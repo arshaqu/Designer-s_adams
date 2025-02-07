@@ -24,9 +24,13 @@ const UnderConstruction = () => {
         
         {/* Text in red with custom bounce animation */}
         <h1 
-          className="mt-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-600 font-bold p-3 animate-bounce"
+         className="mt-4 text-xl sm:text-3xl md:text-3xl lg:text-4xl font-extrabold montserrat p-3 
+            text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 
+            shadow-2xl drop-shadow-[0_15px_10px_rgba(255,256,256,1.8)] 
+            tracking-wider uppercase animate-pulse"
+
         >
-          OUR SITE IS UNDER CONSTRUCTION WILL UPDATE SOON...
+          Our Site Is Under Construction Will Update Soon...!
         </h1>
       </div>
     </div>
