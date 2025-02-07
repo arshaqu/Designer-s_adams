@@ -51,7 +51,7 @@ function Footer() {
                </a>
 
               <a href="#" className="flex items-center text-white space-x-2 ">
-                <div className="border border-red-600 ml-[-34px]  bg-red-500 rounded-full px-1 py-1">
+                <div className="border border-red-600 ml-[-34px] md:ml-[0px]  bg-red-500 rounded-full px-1 py-1">
                 <FaWhatsapp size={20} />
                 </div>  <span className="text-gray-900 ">WhatsApp</span>
                 </a>
