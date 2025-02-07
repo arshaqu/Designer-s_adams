@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import ContactUs from './Pages/ContactUs.jsx';
 import AboutUs from './Pages/AboutUs.jsx';
 import UnderConstruction from './Pages/Construction.jsx';
+import SimpleDry from './Pages/SimpleDry.jsx';
 
 function App() {
   return (
@@ -15,9 +16,8 @@ function App() {
         <Route path="/contactus" element={<ContactUs/>} />
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="*" element={<UnderConstruction/>} />
-
+        <Route path="/simpletry" element={<SimpleDry/>} />
         
-
 
    
       </Routes>

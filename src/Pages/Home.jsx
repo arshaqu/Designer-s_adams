@@ -95,7 +95,7 @@ function Home() {
                   <li style={{marginTop:'20px'}} className='mt-5'>100% SPACE GAIN</li>
                   </ul>
 <div className="mt-12 flex justify-end">
-  <button className="bg-white text-red-600 px-4 py-2 rounded-full shadow-md text-sm font-semibold">
+  <button  onClick={() => navigate('/simpletry')} className="bg-white text-red-600 px-4 py-2 rounded-full shadow-md text-sm font-semibold">
     Learn more &gt;&gt;
   </button>
 </div>
@@ -117,7 +117,7 @@ function Home() {
             Explore Products
           </button>
           <div style={{marginTop:'20px'}} className=" flex flex-col sm:flex-row items-center sm:space-x-6 space-y-4 sm:space-y-0 text-black ">
-            <a href="https://instagram.com/adham_profiles" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+            <a href="https://www.instagram.com/adhams_profiles/" target="_blank" rel="noopener noreferrer" className="flex items-center ml-[-5px]  space-x-2">
               <FaInstagram className="text-2xl text-[#E6492D]" />
               <span className="text-lg">adhams_profiles</span>
             </a>
@@ -125,8 +125,8 @@ function Home() {
               <FaFacebookF className="text-2xl text-[#E6492D]" />
               <span className="text-lg">adhams-laminates</span>
             </a>
-            <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
-              <FaWhatsapp className="text-2xl text-[#E6492D]" />
+            <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="flex items-center ml-[-48px] space-x-2">
+              <FaWhatsapp className="text-2xl  text-[#E6492D]" />
               <span className="text-lg">WhatsApp</span>
             </a>
           </div>

@@ -8,7 +8,7 @@ import AdhamsWhite from '../Assets/whitered.png'
 
 function ContactUs() {
   return (
-    <div className="w-full min-h-screen bg-neutral-50">
+    <div style={{overflow:'hidden'}} className="w-full min-h-screen bg-neutral-50">
 
     <Navbar/>
   <div className="  flex flex-col items-center montserrat">
@@ -40,12 +40,12 @@ function ContactUs() {
       </div>
 
       {/* Contact Information Section */}
-      <div className="flex justify-center container mx-auto px-6 py-12 montserrat ">
+      <div  className="flex justify-center container mx-auto md:ml-48 px-6 py-12 montserrat ">
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 text-start ">
           {/* Left Column - Contact Info */}
           <div>
-            <h3 className="text-2xl ml-[-50px] flex justify-center font-bold mb-4">Our Address:</h3>
-            <p className="text-gray-700 text-3x1 flex justify-center">
+            <h3 className="text-2xl md:text-3xl ml-[-50px] flex justify-center font-bold mb-4">Our Address:</h3>
+            <p className="text-gray-700 text-3x1 md:text-lg flex justify-center">
               Deziner Ceiling Co. <br />
               34H, Inkel Greens <br />
               Inkel City, Karathode, <br />
@@ -56,26 +56,26 @@ function ContactUs() {
 
             <div className="flex justify-center ">
            <div>
-           <div> <h3 className=" ml-[40px] text-2xl font-bold mt-8 mb-2 ">Email:</h3></div>
-          <div className="ml-[50px]">
-          <p className="text-gray-700   ">dezinerradhams@gmail.com</p>
-          <p className="text-gray-700 ">customercare.adhams@gmail.com</p>
+           <div> <h3 className=" ml-[50px] md:ml-[120px]  text-2xl md:text-3xl  font-bold mt-8 mb-2 ">Email:</h3></div>
+          <div className="ml-[60px] ">
+          <p className="text-gray-700 md:text-2xl md:ml-24 ">dezinerradhams@gmail.com</p>
+          <p className="text-gray-700 md:text-2xl md:ml-24">customercare.adhams@gmail.com</p>
           </div>
            </div>
             </div>
 
               <div className="flex justify-center">
                 <div>
-                <h3 className="text-2xl font-bold mt-6 mb-2 ml-[-10px]">Call or WhatsApp:</h3>
-                <p className="text-gray-700">+91 8301 955 233</p>
+                <h3 className="text-3xl font-bold mt-6 mb-2 ml-[-10px]">Call or WhatsApp:</h3>
+                <p className="text-gray-700 ml-6 md:text-2xl">+91 8301 955 233</p>
                 </div>
               </div>
 
 
 
 
-            <div className="flex flex-col items-center mt-3">
-              <h3 className="text-2xl font-bold mb-4 mt-5 mr-[80px]">Follow Us:</h3>
+            <div className="flex flex-col items-center md:ml-[-12] mt-3">
+              <h3 className="text-3xl font-bold mb-4 mt-5  mr-[80px]">Follow Us:</h3>
               <div className="flex flex-col mr-6 gap-4">
                
 
@@ -83,29 +83,29 @@ function ContactUs() {
                 <a href="#" className="flex items-center text-white space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaFacebookF size={20} />
-                  </div>  <span className="text-red-600">adhams-laminates</span>
+                  </div>  <span className="text-red-600 md:text-2xl">adhams-laminates</span>
                 </a>
 
                 <a href="#" className="flex items-center text-white space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaInstagram size={20} />
 
-                  </div>  <span className="text-red-600">adhams_profiles</span>
+                  </div>  <span className="text-red-600 md:text-2xl">adhams_profiles</span>
                 </a>
 
 
                 <a href="#" className="flex items-center text-white space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaWhatsapp size={20} />
-                  </div>  <span className="text-red-600">WhatsApp</span>
+                  </div>  <span className="text-red-600 md:text-2xl">WhatsApp</span>
                 </a>
 
               </div>
 
-              <h3 className="text-2xl font-bold mt-6 mb-2 mr-32">Visit Us:</h3>
+              <h3 className="text-2xl font-bold mt-6 md:text-3xl mb-2 mr-32">Visit Us:</h3>
               <a href="#" className="flex items-center mr-28 text-red-600 space-x-2">
                 <FaMapMarkerAlt size={20} />
-                <span>Sitemap</span>
+                <span className="md:text-3xl">Sitemap</span>
               </a>
 
               {/* Message Box */}
@@ -118,13 +118,13 @@ function ContactUs() {
 
 
           <div className="mt-8">
-      <button className="bg-red-600 md:ml-24 ml-12 text-white text-lg px-6 py-3 shadow-md hover:bg-red-700">
+      <button className="bg-red-600 md:ml-48 ml-12 text-white text-lg px-6 py-3 shadow-md hover:bg-red-700">
         EXPLORE PRODUCTS
       </button>
     </div>
 
     {/* Color Circles */}
-    <div className="flex space-x-4 mt-6 md:ml-36 ml-28">
+    <div className="flex space-x-4 mt-6 md:ml-64 ml-28">
       <div className="w-6 h-6 bg-red-600 rounded-full"></div>
       <div className="w-6 h-6 bg-blue-800 rounded-full"></div>
       <div className="w-6 h-6 bg-green-600 rounded-full"></div>

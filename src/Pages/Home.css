@@ -6,4 +6,11 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
+  @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+  .bagel {
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }

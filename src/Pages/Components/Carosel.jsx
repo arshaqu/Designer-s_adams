@@ -73,7 +73,7 @@ function Carosel() {
 
       <button
         onClick={() => handleScroll("left")}
-        className="absolute left-4 top-1/2 z-10 bg-red-600 hover:bg-white text-white  rounded-full p-2 transform -translate-y-1/2"
+        className="absolute left-4 top-1/2 z-10 bg-red-600 hover:bg-white text-white hover:text-red-600  rounded-full p-2 transform -translate-y-1/2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ function Carosel() {
 
       <button
         onClick={() => handleScroll("right")}
-        className="absolute right-4 top-1/2 z-10 bg-red-600 hover:bg-white text-white rounded-full p-2 transform -translate-y-1/2"
+        className="absolute right-4 top-1/2 z-10 bg-red-600 hover:bg-white text-white hover:text-red-600 rounded-full p-2 transform -translate-y-1/2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

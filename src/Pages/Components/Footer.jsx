@@ -39,7 +39,7 @@ function Footer() {
       {/* Social Media Links */}
     <div className="flex flex-col sm:flex-row items-center sm:space-x-6 space-y-4 sm:space-y-0 text-black">
               <a href="#" className="flex items-center text-white space-x-2 ">
-                 <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+                 <div className="border border-red-600 bg-red-500 ml-[18px]  rounded-full px-1 py-1">
                 <FaFacebookF size={20} />
               </div>  <span className="text-gray-900">adhams-laminates</span>
               </a>
@@ -51,9 +51,9 @@ function Footer() {
                </a>
 
               <a href="#" className="flex items-center text-white space-x-2 ">
-                <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+                <div className="border border-red-600 ml-[-34px]  bg-red-500 rounded-full px-1 py-1">
                 <FaWhatsapp size={20} />
-                </div>  <span className="text-gray-900">WhatsApp</span>
+                </div>  <span className="text-gray-900 ">WhatsApp</span>
                 </a>
             </div>
       
