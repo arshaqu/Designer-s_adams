@@ -79,7 +79,7 @@ function Home() {
             <p className="text-green-600 text-lg md:text-xl">Our</p>
             <p className="text-gray-600 text-lg md:text-xl">Premium Brand</p>
             <div className="flex justify-center py-4">
-              <img src={Adhams} alt="Adhams Logo" className="h-64 md:h-80" />
+              <img src={Adhams} alt="Adhams Logo" className="h-28 w-auto  md:h-80" />
             </div>
             <p className="text-gray-700 w-full mt-4 px-4 md:px-6">
               Our leading brand, "Adhams - The Royal Definition", epitomizes our commitment to quality and luxury. The brand encompasses a diverse range of wall panels, ceiling solutions.
@@ -97,7 +97,7 @@ function Home() {
         <img 
           src={Simple} 
           alt="Featured Product" 
-          className="w-full h-80 md:h-full md:w-1/2 object-cover" 
+          className="w-full h-auto md:h-full md:w-1/2 object-cover" 
         />
         <div 
           style={{backgroundColor:'#f24424'}} 
@@ -129,7 +129,7 @@ function Home() {
 
 
           <div className="flex justify-center  py-4">
-              <div><img src={SimpleDry} alt="Adhams Logo" className="h-32 md:h-48" /></div>
+              <div><img src={SimpleDry} alt="Adhams Logo" className=" h-20 w-auto  md:h-48" /></div>
             </div>
               <p className='font-bold mt-[-20px] montserrat'>CLOTH DRYING HANGER</p>
           <Carosel />
@@ -138,20 +138,7 @@ function Home() {
           <button className="bg-[#E6492D] text-white font-bold text-lg px-6 py-3 rounded-md uppercase w-full max-w-xs sm:max-w-md">
             Explore Products
           </button>
-          <div style={{marginTop:'20px'}} className=" flex flex-col sm:flex-row items-center sm:space-x-6 space-y-4 sm:space-y-0 text-black ">
-            <a href="https://www.instagram.com/adhams_profiles/" target="_blank" rel="noopener noreferrer" className="flex items-center ml-[-5px]  space-x-2">
-              <FaInstagram className="text-2xl text-[#E6492D]" />
-              <span className="text-lg">adhams_profiles</span>
-            </a>
-            <a href="https://facebook.com/adhams-laminates" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
-              <FaFacebookF className="text-2xl text-[#E6492D]" />
-              <span className="text-lg">adhams-laminates</span>
-            </a>
-            <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="flex items-center ml-[-48px] space-x-2">
-              <FaWhatsapp className="text-2xl  text-[#E6492D]" />
-              <span className="text-lg">WhatsApp</span>
-            </a>
-          </div>
+         
         </div>
       </div>
       <Footer />

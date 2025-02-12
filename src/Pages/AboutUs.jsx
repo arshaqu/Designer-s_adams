@@ -18,7 +18,7 @@ function AboutUs() {
   <img src={BannerAbout} alt="Company Banner" className="w-auto h-auto" />
   
   {/* Text with Background and Underline Effect */}
-  <div className="absolute inset-0 flex items-center justify-center mt-48 ml-48">
+  <div className="absolute inset-0 flex items-center justify-center mt-40 ml-48">
 <div className="relative w-full md:ml-[596px] md:mt-[550px]">
   <h1 className="text-white text-1xl  md:text-4xl font-bold bg-opacity-45 bg-gray-800 px-8 py-4 md:py-6 w-full md:w-full">
     About<span className="ml-2">Us</span>
@@ -29,7 +29,7 @@ function AboutUs() {
 <img 
   src={AdhamsWhite} 
   alt="Small Icon" 
-  className="absolute bottom-1 md:bottom-8  left-1 md:left-12 w-24 h-16 m-5 md:w-64 md:h-auto object-contain"
+  className="absolute bottom-[-5px] md:bottom-8  left-1 md:left-12 w-24 h-16 m-5 md:w-64 md:h-auto object-contain"
 />
 </div>
 
@@ -128,11 +128,7 @@ function AboutUs() {
       </div>
 
       {/* Color Circles */}
-      <div className="flex space-x-4 mt-6">
-        <div className="w-6 h-6 bg-red-600 rounded-full"></div>
-        <div className="w-6 h-6 bg-blue-800 rounded-full"></div>
-        <div className="w-6 h-6 bg-green-600 rounded-full"></div>
-      </div>
+     
     </div>
       <Footer/>
     </div>
