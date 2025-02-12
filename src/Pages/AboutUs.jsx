@@ -18,19 +18,19 @@ function AboutUs() {
   <img src={BannerAbout} alt="Company Banner" className="w-auto h-auto" />
   
   {/* Text with Background and Underline Effect */}
-  <div className="absolute inset-0 flex items-center justify-center mt-24 ml-48">
-<div className="relative w-full md:ml-[596px] md:mt-[450px]">
-  <h1 className="text-white text-2xl  md:text-6xl font-bold bg-opacity-45 bg-gray-800 px-8 py-2 md:py-4 w-full md:w-full">
-    About Us
+  <div className="absolute inset-0 flex items-center justify-center mt-48 ml-48">
+<div className="relative w-full md:ml-[596px] md:mt-[550px]">
+  <h1 className="text-white text-1xl  md:text-4xl font-bold bg-opacity-45 bg-gray-800 px-8 py-4 md:py-6 w-full md:w-full">
+    About<span className="ml-2">Us</span>
   </h1>
-  <div style={{backgroundColor:'#eb4c34'}} className="absolutemd: mt-[2px] bottom-0 left-0 w-full h-3 md:h-6 "></div>
+  <div style={{backgroundColor:'#eb4c34'}} className="absolutemd: mt-1 bottom-0 left-0 w-full h-3 md:h-6 "></div>
 </div>
 </div>
 <img 
-    src={AdhamsWhite} 
-    alt="Small Icon" 
-    className="absolute bottom-1 md:bottom-4  left-1 md:left-4 w-24 h-16 md:w-64 md:h-auto object-contain"
-  />
+  src={AdhamsWhite} 
+  alt="Small Icon" 
+  className="absolute bottom-1 md:bottom-8  left-1 md:left-12 w-24 h-16 m-5 md:w-64 md:h-auto object-contain"
+/>
 </div>
 
 
@@ -41,21 +41,31 @@ function AboutUs() {
         </p>
 
         {/* Brand Section */}
-        <div className="p-1 md:p-24">
+      <div className="p-4 sm:p-6 md:p-12 lg:p-24">
+  <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center bg-gray-100 p-4 md:p-12 rounded-lg">
+    {/* Image Section */}
+    <img 
+      src={Adhams} 
+      alt="Adhams Logo" 
+      className="w-96 sm:w-40 md:w-80 h-auto mb-4 md:mb-0 md:ml-3"
+    />
 
-        <div className="flex items-center mt-6 bg-gray-100 p-4  rounded-lg">
-          <img src={Adhams} alt="Adhams Logo" className="w-40 md:w-96 h-40 md:h-80 mr-4 md:ml-3" />
-        <div>
-        <p className="text-gray-700 text-sm p-1 md:p-5 md:text-xl">
-          About our premium brand “<span style={{fontWeight:'bold'}}>Adhams</span>”.<br/>
-          </p>
-          <p className="text-gray-700 text-xs p-1 md:p-5 md:text-xl">
-          Since 2015, our premium brand “Adhams” has been redefining interiors with high-quality decoration concept.Now “Adhams” conquered the front row position with all pride. “Adhams “ has hundreds of premium products that bring timeless style to your every Space. 
+    {/* Text Section */}
+    <div className="text-center md:text-left md:ml-12">
+      <p className="text-gray-700 text-sm sm:text-base md:text-lg md:text-xl p-1 sm:p-3 md:p-5">
+        About our premium brand <span className="font-bold">Adhams</span>.
+      </p>
+      <p className="text-gray-700 text-xs sm:text-sm md:text-lg lg:text-xl p-1 sm:p-3 md:p-5 w-full" style={{ textAlign: 'justify' }}>
+  Since 2015, our premium brand <span className="font-bold">Adhams</span> has been redefining interiors with 
+  high-quality decoration concepts. Now, <span className="font-bold">Adhams</span> has conquered the front row 
+  position with pride. It offers hundreds of premium products that bring timeless style to your every space.
+</p>
 
-          </p>
-        </div>
-        </div>
-        </div>
+
+    </div>
+  </div>
+</div>
+
 
         {/* Commitment Section */}
         <h2 className="text-2xl font-bold text-gray-800 mt-6 flex justify-center">Our Commitment</h2>
@@ -107,7 +117,7 @@ function AboutUs() {
 
       </div>
       <div>
-        <p className="p-5">Thank you for considering Deziner Ceiling Co. for your interior decoration needs .We look forward to serving you and helping you to create beautiful, lasting spaces . For more information, feel free to <span style={{color:'blue',cursor:'pointer'}}>contact us</span>.</p>
+        <p className="p-5">Thank you for considering Deziner Ceiling Co. for your interior decoration needs .We look forward to serving you and helping you to create beautiful, lasting spaces . For more information, feel free to <span  style={{color:'blue',cursor:'pointer'}}><a href="/contactus"> contact us </a></span>.</p>
       </div>
 
       {/* Explore Products Button */}

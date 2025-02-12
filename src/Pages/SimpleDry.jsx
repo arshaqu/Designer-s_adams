@@ -75,7 +75,7 @@ function SimpleDry() {
 
 <div className="bg-gray-300 mt-5 p-6 mb-24 md:px-48">
   <div className="flex flex-row md:flex-row w-full items-center ">
-    <div className="bg-gray-200 md:ml-12 flex items-center justify-center text-center p-5   w-3/3 md:w-1/3">
+    <div className="bg-gray-200 md:ml-12 flex items-center justify-center md:ml-[-20px] text-center p-5   w-3/3 md:w-1/3">
       <h1 className="text-3xl md:text-5xl font-bold text-gray-600 leading-tight">
         100% <br /> Space <br /> Gain
       </h1>

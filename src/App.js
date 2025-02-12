@@ -5,6 +5,7 @@ import ContactUs from './Pages/ContactUs.jsx';
 import AboutUs from './Pages/AboutUs.jsx';
 import UnderConstruction from './Pages/Construction.jsx';
 import SimpleDry from './Pages/SimpleDry.jsx';
+import Footer from './Pages/Components/Footer.jsx';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="*" element={<UnderConstruction/>} />
         <Route path="/simpletry" element={<SimpleDry/>} />
+        <Route path="/Footer" element={<Footer/>} />
+
         
 
    

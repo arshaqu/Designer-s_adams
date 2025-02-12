@@ -8,17 +8,21 @@ import Image5 from '../Assets/Home/homeSlider 4.png';
 import Deziner from '../Assets/DezinerTr.png';
 import Adhams from '../Assets/Home/ADHAMS.jpg';
 import Navbar from './Components/Navbar';
-import overlay from '../Assets/Home/OVERLAY RED.png';
+import overlay from '../Assets/Home/OVERLAYRED1.png';
 import Carosel from './Components/Carosel';
 import Footer from './Components/Footer';
 import Simple from '../Assets/Home/simple.jpg'
 import SimpleDry from '../Assets/dff.png'
 
+
 function Home() {
   const navigate = useNavigate();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [currentImage, setCurrentImage] = useState(Image2);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fade, setFade] = useState(true);
   const imageContainerRef = useRef(null);
+
+  const images = [Image2, Image3, Image4, Image5];
 
   const handleMouseMove = (e) => {
     if (imageContainerRef.current) {
@@ -30,29 +34,34 @@ function Home() {
   };
 
   useEffect(() => {
-    const images = [Image2, Image3, Image4, Image5];
-    let index = 0;
     const interval = setInterval(() => {
-      index = (index + 1) % images.length;
-      setCurrentImage(images[index]);
-    }, 5000);
+      setFade(false); // Start fading out
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade(true); // Start fading in
+      }, 700); // Time for fade-out
+    }, 6000); // Change every 5 seconds
+
     return () => clearInterval(interval);
   }, []);
+
 
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-grow">
-        <div className="relative w-full h-[50vh] sm:h-[40vh] md:h-[100vh]">
+        <div className="relative w-full h-[25vh] sm:h-[40vh] md:h-[100vh]">
           <div
             ref={imageContainerRef}
             onMouseMove={handleMouseMove}
             className="relative w-full h-full overflow-hidden"
           >
-            <img
-              src={currentImage}
+              <img
+              src={images[currentImageIndex]}
               alt="Background"
-              className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+              className={`w-full h-full object-cover transition-opacity duration-500 ease-in-out ${
+                fade ? 'opacity-100' : 'opacity-0'
+              }`}
               style={{ transformOrigin: `${mousePosition.x}% ${mousePosition.y}%`, transform: 'scale(1.1)' }}
             />
             <img src={overlay} alt="Overlay" className="absolute inset-0 w-full h-full z-10" />
@@ -81,31 +90,44 @@ function Home() {
               FEATURED
             </button>
           </div>
-          <div className="flex justify-center py-4">
-            <div className="w-full max-w-4xl flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden mt-6">
-              <img src={Simple} alt="Featured Product" className="w-full h-full md:w-1/2" />
-              <div style={{backgroundColor:'#f24424'}} className="w-full h-full md:w-1/2  text-white p-6">
-                <ul className="space-y-2 text-lg md:text-[21px] mt-12 font-semibold montserrat">
-                  <li>STAINLESS STEEL ROPES </li>
-                  <li style={{marginTop:'20px'}} className='mt-12'>FULL ALUMINIUM BODY</li>
-                  <li style={{marginTop:'20px'}} className='mt-5'>UPTO 30KG CLOTHS HOLDING</li>
-                  <li style={{marginTop:'20px'}} className='mt-5'>EASY INSTALLATION</li>
-                  <li style={{marginTop:'20px'}} className='mt-5'>ANYWHERE DELIVERY</li>
-                  <li style={{marginTop:'20px'}} className='mt-5'>2 YEARS WARRANTY</li>
-                  <li style={{marginTop:'20px'}} className='mt-5'>100% SPACE GAIN</li>
-                  </ul>
-<div className="mt-12 flex justify-end">
-  <button  onClick={() => navigate('/simpletry')} className="bg-white text-red-600 px-4 py-2 rounded-full shadow-md text-sm font-semibold">
-    Learn more &gt;&gt;
-  </button>
-</div>
 
 
-              </div>
-              
+
+      <div className="w-[100%] md:w-auto md:max-w-4xl h-auto md:h-1/2 flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden mt-4 md:mt-6">
+        <img 
+          src={Simple} 
+          alt="Featured Product" 
+          className="w-full h-80 md:h-full md:w-1/2 object-cover" 
+        />
+        <div 
+          style={{backgroundColor:'#f24424'}} 
+          className="w-full h-auto md:h-full md:w-1/2 text-white p-4 md:p-16"
+        >
+          <ul className="space-y-1 md:space-y-2 text-base md:text-[15px] text-[13px]  mt-6 md:mt-12 font-semibold montserrat">
+            <div className="overflow-visible">
+              <li>STAINLESS STEEL ROPES</li>
+              <li className="mt-1 md:mt-[20px]">FULL ALUMINIUM BODY</li>
+              <li className="mt-1 md:mt-[20px]">UPTO 30KG CLOTHS HOLDING</li>
+              <li className="mt-1 md:mt-5">EASY INSTALLATION</li>
+              <li className="mt-1 md:mt-5">ANYWHERE DELIVERY</li>
+              <li className="mt-1 md:mt-5">2 YEARS WARRANTY</li>
+              <li className="mt-1 md:mt-5">100% SPACE GAIN</li>
             </div>
-            
-          </div> 
+          </ul>
+          <div className="mt-6 md:mt-12 flex justify-end">
+            <button 
+              onClick={() => navigate('/simpletry')} 
+              className="bg-white text-red-600 px-3 py-1 md:px-4 md:py-2 rounded-full shadow-md text-xs md:text-sm font-semibold"
+            >
+              Learn more &gt;&gt;
+            </button>
+          </div>
+      </div>
+    </div>
+
+
+
+
           <div className="flex justify-center  py-4">
               <div><img src={SimpleDry} alt="Adhams Logo" className="h-32 md:h-48" /></div>
             </div>
