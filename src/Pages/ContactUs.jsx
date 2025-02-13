@@ -20,7 +20,7 @@ function ContactUs() {
 <div className="absolute inset-0 flex items-center justify-center mt-48 ml-48">
 <div className="relative w-full md:ml-[596px] md:mt-[550px]">
   <h1 className="text-white text-1xl  md:text-4xl font-bold bg-opacity-45 bg-gray-800 px-8 py-4 md:py-6 w-full md:w-full">
-    About<span className="ml-2">Us</span>
+    Contact<span className="ml-2">Us</span>
   </h1>
   <div style={{backgroundColor:'#eb4c34'}} className="absolutemd: mt-1 bottom-0 left-0 w-full h-3 md:h-6 "></div>
 </div>
@@ -61,8 +61,8 @@ function ContactUs() {
 
               <div className="flex justify-center">
                 <div>
-                <h3 className="text-3xl font-bold mt-6 mb-2 ml-[12px] md:ml-[2px]">Call or WhatsApp:</h3>
-                <p className="text-gray-700 ml-6 md:ml-[0px] md:text-2xl">+91 8301 955 233</p>
+                <h3 className="text-2xl font-bold mt-6 mb-2 md:ml-[-50px]">Call or WhatsApp:</h3>
+                <p className="text-gray-700  md:ml-[-45px] md:text-2xl">+91 8301 955 233</p>
                 </div>
               </div>
 
@@ -70,7 +70,7 @@ function ContactUs() {
 
 
             <div className="flex flex-col items-center md:ml-[-12] mt-3">
-              <h3 className="text-3xl font-bold mb-4 mt-5  mr-[80px]">Follow Us:</h3>
+              <h3 className="text-2xl font-bold mb-4 mt-5  mr-[80px]">Follow Us:</h3>
               <div className="flex flex-col mr-6 gap-4">
                
 
@@ -118,12 +118,7 @@ function ContactUs() {
       </button>
     </div>
 
-    {/* Color Circles */}
-    <div className="flex space-x-4 mt-6 md:ml-64 ml-28">
-      <div className="w-6 h-6 bg-red-600 rounded-full"></div>
-      <div className="w-6 h-6 bg-blue-800 rounded-full"></div>
-      <div className="w-6 h-6 bg-green-600 rounded-full"></div>
-    </div>
+ 
           </div>
 
         </div>

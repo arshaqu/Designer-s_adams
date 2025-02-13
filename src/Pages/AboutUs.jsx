@@ -29,7 +29,7 @@ function AboutUs() {
 <img 
   src={AdhamsWhite} 
   alt="Small Icon" 
-  className="absolute bottom-[-5px] md:bottom-8  left-1 md:left-12 w-24 h-16 m-5 md:w-64 md:h-auto object-contain"
+  className="absolute bottom-1 md:bottom-8  left-1 md:left-12 w-24 h-16 m-5 md:w-64 md:h-auto object-contain"
 />
 </div>
 
