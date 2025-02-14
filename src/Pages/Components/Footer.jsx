@@ -38,25 +38,38 @@ function Footer() {
             />
 
             {/* Social Media Links */}
-            <div className="flex flex-col sm:flex-row items-center sm:space-x-6 space-y-4 sm:space-y-0 text-black">
-              <a href="#" className="flex items-center text-white space-x-2 ">
-                 <div className="border border-red-600 bg-red-500 ml-[18px]  rounded-full px-1 py-1">
-                <FaFacebookF size={20} />
-              </div>  <span className="text-gray-900">adhams-laminates</span>
-              </a>
+            <div className="flex flex-col sm:flex-row items-center text-black space-y-4 sm:space-y-0">
+  {/* Facebook and Instagram in a row */}
+  <div className="flex space-x-6">
+   <div className="md:ml-[50px]">
+   <a href="#" className="flex items-center text-white space-x-2">
+      <div className="border border-red-600 bg-red-500 ml-[-25px] rounded-full px-1 py-1">
+        <FaFacebookF className="" size={20} />
+      </div>
+      <span className="text-gray-900 md:w-[120px]">adhams-laminates</span>
+    </a>
+   </div>
 
-               <a href="#" className="flex items-center text-white space-x-2 ">
-               <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
-              <FaInstagram size={20} />
-                </div>  <span className="text-gray-900">adhams_profiles</span>
-               </a>
+   
+   <a href="#" className="flex items-center text-white space-x-2">
+      <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+        <FaWhatsapp size={20} />
+      </div>
+      <span className="text-gray-900">WhatsApp</span>
+    </a>
+  </div>
 
-              <a href="#" className="flex items-center text-white space-x-2 ">
-                <div className="border border-red-600 ml-[-34px] md:ml-[0px]  bg-red-500 rounded-full px-1 py-1">
-                <FaWhatsapp size={20} />
-                </div>  <span className="text-gray-900 ">WhatsApp</span>
-                </a>
-            </div>
+  {/* WhatsApp centered below Facebook & Instagram */}
+  <div className="flex justify-center w-full md:ml-12">
+  <a href="#" className="flex items-center text-white space-x-2">
+      <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+        <FaInstagram size={20} />
+      </div>
+      <span className="text-gray-900">adhams_profiles</span>
+    </a>
+  </div>
+</div>
+
 
             {/* Copyright */}
             <div className="text-center text-sm text-gray-600 mt-5 montserrat">

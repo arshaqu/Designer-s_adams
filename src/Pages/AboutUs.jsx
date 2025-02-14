@@ -14,12 +14,12 @@ function AboutUs() {
       <Navbar/>
     <div className="  flex flex-col items-center montserrat">
       {/* Header Image */}
-      <div className="relative">
+      <div className="relative ">
   <img src={BannerAbout} alt="Company Banner" className="w-auto h-auto" />
   
   {/* Text with Background and Underline Effect */}
   <div className="absolute inset-0 flex items-center justify-center mt-40 ml-48">
-<div className="relative w-full md:ml-[596px] md:mt-[550px]">
+<div className="relative w-full md:ml-[596px] md:mt-[550px] mt-[40px]">
   <h1 className="text-white text-1xl  md:text-4xl font-bold bg-opacity-45 bg-gray-800 px-8 py-4 md:py-6 w-full md:w-full">
     About<span className="ml-2">Us</span>
   </h1>
