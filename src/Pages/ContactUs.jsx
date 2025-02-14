@@ -17,7 +17,7 @@ function ContactUs() {
 <img src={BannerContact} style={{width:'100%'}} alt="Company Banner" className="w-full  h-auto" />
 
 {/* Text with Background and Underline Effect */}
-<div className="absolute inset-0 flex items-center justify-center mt-40 ml-48">
+<div className="absolute inset-0 flex items-center justify-center mt-40 ml-60">
 <div className="relative w-full md:ml-[596px] md:mt-[550px] ">
   <h1  className="text-white text-sm  md:text-4xl montserrat font-bold bg-opacity-45 bg-gray-800 px-7 py-3 md:py-6 w-full md:w-full">
     Contact<span className="ml-2">Us</span>
@@ -28,7 +28,7 @@ function ContactUs() {
 <img 
   src={AdhamsWhite} 
   alt="Small Icon" 
-  className="absolute bottom-[-10px] md:bottom-8  left-1 md:left-12 w-24 h-16 m-5 md:w-64 md:h-auto object-contain"
+  className="absolute bottom-[-12px] md:bottom-8  left-1 md:left-12 w-24 h-16 m-5 md:w-64 md:h-auto object-contain"
 />
 </div>
 
