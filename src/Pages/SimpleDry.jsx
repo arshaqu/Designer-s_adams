@@ -93,7 +93,7 @@ function SimpleDry() {
   </div>
 </div>
 
-<div style={{overflow:'hidden'}} className="w-68 md:w-[496px] absolute mt-40 md:mt-[-156px] ml-[-80px] md:ml-[556px]" >
+<div style={{overflow:'hidden'}} className="w-68 md:w-[496px] absolute mt-40 md:mt-[-156px] ml-[-35px] md:ml-[556px]" >
 <img src={Simpletool} alt="" />
 </div>
 
