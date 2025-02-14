@@ -104,7 +104,7 @@ function ContactUs() {
               </a>
 
               {/* Message Box */}
-              <h3 className="text-2xl font-bold mt-6 mb-2 mr-12">Leave a Message:</h3>
+              <h3 className="text-2xl font-bold mt-6 md:ml-1 ml-10 mb-2 mr-12">Leave a Message:</h3>
               <textarea
                 className="border p-2 w-full h-24 mt-2 rounded-md ml-1 md:ml-80"
                 placeholder="Please write to us..."
