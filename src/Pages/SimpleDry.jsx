@@ -24,7 +24,11 @@ function SimpleDry() {
         <img 
           src={Balcony} 
           alt="Main" 
+<<<<<<< HEAD
           className="rounded-lg h-auto md:h-[52rem] p-1 w-auto md:w-[48rem] shadow-lg"
+=======
+          className="rounded-lg h-[50rem] md:h-[52rem] p-1 w-[32rem] md:w-[48rem] shadow-lg"
+>>>>>>> 716d8955f112d84fba4856abe7b34907714b5778
         />
          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-80 p-4 bg-gradient-to-t from-black via-black/80 to-transparent rounded-b-lg"></div>
         {/* Overlay Text */}
@@ -46,9 +50,15 @@ function SimpleDry() {
 
         {/* Side Images (Stack under main image in small screens) */}
         <div className=" md:flex-col md:ml-5 md:mt-0 mt-4 p-1">
+<<<<<<< HEAD
           <img src={Balcony2} alt="Side view" className="rounded-lg h-auto md:h-[22rem] w-96 md:w-[20rem] shadow-lg mt-" />
           <img src={Balcony3} alt="Side view" className="rounded-lg h-auto md:h-[14rem] w-96 md:w-[20rem]  shadow-lg mt-3" />
           <img src={Balcony4} alt="Side view" className="rounded-lg h-auto md:h-[14rem] w-96 md:w-[20rem]  shadow-lg mt-3" />
+=======
+          <img src={Balcony2} alt="Side view" className="rounded-lg h-[22rem] md:h-[22rem] w-96 md:w-[20rem] shadow-lg mt-" />
+          <img src={Balcony3} alt="Side view" className="rounded-lg h-84 md:h-[14rem] w-96 md:w-[20rem]  shadow-lg mt-3" />
+          <img src={Balcony4} alt="Side view" className="rounded-lg h-84 md:h-[14rem] w-96 md:w-[20rem]  shadow-lg mt-3" />
+>>>>>>> 716d8955f112d84fba4856abe7b34907714b5778
 
         </div>
       </div>
