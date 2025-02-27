@@ -6,10 +6,7 @@ import AboutUs from './Pages/AboutUs.jsx';
 import UnderConstruction from './Pages/Construction.jsx';
 import SimpleDry from './Pages/SimpleDry.jsx';
 import FloatingButtons from './Pages/Components/FloatingButtons.jsx';
-<<<<<<< HEAD
 import Products from './Pages/Products.jsx';
-=======
->>>>>>> 716d8955f112d84fba4856abe7b34907714b5778
 
 function App() {
   return (
@@ -22,13 +19,10 @@ function App() {
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="*" element={<UnderConstruction/>} />
         <Route path="/simpletry" element={<SimpleDry/>} />
-<<<<<<< HEAD
         <Route path="/products" element={<Products/>} />        
-=======
 
 
         
->>>>>>> 716d8955f112d84fba4856abe7b34907714b5778
 
    
       </Routes>
