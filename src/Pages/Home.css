@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+  .bagel {
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
