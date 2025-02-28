@@ -288,7 +288,7 @@ const ProductCard = ({ product, onLearnMore }) => {
         </p>
         <button 
           onClick={() => onLearnMore(product)} 
-          className="text-red-500 md:text-xl hover:text-red-500 transition cursor-pointer"
+          className="text-red-500 md:text-lg hover:text-red-500 transition cursor-pointer"
         >
           Learn More --- 
         </button>
@@ -296,7 +296,7 @@ const ProductCard = ({ product, onLearnMore }) => {
           {product.tags.map((tag, index) => (
             <button 
               key={index} 
-              className="bg-red-500 md:mt-3 text-white text-xs md:text-3xl px-1 md:px-5 py-1 md:py-2 sm:py-1 rounded-md hover:bg-red-600 transition"
+              className="bg-red-500 md:mt-3 text-white text-xs md:text-lg px-1 md:px-5 py-1 md:py-2 sm:py-1 rounded-md hover:bg-red-600 transition"
             >
               {tag}
             </button>
