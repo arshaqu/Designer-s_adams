@@ -272,9 +272,11 @@ function Products() {
           <img src={ProductBanner} alt="Company Banner" className="w-auto h-auto" />
           <div className="absolute inset-0 flex items-center justify-center mt-40 ml-60">
             <div className="relative w-full md:ml-[596px] md:mt-[550px]">
-              <h1 className="text-white text-sm md:text-4xl font-bold bg-opacity-45 bg-gray-800 px-7 py-3 md:py-6 w-full md:w-full">
+             <div style={{overflow:'hidden'}} className="">
+             <h1 className="text-white text-sm md:text-4xl font-bold bg-opacity-45 bg-gray-800 px-7 py-3 md:py-6 w-full md:w-full">
                 Products
               </h1>
+             </div>
               <div style={{ backgroundColor: '#eb4c34' }} className="absolute mt-1 bottom-0 left-0 w-full h-3 md:h-6"></div>
             </div>
           </div>
@@ -286,7 +288,7 @@ function Products() {
         </div>
 
         {/* Exterior Section */}
-        <div className="p-2 border-b-4 m-2">
+        <div style={{overflow:'hidden'}} className="p-2 border-b-4 m-2">
           <h2 style={{fontWeight:'bold'}} className="md:text-4xl text-1xl font-bold mt-3 md:m-12 border-b montserrat"> EXTERIOR & INTERIOR </h2>
           <div className="md:mt-5">
             {exteriorProducts.map((product, index) => (
@@ -301,7 +303,7 @@ function Products() {
         </div>
 
         {/* Interior Section */}
-        <div className="p-2 border-b-4 m-2">
+        <div style={{overflow:'hidden'}} className="p-2 border-b-4 m-2">
           <h2 style={{fontWeight:'bold'}} className="md:text-4xl text-1xl font-bold mt-3 md:m-12 border-b montserrat">INTERIOR</h2>
           <div className="md:mt-5">
             {interiorProducts.map((product, index) => (
