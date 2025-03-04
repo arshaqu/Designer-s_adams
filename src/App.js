@@ -7,6 +7,7 @@ import UnderConstruction from './Pages/Construction.jsx';
 import SimpleDry from './Pages/SimpleDry.jsx';
 import FloatingButtons from './Pages/Components/FloatingButtons.jsx';
 import Products from './Pages/Products.jsx';
+import ExteriorCladding from './Pages/Products/ExteriorCladding.jsx';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="*" element={<UnderConstruction/>} />
         <Route path="/simpletry" element={<SimpleDry/>} />
         <Route path="/products" element={<Products/>} />        
-
+        <Route path='/exterior_cladding' element={<ExteriorCladding/>} />
 
         
 
