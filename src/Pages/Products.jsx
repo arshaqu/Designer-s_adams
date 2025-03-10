@@ -29,6 +29,10 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
     }
   };
 
+  const shouldShowLearnMore = 
+    product.title !== "NO NAIL - SPECIAL ADHESIVE" && 
+    product.title !== "PVC MIRROR STRIPS";
+
   return (
     <div className="flex gap-3 sm:gap-1 montserrat items-center md:m-16 mb-4">
       <img 
@@ -48,12 +52,14 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
         <p className="text-xs md:text-xl md:mt-4 leading-tight w-[250px] md:w-full text-gray-700">
           {product.description}
         </p>
-        <button 
-          onClick={() => onLearnMore(product)} 
-          className="text-red-500 md:text-lg hover:text-red-500 transition cursor-pointer"
-        >
-          Learn More --- 
-        </button>
+        {shouldShowLearnMore && (
+          <button 
+            onClick={() => onLearnMore(product)} 
+            className="text-red-500 md:text-lg hover:text-red-500 transition cursor-pointer"
+          >
+            Learn More --- 
+          </button>
+        )}
         <div className="mt-1 flex flex-wrap gap-1 sm:gap-2">
           {product.tags.map((tag, index) => (
             <button 

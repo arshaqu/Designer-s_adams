@@ -453,59 +453,104 @@ Why Choose Our HPL Boards?
             </div>
           </div>
 
-          {/* Composition Section */}
+         
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Composition
-            </h3>
-            <div className="p-4 flex flex-wrap justify-around text-center">
-              <div className="p-2 w-1/3">
-                <div className="font-bold">Wood Polymer Composite (WPVC)</div>
-                <div className="text-lg font-semibold text-red-600">70% – 75%</div>
-              </div>
-              <div className="p-2 w-1/3">
-                <div className="font-bold">Calcium Carbonate</div>
-                <div className="text-lg font-semibold text-red-600">15% – 20%</div>
-              </div>
-              <div className="p-2 w-1/3">
-                <div className="font-bold">Additives & Binders</div>
-                <div className="text-lg font-semibold text-red-600">5% – 10%</div>
-              </div>
-            </div>
-          </div>
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    WPVC Interior Louvers: Wooden and Marble Textured
+  </h3>
+  <div className="p-4 space-y-4">  
+    <div>
+      <h4 className="font-bold text-lg">WPVC Pastel-Colored Louvers for Interior Walls and Ceilings</h4>
+      <p className="text-gray-700">                   
+        WPVC pastel-colored louvers offer a modern and elegant solution for interior decoration. 
+        Combining the soft aesthetic of pastel shades with the durability of WPVC materials, 
+        they create a calming and sophisticated look for both residential and commercial spaces.
+      </p>
+    </div>
 
-          {/* Applications Section */}
-          <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Applications of WPVC Interior Louvers
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Wall Cladding & Decorative Panels</li>
-                <li className="text-gray-700">Room Partitions & Dividers</li>
-                <li className="text-gray-700">Ceiling Panels & Accent Walls</li>
-                <li className="text-gray-700">Commercial & Residential Interiors</li>
-                <li className="text-gray-700">Retail Stores & Hospitality Spaces</li>
-              </ul>
-            </div>
-          </div>
+    <div>
+      <h4 className="font-bold text-lg">Wooden Textured Louvers</h4>
+      <p className="text-gray-700">
+        Mimics the warm and timeless appeal of real wood. Available in oak, walnut, teak, 
+        and other wood grain designs, these louvers bring a natural aesthetic to interiors.
+      </p>
+    </div>
 
-          {/* Advantages Section */}
-          <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Advantages of WPVC Interior Louvers
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Elegant & Modern Look</li>
-                <li className="text-gray-700">Waterproof & Moisture Resistant</li>
-                <li className="text-gray-700">Lightweight & Easy to Install</li>
-                <li className="text-gray-700">Termite & Pest Resistant</li>
-                <li className="text-gray-700">Fire & UV Resistant</li>
-                <li className="text-gray-700">Low Maintenance & Long Lasting</li>
-              </ul>
-            </div>
-          </div>
+    <div>
+      <h4 className="font-bold text-lg">Marble Textured Louvers</h4>
+      <p className="text-gray-700">
+        Replicates the rich and elegant look of natural marble, making it perfect for 
+        high-end interiors with a sleek and luxurious feel.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {[
+        { title: "Versatile Application", description: "Suitable for classic, rustic, or modern interior themes." },
+        { title: "Durability", description: "Resistant to moisture, termites, and wear, ensuring long-lasting use." },
+        { title: "Lightweight & Easy Installation", description: "Designed for quick and hassle-free installation on walls and ceilings." },
+        { title: "Eco-Friendly", description: "Made from recyclable materials, making it a sustainable choice." },
+        { title: "Low Maintenance", description: "Easy to clean and maintain with minimal effort." },
+        { title: "Modern Aesthetics", description: "Complements contemporary and minimalist styles." },
+      ].map((feature, index) => (
+        <div key={index} className="p-4 bg-blue-50 rounded-lg shadow-md">
+          <h4 className="font-semibold text-lg">{feature.title}</h4>
+          <p className="text-gray-700">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+<div className="border-t border-gray-300 mt-4">
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    Applications of WPVC Interior Louvers
+  </h3>
+  <div className="p-4">
+    <ul className="list-disc pl-5 space-y-2">
+      <li className="text-gray-700">
+        <span className="font-semibold">Living Rooms:</span> Creates accent walls or stylish ceilings with a smooth and uniform finish.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Commercial Spaces:</span> Ideal for offices, retail outlets, and hotels, adding a modern touch to interiors.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Bedrooms:</span> Used for headboards or to enhance the cozy ambiance of the space.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Restaurants & Cafes:</span> Chic wall panels that resonate with trendy and upscale interiors.
+      </li>
+    </ul>
+  </div>
+</div>
+
+{/* Advantages Section */}
+<div className="border-t border-gray-300 mt-4">
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    Advantages of WPVC Interior Louvers
+  </h3>
+  <div className="p-4">
+    <ul className="list-disc pl-5 space-y-2">
+      <li className="text-gray-700">
+        <span className="font-semibold">Durable & Long-Lasting:</span> Resistant to moisture, termites, and warping, ensuring longevity.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Lightweight & Easy to Install:</span> Simplifies installation and reduces structural load.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Eco-Friendly:</span> Made from recyclable materials, contributing to sustainability.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Low Maintenance:</span> Requires minimal cleaning and retains its finish over time.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Customizable:</span> Available in different sizes, patterns, and finishes to suit any design preference.
+      </li>
+    </ul>
+  </div>
+</div>
+
 
           {/* Tags Section */}
           <div className="p-4 bg-gray-50 border-t border-gray-300 flex flex-wrap gap-2">
@@ -527,7 +572,6 @@ Why Choose Our HPL Boards?
 
           {product.title === "PVC FOAM BOARDS" && (
             <>
-              {/* Features Section for HPL Exterior Laminate */}
               <div className="border-t border-gray-300 mt-4">
                 <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">What is PVC FOAM BOARD</h3>
                 <div className="p-4">
@@ -754,10 +798,10 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4">
               <p className="text-gray-700">
-                French mouldings are decorative trim and profiles used in interior and furniture design 
-                to create elegant, classical, and sophisticated architectural details. They are commonly 
-                crafted from wood, MDF, or polyurethane and are used to enhance ceilings, walls, doors, 
-                and furniture pieces.
+              French moldings (Polyurethane(PU)molding) are elaborate architectural accents that elevate interior design's sophistication and beauty.
+               They consist of a number of elements, each with a distinct decorative or practical function, including wainscoting, ceiling roses, coving,
+                borders, skirting, and corner rose blocks. These components, which give any home a timeless beauty, are frequently influenced by classical
+                 French style.
               </p>
             </div>
           </div>
@@ -769,33 +813,43 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
               <div className="p-2 w-1/3">
-                <div className="font-bold">SOLID WOOD / MDF</div>
-                <div className="text-lg font-semibold text-red-600">70%</div>
+                <div className="font-bold">Polyurethane Resin</div>
+                <div className="text-lg font-semibold text-red-600">65%</div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">PRIMERS & PAINTS</div>
-                <div className="text-lg font-semibold text-red-600">20%</div>
+                <div className="font-bold">Calcium Carbonate</div>
+                <div className="text-lg font-semibold text-red-600">25%</div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">ADHESIVES & SEALERS</div>
-                <div className="text-lg font-semibold text-red-600">10%</div>
+                <div className="font-bold">Blowing Agents</div>
+                <div className="text-lg font-semibold text-red-600">5%</div>
               </div>
             </div>
           </div>
 
           {/* Applications Section */}
           <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-            <div className="border-t border-gray-300 mt-4">
+          <div className="border-t border-gray-300 mt-4">
               <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
-                Applications of French Mouldings
+                Applications of French Molding
               </h3>
               <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  { title: "Wall & Ceiling Décor", description: "Used to enhance walls and ceilings with intricate detailing." },
-                  { title: "Furniture & Cabinetry", description: "Adds classic decorative trims to furniture and cabinets." },
-                  { title: "Doors & Windows", description: "Provides an elegant frame to doors and windows." },
-                  { title: "Interior Paneling", description: "Enhances luxury interiors with panel mouldings and trims." },
-                  { title: "Commercial & Residential Spaces", description: "Used in hotels, luxury homes, and offices for premium finishes." }
+                  {
+                    title: "Residential Spaces",
+                    description:
+                      "Living rooms, dining areas, bedrooms, and hallways. Used for accent walls, ceilings, and door or window frames.",
+                  },
+                  {
+                    title: "Commercial Spaces",
+                    description:
+                      "Hotels, restaurants, and retail stores for luxurious interior design.",
+                  },
+                  {
+                    title: "Historical Restoration",
+                    description:
+                      "Ideal for restoring classical buildings or adding a vintage touch to modern structures.",
+                  },
                 ].map((app, index) => (
                   <div key={index} className="p-4 bg-gray-50 rounded-lg shadow-md">
                     <h4 className="font-semibold text-lg">{app.title}</h4>
@@ -805,27 +859,110 @@ Why Choose Our HPL Boards?
               </div>
             </div>
 
+
             {/* Key Properties Section */}
             <div className="border-t border-gray-300 mt-6">
-              <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
-                Key Properties of French Mouldings
-              </h3>
-              <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[
-                  "Elegant & Classic – Enhances interiors with a luxurious touch.",
-                  "Durable & Long-Lasting – Resistant to wear and tear over time.",
-                  "Customizable – Available in various designs, sizes, and finishes.",
-                  "Easy to Install – Can be glued, nailed, or screwed into place.",
-                  "Paintable & Stainable – Can be finished to match any décor style.",
-                  "Lightweight – Especially in MDF or polyurethane variants, making installation easy.",
-                  "Moisture Resistant – Certain materials offer resistance to humidity and temperature changes."
-                ].map((property, index) => (
-                  <div key={index} className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
-                    <span className="text-green-700 font-medium">✅ {property}</span>
-                  </div>
-                ))}
-              </div>
+  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+    Key Properties of French Mouldings
+  </h3>
+  <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+    {[
+      "Elegant & Classic – Enhances interiors with a luxurious touch.",
+      "Durable & Long-Lasting – Resistant to wear and tear over time.",
+      "Customizable – Available in various designs, sizes, and finishes.",
+      "Easy to Install – Can be glued, nailed, or screwed into place.",
+      "Paintable & Stainable – Can be finished to match any décor style.",
+      "Lightweight – Especially in MDF or polyurethane variants, making installation easy.",
+      "Moisture Resistant – Certain materials offer resistance to humidity and temperature changes.",
+    ].map((property, index) => (
+      <div key={index} className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
+        <span className="text-green-700 font-medium">✅ {property}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+<div className="border-t border-gray-300 mt-6">
+  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+    Types of French Molding and Decorative Elements
+  </h3>
+  <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+    {[
+      {
+        title: "Skirting (Baseboards)",
+        description:
+          "Covers the joint between walls and floors, protecting against scuffs while adding a finished look. Available in plain, grooved, or ornate patterns.",
+      },
+      {
+        title: "Coving (Cornices)",
+        description:
+          "Smooths transitions between walls and ceilings while adding a decorative touch. Designs range from simple curves to intricate motifs.",
+      },
+      {
+        title: "Borders",
+        description:
+          "Frames walls, ceilings, or floors, creating a defined visual space. Used as trims for panels, doors, or to separate painted and wallpapered areas.",
+      },
+      {
+        title: "Ceiling Roses",
+        description:
+          "Decorative ceiling centerpiece, often framing chandeliers or lighting fixtures. Available in floral, geometric, and French baroque styles.",
+      },
+      {
+        title: "Corner Roses",
+        description:
+          "Complements ceiling roses by adding decorative corner elements for symmetry. Ideal for enhancing ceiling aesthetics.",
+      },
+      {
+        title: "Wainscoting (Wall Panels)",
+        description:
+          "Adds depth and dimension to walls with traditional paneling, beadboard, or raised panels for a classic French elegance.",
+      },
+    ].map((type, index) => (
+      <div key={index} className="p-4 bg-gray-50 rounded-lg shadow-md">
+        <h4 className="font-semibold text-lg">{type.title}</h4>
+        <p className="text-gray-700">{type.description}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+      <div className="border-t border-gray-300 mt-6">
+        <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+          Why Choose Our French Molding and Decorative Elements?
+        </h3>
+        <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            {
+              title: "Premium Quality",
+              description:
+                "Sourced from trusted manufacturers to ensure durability and aesthetic appeal.",
+            },
+            {
+              title: "Wide Selection",
+              description:
+                "Extensive range of designs, patterns, and materials to suit diverse preferences.",
+            },
+            {
+              title: "Customizable Options",
+              description:
+                "Tailored designs and finishes available to meet specific project requirements.",
+            },
+            {
+              title: "Expert Support",
+              description:
+                "Professional guidance in selection, installation, and maintenance for a seamless experience.",
+            },
+          ].map((feature, index) => (
+            <div key={index} className="p-4 bg-blue-50 rounded-lg shadow-md">
+              <h4 className="font-semibold text-lg">{feature.title}</h4>
+              <p className="text-gray-700">{feature.description}</p>
             </div>
+          ))}
+        </div>
+      </div>
+
+
           </div>
         </>
       )}
@@ -988,6 +1125,10 @@ Why Choose Our HPL Boards?
 
 
 
+
+
+
+
 {product.title === "WPVC PASTEL LOUVERS" && (
         <>
           {/* What is WPVC Pastel Louvers? */}
@@ -1086,8 +1227,8 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4">
               <p className="text-gray-700">
-                PS (Polystyrene) Charcoal Panels are stylish, lightweight decorative panels designed for modern interiors. 
-                They offer a **matte charcoal finish** that enhances aesthetics while providing durability, sound absorption, and resistance to moisture and pests.
+              PS Planks, commonly known as charcoal panels, are innovative decorative materials crafted to elevate the aesthetics of interior spaces. These panels are made using polystyrene (PS),
+              offering a sleek, modern look with exceptional durability and functionality. Their unique charcoal-like texture adds a bold and sophisticated touch to walls and ceilings.
               </p>
             </div>
           </div>
@@ -1099,52 +1240,129 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
               <div className="p-2 w-1/3">
-                <div className="font-bold">Polystyrene (PS)</div>
-                <div className="text-lg font-semibold text-red-600">70% – 80%</div>
+                <div className="font-bold">Expanded Polystyrene</div>
+                <div className="text-lg font-semibold text-red-600">80%</div>
+              </div>
+               <div className="p-2 w-1/3">
+                <div className="font-bold">Modifiedd Polystrene</div>
+                <div className="text-lg font-semibold text-red-600">10%</div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">Pigments & Stabilizers</div>
-                <div className="text-lg font-semibold text-red-600">10% – 15%</div>
+                <div className="font-bold">Polystyrene</div>
+                <div className="text-lg font-semibold text-red-600">5%</div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">Additives</div>
-                <div className="text-lg font-semibold text-red-600">5% – 10%</div>
+                <div className="font-bold">Recycled Polystyrene</div>
+                <div className="text-lg font-semibold text-red-600">5%</div>
               </div>
             </div>
           </div>
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Applications of PS Panels (Charcoal Panels)
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Interior Wall Cladding</li>
-                <li className="text-gray-700">Ceiling Panels & Partitions</li>
-                <li className="text-gray-700">Commercial & Residential Interiors</li>
-                <li className="text-gray-700">Retail Store & Showroom Decor</li>
-                <li className="text-gray-700">Accent Walls & Feature Panels</li>
-              </ul>
-            </div>
-          </div>
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    Features of PS Planks (Charcoal Panels)
+  </h3>
+  <div className="p-4">
+    <ul className="list-disc pl-5 space-y-4">
+      <li className="text-gray-700">
+        <span className="font-semibold">Modern Aesthetic Appeal:</span>
+        <ul className="list-disc pl-5 space-y-1 text-gray-600">
+          <li>Distinctive textured surface, ideal for contemporary and industrial interior styles.</li>
+          <li>Available in matte, glossy, or subtle grain finishes to suit various design preferences.</li>
+        </ul>
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Durable & Lightweight:</span>
+        <ul className="list-disc pl-5 space-y-1 text-gray-600">
+          <li>Resistant to moisture, warping, and pests, ensuring long-term reliability.</li>
+          <li>Lightweight construction allows easy handling and installation.</li>
+        </ul>
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Eco-Friendly:</span> Made from recyclable polystyrene, offering an environmentally responsible choice.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Versatile Applications:</span>
+        <ul className="list-disc pl-5 space-y-1 text-gray-600">
+          <li>Ideal for both residential and commercial spaces.</li>
+          <li>Enhances walls and ceilings with a bold, minimalist design.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{/* Advantages Section */}
+<div className="border-t border-gray-300 mt-4">
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    Advantages of PS Planks
+  </h3>
+  <div className="p-4">
+    <ul className="list-disc pl-5 space-y-4">
+      <li className="text-gray-700">
+        <span className="font-semibold">Low Maintenance:</span> Easily cleaned with a damp cloth, retaining their original appearance over time.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Fire Retardant:</span> Offers enhanced safety for interiors.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Sound Insulation:</span> Provides acoustic benefits, reducing noise levels in enclosed spaces.
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Cost-Effective:</span> An affordable alternative to traditional wood or stone cladding.
+      </li>
+    </ul>
+  </div>
+</div>
+
 
           {/* Advantages Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Advantages of PS Panels (Charcoal Panels)
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Sleek, Modern Charcoal Finish</li>
-                <li className="text-gray-700">Lightweight & Easy to Install</li>
-                <li className="text-gray-700">Water & Moisture Resistant</li>
-                <li className="text-gray-700">Sound Absorption Properties</li>
-                <li className="text-gray-700">Termite & Pest Resistant</li>
-                <li className="text-gray-700">Low Maintenance & Durable</li>
-              </ul>
-            </div>
-          </div>
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    Applications of PS Planks (Charcoal Panels)
+  </h3>
+  <div className="p-4">
+    <ul className="list-disc pl-5 space-y-4">
+      <li className="text-gray-700">
+        <span className="font-semibold">Residential Interiors:</span>
+        <ul className="list-disc pl-5 space-y-1 text-gray-600">
+          <li>Living rooms: Create accent walls with a bold, textured finish.</li>
+          <li>Bedrooms: Add depth and character to headboards or feature walls.</li>
+        </ul>
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Commercial Spaces:</span>
+        <ul className="list-disc pl-5 space-y-1 text-gray-600">
+          <li>Offices: Use for elegant partitions or decorative wall panels.</li>
+          <li>Retail Stores: Enhance product displays with a stylish backdrop.</li>
+        </ul>
+      </li>
+      <li className="text-gray-700">
+        <span className="font-semibold">Hospitality Sector:</span>
+        <ul className="list-disc pl-5 space-y-1 text-gray-600">
+          <li>Restaurants and cafes: Introduce modern, chic wall cladding for a unique ambiance.</li>
+          <li>Hotels: Elevate lobbies and guest rooms with a premium feel.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{/* Why Choose PS Planks Section */}
+<div className="border-t border-gray-300 mt-4">
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    Why Choose PS Planks (Charcoal Panels)?
+  </h3>
+  <div className="p-4">
+    <ul className="list-disc pl-5 space-y-4">
+      <li className="text-gray-700">Combines the aesthetic appeal of charcoal textures with the practicality of PS material.</li>
+      <li className="text-gray-700">Offers superior durability while maintaining a lightweight and sleek design.</li>
+      <li className="text-gray-700">Perfect for creating modern, minimalist, and industrial-themed interiors.</li>
+    </ul>
+  </div>
+</div>
+
 
           {/* Tags Section */}
           <div className="p-4 bg-gray-50 border-t border-gray-300 flex flex-wrap gap-2">
@@ -1174,8 +1392,8 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4">
               <p className="text-gray-700">
-                PVC Fluted Panels are decorative wall panels made from **Polyvinyl Chloride (PVC)** with a grooved or fluted design. 
-                These panels are widely used for **interior wall cladding** due to their **elegant appearance, durability, and low maintenance**.
+              PVC fluted panels are versatile decorative materials designed to enhance the aesthetics and functionality of interiors. 
+              Known for their vertical grooves and sleek finish, these panels add a modern and elegant touch to walls and ceilings
               </p>
             </div>
           </div>
@@ -1187,52 +1405,80 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
               <div className="p-2 w-1/3">
-                <div className="font-bold">Polyvinyl Chloride (PVC)</div>
-                <div className="text-lg font-semibold text-red-600">80% – 85%</div>
+                <div className="font-bold">Polyurethane Resin</div>
+                <div className="text-lg font-semibold text-red-600">65%</div>
               </div>
               <div className="p-2 w-1/3">
                 <div className="font-bold">Calcium Carbonate</div>
-                <div className="text-lg font-semibold text-red-600">10% – 15%</div>
+                <div className="text-lg font-semibold text-red-600">30%</div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">Additives & Stabilizers</div>
-                <div className="text-lg font-semibold text-red-600">2% – 5%</div>
+                <div className="font-bold">Others</div>
+                <div className="text-lg font-semibold text-red-600">5%</div>
               </div>
             </div>
           </div>
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Applications of PVC Fluted Panels
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Interior Wall Cladding</li>
-                <li className="text-gray-700">Feature Walls & Accent Panels</li>
-                <li className="text-gray-700">Commercial & Residential Interiors</li>
-                <li className="text-gray-700">Retail Store & Showroom Decor</li>
-                <li className="text-gray-700">Ceiling Panels & Partitions</li>
-              </ul>
-            </div>
-          </div>
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    PVC Fluted Panels: Stylish and Functional Wall & Ceiling Solutions
+  </h3>
+  <div className="p-4 text-gray-700 space-y-4">
+    <p>
+      PVC fluted panels are versatile decorative materials designed to enhance the aesthetics and functionality of interiors. 
+      Known for their vertical grooves and sleek finish, these panels add a modern and elegant touch to walls and ceilings, 
+      making them a popular choice for residential and commercial spaces.
+    </p>
 
-          {/* Advantages Section */}
-          <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Advantages of PVC Fluted Panels
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Elegant & Modern Design</li>
-                <li className="text-gray-700">Lightweight & Easy to Install</li>
-                <li className="text-gray-700">Water & Moisture Resistant</li>
-                <li className="text-gray-700">Termite & Pest Resistant</li>
-                <li className="text-gray-700">Fire & UV Resistant</li>
-                <li className="text-gray-700">Low Maintenance & Durable</li>
-              </ul>
-            </div>
-          </div>
+    <h4 className="text-lg font-semibold">Key Features of PVC Fluted Panels</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li><strong>Stylish Design:</strong> Features evenly spaced vertical grooves for a textured, linear look. Available in a range of colors, matte, glossy, wood, or marble textures.</li>
+      <li><strong>Durable & Long-Lasting:</strong> Resistant to moisture, termites, and UV light, making them ideal for humid environments. Does not warp, crack, or fade over time.</li>
+      <li><strong>Lightweight & Easy Installation:</strong> Simple to install using basic tools and adhesives. Can be customized for various dimensions and designs.</li>
+      <li><strong>Low Maintenance:</strong> Easy to clean with a damp cloth, requiring minimal upkeep.</li>
+    </ul>
+
+    <h4 className="text-lg font-semibold">Advantages of PVC Fluted Panels</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li><strong>Eco-Friendly:</strong> Made from recyclable PVC material, reducing environmental impact.</li>
+      <li><strong>Cost-Effective:</strong> An affordable alternative to traditional wood or stone panels while offering a premium appearance.</li>
+      <li><strong>Sound & Thermal Insulation:</strong> The fluted design provides acoustic and thermal benefits, improving indoor comfort.</li>
+      <li><strong>Waterproof & Fire-Resistant:</strong> Ideal for areas exposed to moisture or requiring fire safety compliance.</li>
+    </ul>
+
+    <h4 className="text-lg font-semibold">Applications of PVC Fluted Panels</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li><strong>Residential Spaces:</strong> 
+        <ul className="list-disc pl-5">
+          <li>Living Rooms: Create stylish accent walls or statement ceilings.</li>
+          <li>Bedrooms: Add texture and warmth to feature walls or headboards.</li>
+          <li>Bathrooms: Use moisture-resistant panels for a sleek and practical finish.</li>
+        </ul>
+      </li>
+      <li><strong>Commercial Interiors:</strong> 
+        <ul className="list-disc pl-5">
+          <li>Offices: Modernize meeting rooms and lobbies with clean, structured lines.</li>
+          <li>Retail Stores: Use as a backdrop for displays or partitions.</li>
+        </ul>
+      </li>
+      <li><strong>Hospitality and Entertainment:</strong> 
+        <ul className="list-disc pl-5">
+          <li>Hotels and Restaurants: Enhance interiors with luxurious textures and finishes.</li>
+          <li>Theaters and Lounges: Improve acoustics while adding a contemporary look.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4 className="text-lg font-semibold">Why Choose PVC Fluted Panels?</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li>Offers a modern, linear aesthetic that complements minimalistic and contemporary designs.</li>
+      <li>Combines visual appeal with practical benefits like durability, ease of maintenance, and eco-friendliness.</li>
+      <li>Versatile and adaptable for various applications, transforming any space into a stylish masterpiece.</li>
+    </ul>
+  </div>
+</div>
+
 
           {/* Tags Section */}
           <div className="p-4 bg-gray-50 border-t border-gray-300 flex flex-wrap gap-2">
@@ -1261,8 +1507,9 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4">
               <p className="text-gray-700">
-                PVC False Ceiling is a **lightweight, durable, and moisture-resistant** ceiling solution made from **Polyvinyl Chloride (PVC)**. 
-                It is used in **residential, commercial, and industrial spaces** to enhance aesthetics, provide insulation, and protect the ceiling structure.
+              PVC false ceiling panels are a highly durable and aesthetically appealing option for enhancing interior spaces. These panels
+              are lightweight, easy to install, and available in a wide variety of shades, making them a preferred choice for both residential 
+              and commercial applications
               </p>
             </div>
           </div>
@@ -1274,52 +1521,130 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
               <div className="p-2 w-1/3">
-                <div className="font-bold">Polyvinyl Chloride (PVC)</div>
-                <div className="text-lg font-semibold text-red-600">80% – 85%</div>
+                <div className="font-bold">Polyvinyl Chloride Resign </div>
+                <div className="text-lg font-semibold text-red-600">64%</div>
               </div>
               <div className="p-2 w-1/3">
                 <div className="font-bold">Calcium Carbonate</div>
-                <div className="text-lg font-semibold text-red-600">10% – 15%</div>
-              </div>
-              <div className="p-2 w-1/3">
-                <div className="font-bold">Stabilizers & Additives</div>
-                <div className="text-lg font-semibold text-red-600">2% – 5%</div>
+                <div className="text-lg font-semibold text-red-600">36%</div>
               </div>
             </div>
           </div>
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Applications of PVC False Ceiling
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Residential Ceilings (Bedrooms, Living Rooms, Kitchens)</li>
-                <li className="text-gray-700">Commercial Spaces (Offices, Retail Stores, Hotels)</li>
-                <li className="text-gray-700">Healthcare Facilities (Hospitals, Clinics, Laboratories)</li>
-                <li className="text-gray-700">Educational Institutions (Schools, Colleges, Libraries)</li>
-                <li className="text-gray-700">Industrial & Warehouse Ceilings</li>
-              </ul>
-            </div>
-          </div>
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    PVC False Ceiling Panels: A Practical and Stylish Ceiling Solution
+  </h3>
+  <div className="p-4 text-gray-700 space-y-4">
+    <p>
+      PVC false ceiling panels are a highly durable and aesthetically appealing option for enhancing interior spaces. 
+      These panels are lightweight, easy to install, and available in a wide variety of shades, making them a preferred choice for both 
+      residential and commercial applications.
+    </p>
+
+    <h4 className="text-lg font-semibold">Composition</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li><strong>Polyvinyl Chloride Resin:</strong> 64%</li>
+      <li><strong>Calcium Carbonate (CaCO₃):</strong> 36%</li>
+    </ul>
+
+    <h4 className="text-lg font-semibold">Panel Specifications</h4>
+    <div className="overflow-x-auto">
+    <table className="min-w-full border-collapse border border-gray-300">
+  <thead>
+    <tr className="bg-gray-100">
+      <th className="border border-gray-300 px-4 py-2" colSpan="3">Wooden finsh Grooved</th>
+      <th className="border border-gray-300 px-4 py-2" colSpan="3">Pain seamless</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr className="bg-gray-100 font-bold">
+      <td className="border border-gray-300 px-4 py-2">Length</td>
+      <td className="border border-gray-300 px-4 py-2">Width</td>
+      <td className="border border-gray-300 px-4 py-2">Thickness</td>
+      <td className="border border-gray-300 px-4 py-2">Length</td>
+      <td className="border border-gray-300 px-4 py-2">Width</td>
+      <td className="border border-gray-300 px-4 py-2">Thickness</td>
+
+    </tr>
+    <tr>
+      <td className="border border-gray-300 px-4 py-2">366cm</td>
+      <td className="border border-gray-300 px-4 py-2">30cm</td>
+      <td className="border border-gray-300 px-4 py-2">9mm</td>
+      <td className="border border-gray-300 px-4 py-2">366cm</td>
+      <td className="border border-gray-300 px-4 py-2">25cm</td>
+      <td className="border border-gray-300 px-4 py-2">9mm</td>
+
+    </tr>
+    <tr>
+      <td className="border border-gray-300 px-4 py-2">305cm</td>
+      <td className="border border-gray-300 px-4 py-2">30cm</td>
+      <td className="border border-gray-300 px-4 py-2">7mm</td>
+      <td className="border border-gray-300 px-4 py-2">305cm</td>
+      <td className="border border-gray-300 px-4 py-2">25cm</td>
+      <td className="border border-gray-300 px-4 py-2">7mm</td>
+
+
+    </tr>
+
+  </tbody>
+</table>
+
+
+    </div>
+
+        <h4 className="text-lg font-semibold">Key Features of PVC False Ceiling Panels</h4>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Durable & Long-Lasting:</strong> Resistant to moisture, termites, and corrosion, making them ideal for damp or humid environments. UV-resistant and does not warp or fade over time.</li>
+          <li><strong>Lightweight & Easy Installation:</strong> Designed for quick and hassle-free installation. Can be fitted using basic tools with minimal structural modifications.</li>
+          <li><strong>Aesthetic Versatility:</strong> Available in a wide range of colors, textures, and designs, including wood, marble, and metallic finishes. Offers seamless integration with lighting fixtures and air conditioning ducts.</li>
+          <li><strong>Low Maintenance:</strong> Smooth surface ensures easy cleaning with just a damp cloth. Stain-resistant and requires minimal upkeep.</li>
+        </ul>
+
+        <h4 className="text-lg font-semibold">Advantages of PVC False Ceiling Panels</h4>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Waterproof and Fire-Resistant:</strong> Ideal for bathrooms, kitchens, and areas prone to moisture or heat.</li>
+          <li><strong>Cost-Effective:</strong> More affordable than traditional false ceiling materials like gypsum or wood.</li>
+          <li><strong>Sound and Thermal Insulation:</strong> Helps in reducing noise levels and improving indoor temperature regulation.</li>
+          <li><strong>Eco-Friendly:</strong> Made from recyclable materials, supporting sustainable practices.</li>
+        </ul>
+
+        <h4 className="text-lg font-semibold">Applications of PVC False Ceiling Panels</h4>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Residential Spaces:</strong>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong>Living Rooms:</strong> For a modern, sleek ceiling design with integrated lighting.</li>
+              <li><strong>Kitchens and Bathrooms:</strong> Moisture-resistant panels ensure durability in these spaces.</li>
+              <li><strong>Bedrooms:</strong> Add texture and style with patterned or wood-finish panels.</li>
+            </ul>
+          </li>
+          <li><strong>Commercial Spaces:</strong>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong>Offices:</strong> Enhances professional environments with clean and contemporary ceiling designs.</li>
+              <li><strong>Retail Stores:</strong> Creates visually appealing ceilings to complement product displays.</li>
+            </ul>
+          </li>
+          <li><strong>Hospitality and Public Areas:</strong>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong>Hotels and Restaurants:</strong> Adds elegance and functionality to dining areas and lobbies.</li>
+              <li><strong>Hospitals and Clinics:</strong> Hygienic and easy-to-clean solutions for healthcare facilities.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4 className="text-lg font-semibold">Why Choose PVC False Ceiling Panels?</h4>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Combines durability, affordability, and aesthetic versatility in one solution.</li>
+          <li>Easy to install, maintain, and customize for various design themes.</li>
+          <li>Ideal for both functional and decorative purposes, transforming ceilings into standout features.</li>
+        </ul>
+      </div>
+    </div>
+
 
           {/* Advantages Section */}
-          <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Advantages of PVC False Ceiling
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Water & Moisture Resistant</li>
-                <li className="text-gray-700">Lightweight & Easy to Install</li>
-                <li className="text-gray-700">Termite & Pest Resistant</li>
-                <li className="text-gray-700">Fire & UV Resistant</li>
-                <li className="text-gray-700">Low Maintenance & Durable</li>
-                <li className="text-gray-700">Cost-Effective Ceiling Solution</li>
-              </ul>
-            </div>
-          </div>
+         
 
           {/* Tags Section */}
           <div className="p-4 bg-gray-50 border-t border-gray-300 flex flex-wrap gap-2">
@@ -1351,12 +1676,9 @@ Why Choose Our HPL Boards?
             </h3>
             <div className="p-4">
               <p className="text-gray-700">
-                PU (Polyurethane) Wall Coverings are **durable, lightweight, and
-                aesthetically appealing** wall panels designed to mimic
-                **natural materials** like wood, brick, and stone. They are
-                widely used in **residential, commercial, and hospitality
-                spaces** due to their **high insulation properties, moisture
-                resistance, and low maintenance**.
+              PU (Polyurethane) wall coverings are premium decorative materials known for their versatility and 
+              intricate designs. Featuring patterns like leaves, stone textures,
+               and Jali. Bring a natural, organic look to interiors with 3D feel.
               </p>
             </div>
           </div>
@@ -1370,70 +1692,140 @@ Why Choose Our HPL Boards?
               <div className="p-2 w-1/3">
                 <div className="font-bold">Polyurethane Resin</div>
                 <div className="text-lg font-semibold text-red-600">
-                  80% – 90%
+                  70%
                 </div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">Additives & Fillers</div>
+                <div className="font-bold">Blowing Agents</div>
                 <div className="text-lg font-semibold text-red-600">
-                  5% – 10%
+                  5%
                 </div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">UV & Fire Retardants</div>
+                <div className="font-bold">Fillers</div>
                 <div className="text-lg font-semibold text-red-600">
-                  2% – 5%
+                  15%
                 </div>
               </div>
             </div>
           </div>
+
+
+          <div className="overflow-x-auto">
+    <table className="min-w-full border-collapse border border-gray-300">
+  <thead>
+    <tr className="bg-gray-100">
+      <th className="border border-gray-300 px-4 py-2" colSpan="3">Wooden finsh Grooved</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr className="bg-gray-100 font-bold">
+      <td className="border border-gray-300 px-4 py-2">Length</td>
+      <td className="border border-gray-300 px-4 py-2">Width</td>
+      <td className="border border-gray-300 px-4 py-2">Thickness</td>
+
+    </tr>
+    <tr>
+      <td className="border border-gray-300 px-4 py-2">366cm</td>
+      <td className="border border-gray-300 px-4 py-2">25cm</td>
+      <td className="border border-gray-300 px-4 py-2">9mm</td>
+
+    </tr>
+ 
+
+  </tbody>
+</table>
+
+
+    </div>
+
+          
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Applications of PU Wall Coverings
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">
-                  Residential Interiors (Living rooms, Bedrooms, Hallways)
-                </li>
-                <li className="text-gray-700">
-                  Commercial Spaces (Offices, Retail Stores, Hotels, Restaurants)
-                </li>
-                <li className="text-gray-700">
-                  Hospitality Industry (Resorts, Cafes, Lounges)
-                </li>
-                <li className="text-gray-700">
-                  Feature Walls (Accent Walls, TV Panels, Reception Areas)
-                </li>
-                <li className="text-gray-700">
-                  Outdoor Applications (Exterior Facades, Patios, Balconies)
-                </li>
-              </ul>
-            </div>
-          </div>
+  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+    PU Wall Coverings: Elegant Decorative Panels with Leaf, Stone, and Jali Designs
+  </h3>
+  <div className="p-4 text-gray-700 space-y-4">
+    <p>
+      PU (Polyurethane) wall coverings are premium decorative materials known for their versatility and intricate designs. 
+      Featuring patterns like leaves, stone textures, and Jali (latticework), these panels add an artistic and luxurious touch 
+      to any interior space. They are lightweight, durable, and easy to install, making them a popular choice for both residential 
+      and commercial applications.
+    </p>
 
-          {/* Advantages Section */}
-          <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-              Advantages of PU Wall Coverings
-            </h3>
-            <div className="p-4">
-              <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-700">Lightweight & Easy to Install</li>
-                <li className="text-gray-700">Waterproof & Moisture Resistant</li>
-                <li className="text-gray-700">Termite & Pest Resistant</li>
-                <li className="text-gray-700">Fire & UV Resistant</li>
-                <li className="text-gray-700">Low Maintenance & Cost-Effective</li>
-                <li className="text-gray-700">
-                  Enhances Sound & Heat Insulation
-                </li>
-              </ul>
-            </div>
-          </div>
+    {/* Key Features */}
+    <h4 className="text-lg font-semibold">Key Features of PU Wall Coverings</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li><strong>Aesthetic Variety</strong>
+        <ul className="list-disc pl-5">
+          <li><strong>Leaf Designs:</strong> Bring a natural, organic look to interiors with 3D leaf patterns.</li>
+          <li><strong>Stone Textures:</strong> Mimic the rugged beauty of natural stone for a rustic or industrial vibe.</li>
+          <li><strong>Jali Patterns:</strong> Intricate lattice designs inspired by traditional architecture, ideal for modern and ethnic themes.</li>
+        </ul>
+      </li>
+      <li><strong>Durable and Long-Lasting</strong>
+        <ul className="list-disc pl-5">
+          <li>Resistant to moisture, termites, and UV rays, ensuring durability in various environments.</li>
+          <li>Maintains its color and texture over time.</li>
+        </ul>
+      </li>
+      <li><strong>Lightweight and Easy Installation</strong>
+        <ul className="list-disc pl-5">
+          <li>Panels are lightweight, making transportation and installation hassle-free.</li>
+          <li>Can be mounted on walls with basic adhesives or mechanical fixtures.</li>
+        </ul>
+      </li>
+      <li><strong>Customizable and Versatile</strong>
+        <ul className="list-disc pl-5">
+          <li>Available in various sizes, patterns, and finishes to suit diverse design requirements.</li>
+          <li>Can be painted or coated for a personalized look.</li>
+        </ul>
+      </li>
+    </ul>
 
-          {/* Tags Section */}
+    {/* Advantages */}
+    <h4 className="text-lg font-semibold">Advantages of PU Wall Coverings</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li><strong>Eco-Friendly:</strong> Made from recyclable materials and free from harmful chemicals.</li>
+      <li><strong>Low Maintenance:</strong> Easy to clean with a damp cloth, requiring minimal upkeep.</li>
+      <li><strong>Acoustic and Thermal Insulation:</strong> Provides soundproofing and improves indoor thermal efficiency.</li>
+      <li><strong>Cost-Effective:</strong> Offers a luxurious look at an affordable price compared to natural materials like stone or wood.</li>
+    </ul>
+
+    {/* Applications */}
+    <h4 className="text-lg font-semibold">Applications</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li><strong>Residential Spaces</strong>
+        <ul className="list-disc pl-5">
+          <li><strong>Living Rooms:</strong> Create feature walls with leaf or stone designs for a bold statement.</li>
+          <li><strong>Bedrooms:</strong> Use Jali patterns as headboards or decorative wall panels.</li>
+          <li><strong>Kitchens & Bathrooms:</strong> Moisture-resistant panels for accent walls or backsplashes.</li>
+        </ul>
+      </li>
+      <li><strong>Commercial Spaces</strong>
+        <ul className="list-disc pl-5">
+          <li><strong>Offices:</strong> Enhance meeting rooms and reception areas with stylish patterns.</li>
+          <li><strong>Retail Stores:</strong> Use as a backdrop for displays or partitions.</li>
+        </ul>
+      </li>
+      <li><strong>Hospitality and Public Areas</strong>
+        <ul className="list-disc pl-5">
+          <li><strong>Hotels and Restaurants:</strong> Add elegance with Jali-inspired wall coverings in lobbies or dining areas.</li>
+          <li><strong>Theaters and Lounges:</strong> Improve acoustics while adding aesthetic value.</li>
+        </ul>
+      </li>
+    </ul>
+
+    {/* Why Choose PU Wall Coverings */}
+    <h4 className="text-lg font-semibold">Why Choose PU Wall Coverings?</h4>
+    <ul className="list-disc pl-5 space-y-2">
+      <li>Combines the durability of polyurethane with artistic designs to suit any interior theme.</li>
+      <li>Lightweight and easy to work with, making installation and customization effortless.</li>
+      <li>Offers a unique blend of traditional and modern aesthetics with designs like Jali, stone, and leaf.</li>
+    </ul>
+  </div>
+</div>
           <div className="p-4 bg-gray-50 border-t border-gray-300 flex flex-wrap gap-2">
             {product.tags.map((tag, index) => (
               <span
