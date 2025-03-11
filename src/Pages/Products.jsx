@@ -22,12 +22,20 @@ import Nonails from '../Assets/Products/009.png';
 
 // Updated Product Card Component with redirect functionality
 const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
+  const navigate = useNavigate()
   // Function to handle click on image or title
   const handleClick = () => {
     if (product.title === "WPC EXTERIOR CLADDING") {
       navigateToExteriorCladding();
     }
+    if (product.title === "HPL EXTERIOR LAMINATE") {
+      navigate('/hpl_exterior');
+    } 
+    if  (product.title === "PVC SOFFIT PANELS") {
+      navigate('/pvc_soffit');
+    }
   };
+
 
   const shouldShowLearnMore = 
     product.title !== "NO NAIL - SPECIAL ADHESIVE" && 
