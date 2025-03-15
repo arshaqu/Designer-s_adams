@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import AdhamsWhite from '../../Assets/whitered.png';
-import CladdingBanner from '../../Assets/Home/homeSlider 3.png';
+import SoffitBanner from '../../Assets/Products/Banners/soffit panel 1.png';
 
 import Image1 from '../../Assets/Products/PvcSoffit/1007.png';
 import Image2 from '../../Assets/Products//PvcSoffit/1006.png';
@@ -31,7 +31,7 @@ function PvcSoffit() {
         <Navbar />
         <div className="flex flex-col items-center montserrat">
           <div className="relative">
-            <img src={CladdingBanner} alt="Company Banner" className="w-auto h-auto" />
+            <img src={SoffitBanner} alt="Company Banner" className="w-auto h-auto" />
             <div className="absolute inset-0 flex items-center justify-center mt-40 md:ml-60 ml-40">
               <div className="relative w-full md:ml-[596px] md:mt-[550px] ">
                 <div style={{ overflow: 'hidden' }}>

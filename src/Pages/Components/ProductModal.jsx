@@ -111,108 +111,143 @@ const ProductModal = ({ product, isOpen, onClose }) => {
 
           {product.title === "HPL EXTERIOR LAMINATE" && (
             <>
-            {/* What is HPL Exterior Laminate? */}
+
             <div className="border-t border-gray-300 mt-4 montserrat">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-    Composition
+  
+
+
+
+  <div className="border-t border-gray-300 mt-4">
+        <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+        Composition
+        </h3>
+        <div className="p-4 text-gray-700">
+          <ul className="list-disc pl-5 space-y-2">
+            <div className="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded-lg shadow-sm">
+              <span className="font-semibold">Core Material</span>
+              <ul className="list-disc pl-5">
+                <li >Multiple layers of kraft paper impregnated with phenolic resin.</li>
+              </ul>
+            </div>
+            <div className="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded-lg shadow-sm">
+              <span className="font-semibold">Surface Layer</span>
+              <ul className="list-disc pl-5">
+                <li>Decorative paper impregnated with melamine resin.</li>
+              </ul>
+            </div>
+            <div className="p-3 bg-yellow-50 border-l-4 border-yellow-500 rounded-lg shadow-sm">
+              <span className="font-semibold">Overlay</span>
+              <ul className="list-disc pl-5">
+                <li>Protective transparent top layer for enhanced durability and wear resistance.</li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+      <div className="border-t border-gray-300 mt-4">
+  <h3 className="text-lg md:flex justify-center font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+    Size
   </h3>
-  <div className="p-4 space-y-4 text-start">
-    <div className="p-2">
-      <div className="font-bold">Core Material</div>
-      <div className="text-lg  text-red-600">
-        Multiple layers of kraft paper impregnated with phenolic resin.
-      </div>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">Surface Layer</div>
-      <div className="text-lg  text-red-600">
-        Decorative paper impregnated with melamine resin.
-      </div>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">Overlay</div>
-      <div className="text-lg  text-red-600">
-        Protective transparent top layer for enhanced durability and wear resistance.
-      </div>
+  <div className="p-6 text-gray-700">
+    <div className="grid md:grid-cols-3 gap-4">
+      {[
+        { title: "Size 1", details: ["Length - 244cm", "Width - 122cm"] },
+        { title: "Size 2", details: ["Length - 305cm", "Width - 129cm"] },
+        { title: "Size 3", details: ["Thickness - 6 mm"] }
+      ].map((size, index) => (
+        <div key={index} className="p-4 bg-gradient-to-r from-teal-200 to-teak-400 border borderteal-400 rounded-xl shadow-md">
+          <h4 className="text-lg font-semibold text-teal-800">{size.title}</h4>
+          <ul className="mt-2 space-y-1 text-gray-800">
+            {size.details.map((detail, i) => (
+              <li key={i} className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-teal-500 rounded-full"></span> {detail}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   </div>
+</div>
 
-  <h3 className="text-lg  p-4 bg-gray-100 border-b border-gray-300 mt-4">
-    Sizes
-  </h3>
-  <div className="p-4 space-y-4 text-start">
-    <div className="p-2">
-      <div className="font-bold">Size 1</div>
-      <div className="text-lg  text-red-600">Length - 244cm</div>
-      <div className="text-lg  text-red-600">Width - 122cm</div>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">Size 2</div>
-      <div className="text-lg  text-red-600">Length - 305cm</div>
-      <div className="text-lg  text-red-600">Width - 129cm</div>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">Size 3</div>
-      <div className="text-lg  text-red-600">Thickness - 6 mm</div>
-    </div>
-  </div>
 
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300 mt-4">
+
+  <div className="p-4 space-y-4">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300 mt-4">
     Key Features and Benefits of HPL Boards
   </h3>
-  <div className="p-4 space-y-4">
-    <div className="p-2">
-      <div className="font-bold">1. Durability</div>
-      <ul className="text-lg text-red-600 list-disc list-inside">
-        <li>Resistant to impact, scratches, and abrasions.</li>
-        <li>Ideal for high-traffic areas due to its robust construction.</li>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+  {[
+    {
+      title: "Durability",
+      points: [
+        "Resistant to impact, scratches, and abrasions.",
+        "Ideal for high-traffic areas due to its robust construction.",
+      ],
+    },
+    {
+      title: "Weather Resistance (Exterior Grade)",
+      points: [
+        "Specially designed HPL boards can withstand UV rays, rain, and temperature fluctuations, making them perfect for outdoor use.",
+      ],
+    },
+    {
+      title: "Aesthetic Versatility",
+      points: [
+        "Available in various colors, patterns, textures, and finishes.",
+        "Enhances the visual appeal of spaces with sleek, modern designs.",
+      ],
+    },
+    {
+      title: "Low Maintenance",
+      points: [
+        "Easy to clean with water or mild detergents.",
+        "Resistant to stains and does not require frequent polishing or repainting.",
+      ],
+    },
+    {
+      title: "Fire and Moisture Resistance",
+      points: [
+        "Engineered to meet safety standards, offering fire-resistant grades.",
+        "Non-porous surface prevents moisture absorption, making it suitable for wet environments.",
+      ],
+    },
+    {
+      title: "Eco-Friendly",
+      points: [
+        "Made from sustainable materials and recyclable, contributing to environmentally conscious design.",
+        "Protects against color fading and water damage, ensuring a long-lasting appearance.",
+      ],
+    },
+  ].map((item, index) => (
+    <div
+      key={index}
+      className=" shadow-lg bg-emerald-500 rounded-2xl p-5 border border-green-400 transition-transform hover:scale-105"
+    >
+      <h3 className="font-bold text-xl text-white mb-3">{index + 1}. {item.title}</h3>
+      <ul className="text-md text-white list-disc list-inside space-y-1">
+        {item.points.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
       </ul>
     </div>
-    <div className="p-2">
-      <div className="font-bold">2. Weather Resistance (Exterior Grade)</div>
-      <ul className="text-lg  text-red-600 list-disc list-inside">
-        <li>Withstands UV rays, rain, and temperature fluctuations.</li>
-        <li>Perfect for outdoor use.</li>
-      </ul>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">3. Aesthetic Versatility</div>
-      <ul className="text-lg  text-red-600 list-disc list-inside">
-        <li>Available in various colors, patterns, textures, and finishes.</li>
-        <li>Enhances spaces with sleek, modern designs.</li>
-      </ul>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">4. Low Maintenance</div>
-      <ul className="text-lg  text-red-600 list-disc list-inside">
-        <li>Easy to clean with water or mild detergents.</li>
-        <li>Resistant to stains; no frequent polishing or repainting needed.</li>
-      </ul>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">5. Fire and Moisture Resistance</div>
-      <ul className="text-lg  text-red-600 list-disc list-inside">
-        <li>Meets safety standards with fire-resistant grades.</li>
-        <li>Non-porous surface prevents moisture absorption.</li>
-      </ul>
-    </div>
-    <div className="p-2">
-      <div className="font-bold">6. Eco-Friendly</div>
-      <ul className="text-lg  text-red-600 list-disc list-inside">
-        <li>Made from sustainable materials and recyclable.</li>
-        <li>Protects against color fading and water damage.</li>
-      </ul>
-    </div>
+  ))}
+</div>
+
   </div>
 
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300 mt-4">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300 mt-4">
     Warranty
   </h3>
   <div className="p-4 text-lg text-red-600">
     Deziner Ceiling Co. warrants Adhams HPL sheets against manufacturing defects, ensuring that color fade will not exceed 5%, gloss loss on matte finishes will not exceed 40%, and color leach is minimal within the first 15 years of installation. Warranty will be void if installed incorrectly or removed without informing the supplier.
   </div>
 
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300 mt-4">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300 mt-4">
     Installation Process
   </h3>
   <ul className="p-4 text-lg text-red-600 list-disc list-inside">
@@ -223,7 +258,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
     <li><strong>Finishing:</strong> Apply trim or molding for a refined appearance.</li>
   </ul>
 
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300 mt-4">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300 mt-4">
     How to Care for HPL Sheets
   </h3>
   <ul className="p-4 text-lg text-red-600 list-disc list-inside">
@@ -232,37 +267,37 @@ const ProductModal = ({ product, isOpen, onClose }) => {
     <li><strong>Clean Regularly:</strong> Prevent stains and mold with regular maintenance.</li>
   </ul>
 
-  <h3 className="text-lg p-4 bg-gray-100 border-b border-gray-300 mt-4">
+  <h3 className="text-lg p-4 bg-red-600 text-white border-b border-gray-300 mt-4">
     Applications of HPL Boards
   </h3>
   <div className="p-4">
-    <div className="font-bold">1. Interior Applications</div>
-    <ul className="text-lg text-red-600 list-disc list-inside">
+    <div className="font-bold text-red-600">1. Interior Applications</div>
+    <ul className="text-lg  list-disc list-inside">
       <li>Furniture surfacing for cabinets, wardrobes, and countertops.</li>
       <li>Wall cladding for residential and commercial interiors.</li>
       <li>Partitions in offices, bathrooms, and hospitals.</li>
     </ul>
-    <div className="font-bold mt-4">2. Exterior Applications</div>
-    <ul className="text-lg text-red-600 list-disc list-inside">
+    <div className="font-bold text-red-600 mt-4">2. Exterior Applications</div>
+    <ul className="text-lg  list-disc list-inside">
       <li>Facade cladding for improved aesthetics and weather protection.</li>
       <li>Outdoor furniture and signage.</li>
       <li>Balconies, railings, and soffits.</li>
     </ul>
-    <div className="font-bold mt-4">3. Specialized Uses</div>
-    <ul className="text-lg text-red-600 list-disc list-inside">
+    <div className="font-bold text-red-600 mt-4">3. Specialized Uses</div>
+    <ul className="text-lg  list-disc list-inside">
       <li>Compact HPL boards for laboratory countertops and industrial use.</li>
       <li>Decorative panels for retail spaces and exhibition booths.</li>
     </ul>
   </div>
 </div>
-<h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300 mt-4">
+<h3 className="text-lg font-semibold p-4 bg-red-700 text-white border-b border-gray-300 mt-4">
 Why Choose Our HPL Boards?
   </h3>
-  <ul className="p-4 text-lg text-red-600 list-disc list-inside">
-    <li><strong>Superior Quality:</strong> High-grade materials that ensure long-lasting performance.    </li>
-    <li><strong>Design Variety:</strong>  A wide range of designs and finishes to suit all styles.</li>
-    <li><strong>Custom Solutions:</strong>Tailored sizes and finishes for specific project needs.</li>
-    <li><strong>Sustainability:</strong>Eco-friendly production and recyclable products</li>
+  <ul className="p-4 text-lg  list-disc list-inside">
+    <li><strong className="text-red-600">Superior Quality:</strong> High-grade materials that ensure long-lasting performance.    </li>
+    <li><strong className="text-red-600">Design Variety:</strong>  A wide range of designs and finishes to suit all styles.</li>
+    <li><strong className="text-red-600">Custom Solutions:</strong>Tailored sizes and finishes for specific project needs.</li>
+    <li><strong className="text-red-600">Sustainability:</strong>Eco-friendly production and recyclable products</li>
 
   </ul>
             <div className="p-4 bg-gray-50 border-t border-gray-300 flex flex-wrap gap-2">
@@ -291,9 +326,7 @@ Why Choose Our HPL Boards?
                 <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">What is PVC Soffit panels</h3>
                 <div className="p-4">
                   <p className="text-gray-700">
-                  PVC (Polyvinyl Chloride) Soffit Panels are lightweight, durable panels used to cover the underside of roof overhangs
-                  , eaves, and porch ceilings. They provide ventilation, protect the roof structure from moisture and pests, and enhance
-                   the building’s aesthetics.
+                  PVC Soffit panels are essential architectural elements installed under roof overhangs or eaves to protect the structure and enhance its aesthetic appeal. They are designed for both functional and decorative purposes.
                   </p>
                 </div>
               </div>
@@ -442,7 +475,7 @@ Why Choose Our HPL Boards?
         <>
           {/* What is WPVC Interior Louvers Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b">
               What are WPVC Interior Louvers?
             </h3>
             <div className="p-4">
@@ -455,9 +488,7 @@ Why Choose Our HPL Boards?
 
          
           <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-    WPVC Interior Louvers: Wooden and Marble Textured
-  </h3>
+  
   <div className="p-4 space-y-4">  
     <div>
       <h4 className="font-bold text-lg">WPVC Pastel-Colored Louvers for Interior Walls and Ceilings</h4>
@@ -504,7 +535,7 @@ Why Choose Our HPL Boards?
 
 
 <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     Applications of WPVC Interior Louvers
   </h3>
   <div className="p-4">
@@ -527,7 +558,7 @@ Why Choose Our HPL Boards?
 
 {/* Advantages Section */}
 <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     Advantages of WPVC Interior Louvers
   </h3>
   <div className="p-4">
@@ -573,13 +604,11 @@ Why Choose Our HPL Boards?
           {product.title === "PVC FOAM BOARDS" && (
             <>
               <div className="border-t border-gray-300 mt-4">
-                <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">What is PVC FOAM BOARD</h3>
+                <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">What is PVC FOAM BOARD</h3>
                 <div className="p-4">
                   <p className="text-gray-700">
-                  PVC (Polyvinyl Chloride) foam board is a lightweight, rigid, and durable material made from polyvinyl chloride (PVC). It is widely used in construction,
-                  advertising, furniture, and interior design due to its excellent strength, moisture resistance, and ease of fabrication.
-
-
+                  PVC foam boards are lightweight, durable, and versatile materials widely used in both interior and exterior applications. 
+                  These boards are known for their excellent strength-to-weight ratio and resistance to moisture, chemicals, and fire.
                   </p>
                 </div>
               </div>
@@ -587,7 +616,7 @@ Why Choose Our HPL Boards?
               {/* Composition */}
               <div className="border-t border-gray-300 mt-4">
       {/* Composition Section */}
-      <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+      <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
         Composition
       </h3>
       <div className="p-4 flex flex-wrap justify-around text-center">
@@ -611,7 +640,7 @@ Why Choose Our HPL Boards?
 
       {/* Size Section */}
       <div className="border-t border-gray-300 mt-4">
-        <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+        <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
           Size
         </h3>
         <div className="p-4 text-center">
@@ -624,7 +653,7 @@ Why Choose Our HPL Boards?
 
       {/* Available Density & Thickness Section */}
       <div className="border-t border-gray-300 mt-4">
-        <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+        <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
           Available Density & Thickness
         </h3>
         <div className="p-4 text-center">
@@ -639,10 +668,10 @@ Why Choose Our HPL Boards?
               <tbody>
                 <tr>
                   <td className="border border-gray-300 p-2">
-                    0.5  0.5  0.45  0.5  0.55  0.6  0.5  0.55  0.6  0.45  0.5  0.55  0.6  0.7
+                    0.40 &nbsp;&nbsp;&nbsp;  0.45 &nbsp;&nbsp;&nbsp; 0.55 &nbsp;&nbsp;&nbsp; 0.60 &nbsp;&nbsp;&nbsp;0.70
                   </td>
                   <td className="border border-gray-300 p-2">
-                    5  8  12  12  12  12  15  15  15  17  17  17  17  17
+                  5&nbsp;mm &nbsp;&nbsp;&nbsp;8&nbsp;mm &nbsp;&nbsp;&nbsp;12&nbsp;mm &nbsp;&nbsp;&nbsp;15&nbsp;mm &nbsp;&nbsp;&nbsp;17&nbsp;mm &nbsp;&nbsp;&nbsp;
                   </td>
                 </tr>
               </tbody>
@@ -653,89 +682,49 @@ Why Choose Our HPL Boards?
 
       {/* Density Options */}
       <div className="border-t border-gray-300 mt-4">
-        <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+        <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
           Density Options
         </h3>
         <div className="p-4 text-gray-700">
           <ul className="list-disc pl-5 space-y-2">
-            <li>
+            <div className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
               <span className="font-semibold">Low-Density Boards:</span>
               <ul className="list-disc pl-5">
-                <li>Lightweight and easy to handle.</li>
+                <li >Lightweight and easy to handle.</li>
                 <li>Best for applications like signage, decorative panels, and exhibition displays.</li>
               </ul>
-            </li>
-            <li>
+            </div>
+            <div className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
               <span className="font-semibold">Medium-Density Boards:</span>
               <ul className="list-disc pl-5">
                 <li>Balanced strength and flexibility.</li>
                 <li>Suitable for furniture, partitions, and interior cladding.</li>
               </ul>
-            </li>
-            <li>
+            </div>
+            <div className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
               <span className="font-semibold">High-Density Boards:</span>
               <ul className="list-disc pl-5">
                 <li>High strength and rigidity.</li>
                 <li>Ideal for load-bearing applications, outdoor cladding, and industrial use.</li>
               </ul>
-            </li>
+            </div>
           </ul>
         </div>
       </div>
 
-      {/* Applications of PVC Foam Boards */}
-      <div className="border-t border-gray-300 mt-4">
-        <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
-          Applications of PVC Foam Boards
-        </h3>
-        <div className="p-4 text-gray-700">
-          <ul className="list-disc pl-5 space-y-2">
-            <li>
-              <span className="font-semibold">Signage and Advertising:</span>
-              <ul className="list-disc pl-5">
-                <li>Ideal for banners, hoardings, and display boards.</li>
-              </ul>
-            </li>
-            <li>
-              <span className="font-semibold">Interior Design:</span>
-              <ul className="list-disc pl-5">
-                <li>Wall cladding, ceiling panels, and decorative partitions.</li>
-              </ul>
-            </li>
-            <li>
-              <span className="font-semibold">Furniture:</span>
-              <ul className="list-disc pl-5">
-                <li>Used for lightweight and moisture-resistant furniture, especially in kitchens and bathrooms.</li>
-              </ul>
-            </li>
-            <li>
-              <span className="font-semibold">Outdoor Applications:</span>
-              <ul className="list-disc pl-5">
-                <li>Building facades, fences, and temporary structures.</li>
-              </ul>
-            </li>
-            <li>
-              <span className="font-semibold">Industrial Use:</span>
-              <ul className="list-disc pl-5">
-                <li>Used in packaging, insulation, and construction templates.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+      
 
       {/* Key Features Section */}
       <div className="border-t border-gray-300 mt-4">
-        <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+        <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
           Key Features of PVC Foam Boards
         </h3>
-        <div className="p-4">
-          <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li><span className="font-semibold">Lightweight and Strong:</span> Easy to handle with excellent durability.</li>
-            <li><span className="font-semibold">Weather Resistance:</span> Resistant to moisture, UV rays, and temperature changes.</li>
-            <li><span className="font-semibold">Fire Retardant:</span> Meets fire safety standards.</li>
-            <li><span className="font-semibold">Eco-Friendly:</span> Recyclable and non-toxic.</li>
-            <li><span className="font-semibold">Customizable:</span> Easy to cut, drill, and shape.</li>
+        <div className="p-4 ">
+          <ul className="list-disc pl-5 space-y-2 text-gray-700 ">
+            <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm"><span className="font-semibold ">Weather Resistance:</span> Resistant to moisture, UV rays, and temperature changes<br/>- Suitable for outdoor applications.</div>
+            <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm"><span className="font-semibold">Fire Retardant:</span> Meets fire safety standards,, adding an extra layer of safety.</div>
+            <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm"><span className="font-semibold">Eco-Friendly:</span> Recyclable and non-toxic,contributing to sustainable building practices.</div>
+            <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm"><span className="font-semibold">Customizable:</span> Easy to cut, drill, and shape, making it ideal for creative applications.</div>
           </ul>
         </div>
       </div>
@@ -745,16 +734,16 @@ Why Choose Our HPL Boards?
               <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       {/* Applications Section */}
       <div className="border-t border-gray-300 mt-4">
-        <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">Applications of PVC Foam Board</h3>
+        <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300">Applications of PVC Foam Board</h3>
         <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
-            { title: "Advertising & Signage", description: "Used for billboards, displays, and digital printing." },
-            { title: "Furniture & Interior Decor", description: "Kitchen cabinets, partitions, and ceiling panels." },
-            { title: "Construction", description: "Wall cladding, roofing, and insulation panels." },
-            { title: "Automotive & Marine", description: "Used in vehicle interiors and boats due to water resistance." },
-            { title: "Industrial Applications", description: "Chemical-resistant panels for labs and factories." }
+            { title: "Signage and Advertising", description: "Ideal for banners, hoardings, and display boards." },
+            { title: "Interior Design", description: "Wall cladding, ceiling panels, and decorative partitions." },
+            { title: "Furniture", description: "Used for lightweight and moisture-resistant furniture, especially in kitchens and bathrooms." },
+            { title: "Outdoor Applications", description: "Building facades, fences, and temporary structures." },
+            { title: "Industrial Use", description: "Used in packaging, insulation, and construction templates." }
           ].map((app, index) => (
-            <div key={index} className="p-4 bg-gray-50 rounded-lg shadow-md">
+            <div key={index} className="p-4 bg-yellow-50 rounded-lg shadow-md">
               <h4 className="font-semibold text-lg">{app.title}</h4>
               <p className="text-gray-700">{app.description}</p>
             </div>
@@ -762,25 +751,6 @@ Why Choose Our HPL Boards?
         </div>
       </div>
 
-      {/* Key Properties Section */}
-      <div className="border-t border-gray-300 mt-6">
-        <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">Key Properties of PVC Foam Board</h3>
-        <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[
-            "Lightweight – Easy to handle and install.",
-            "Moisture & Waterproof – Does not absorb water, making it ideal for outdoor applications.",
-            "Corrosion & Chemical Resistant – Resistant to acids, alkalis, and other chemicals.",
-            "Weatherproof & UV Resistant – Can withstand sun exposure without degrading.",
-            "Fire Retardant – Offers high resistance to flames and does not propagate fire easily.",
-            "Easy to Cut & Shape – Can be sawed, drilled, glued, and painted easily.",
-            "Smooth Surface – Suitable for printing and lamination."
-          ].map((property, index) => (
-            <div key={index} className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
-              <span className="text-green-700 font-medium">✅ {property}</span>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
             </>
           )}
@@ -793,22 +763,20 @@ Why Choose Our HPL Boards?
         <>
           {/* What is French Moulding Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               What are French Mouldings?
             </h3>
             <div className="p-4">
               <p className="text-gray-700">
-              French moldings (Polyurethane(PU)molding) are elaborate architectural accents that elevate interior design's sophistication and beauty.
-               They consist of a number of elements, each with a distinct decorative or practical function, including wainscoting, ceiling roses, coving,
-                borders, skirting, and corner rose blocks. These components, which give any home a timeless beauty, are frequently influenced by classical
-                 French style.
+              French moldings are intricate architectural details that enhance the elegance and sophistication of interiors.
+               These elements are often inspired by classical French design, adding a timeless charm to any space.
               </p>
             </div>
           </div>
 
           {/* Composition Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               Composition
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
@@ -830,7 +798,7 @@ Why Choose Our HPL Boards?
           {/* Applications Section */}
           <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
           <div className="border-t border-gray-300 mt-4">
-              <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+              <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300">
                 Applications of French Molding
               </h3>
               <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -851,7 +819,7 @@ Why Choose Our HPL Boards?
                       "Ideal for restoring classical buildings or adding a vintage touch to modern structures.",
                   },
                 ].map((app, index) => (
-                  <div key={index} className="p-4 bg-gray-50 rounded-lg shadow-md">
+                  <div key={index} className="p-4 bg-yellow-50 rounded-lg shadow-md">
                     <h4 className="font-semibold text-lg">{app.title}</h4>
                     <p className="text-gray-700">{app.description}</p>
                   </div>
@@ -861,65 +829,46 @@ Why Choose Our HPL Boards?
 
 
             {/* Key Properties Section */}
-            <div className="border-t border-gray-300 mt-6">
-  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
-    Key Properties of French Mouldings
-  </h3>
-  <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-    {[
-      "Elegant & Classic – Enhances interiors with a luxurious touch.",
-      "Durable & Long-Lasting – Resistant to wear and tear over time.",
-      "Customizable – Available in various designs, sizes, and finishes.",
-      "Easy to Install – Can be glued, nailed, or screwed into place.",
-      "Paintable & Stainable – Can be finished to match any décor style.",
-      "Lightweight – Especially in MDF or polyurethane variants, making installation easy.",
-      "Moisture Resistant – Certain materials offer resistance to humidity and temperature changes.",
-    ].map((property, index) => (
-      <div key={index} className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
-        <span className="text-green-700 font-medium">✅ {property}</span>
-      </div>
-    ))}
-  </div>
-</div>
+         
 
 <div className="border-t border-gray-300 mt-6">
-  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-xl font-bold p-4 bg-red-500 text-white border-b border-gray-300">
     Types of French Molding and Decorative Elements
   </h3>
   <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
     {[
       {
-        title: "Skirting (Baseboards)",
+        title: "SKIRTING (Baseboards)",
         description:
           "Covers the joint between walls and floors, protecting against scuffs while adding a finished look. Available in plain, grooved, or ornate patterns.",
       },
       {
-        title: "Coving (Cornices)",
+        title: "COVING (Cornices)",
         description:
           "Smooths transitions between walls and ceilings while adding a decorative touch. Designs range from simple curves to intricate motifs.",
       },
       {
-        title: "Borders",
+        title: "BORDERS",
         description:
           "Frames walls, ceilings, or floors, creating a defined visual space. Used as trims for panels, doors, or to separate painted and wallpapered areas.",
       },
       {
-        title: "Ceiling Roses",
+        title: "CEILING ROSES",
         description:
           "Decorative ceiling centerpiece, often framing chandeliers or lighting fixtures. Available in floral, geometric, and French baroque styles.",
       },
       {
-        title: "Corner Roses",
+        title: "CORNER ROSES",
         description:
           "Complements ceiling roses by adding decorative corner elements for symmetry. Ideal for enhancing ceiling aesthetics.",
       },
       {
-        title: "Wainscoting (Wall Panels)",
+        title: "WAINSCORTING (Wall Panels)",
         description:
           "Adds depth and dimension to walls with traditional paneling, beadboard, or raised panels for a classic French elegance.",
       },
     ].map((type, index) => (
-      <div key={index} className="p-4 bg-gray-50 rounded-lg shadow-md">
+      <div key={index} className="p-4 bg-green-100 rounded-lg shadow-md">
         <h4 className="font-semibold text-lg">{type.title}</h4>
         <p className="text-gray-700">{type.description}</p>
       </div>
@@ -928,7 +877,7 @@ Why Choose Our HPL Boards?
 </div>
 
       <div className="border-t border-gray-300 mt-6">
-        <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+        <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300">
           Why Choose Our French Molding and Decorative Elements?
         </h3>
         <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -975,7 +924,7 @@ Why Choose Our HPL Boards?
   <>
     {/* What is Acrylic Laminate Section */}
     <div className="border-t border-gray-300 mt-4">
-      <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+      <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
         What is Acrylic Laminate?
       </h3>
       <div className="p-4">
@@ -987,7 +936,7 @@ Why Choose Our HPL Boards?
 
     {/* Composition Section */}
     <div className="border-t border-gray-300 mt-4">
-      <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+      <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
         Composition
       </h3>
       <div className="p-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -998,7 +947,7 @@ Why Choose Our HPL Boards?
           { title: "PVC Based Layer", value: "Provides strength & stability" },
           { title: "Primer Layer", value: "Ensures adhesion to surfaces" }
         ].map((item, index) => (
-          <div key={index} className="p-3 bg-gray-50 border rounded-lg shadow-sm">
+          <div key={index} className="p-3 bg-teal-50 border rounded-lg shadow-sm">
             <div className="font-bold">{item.title}</div>
             <div className="text-gray-700">{item.value}</div>
           </div>
@@ -1009,7 +958,7 @@ Why Choose Our HPL Boards?
     {/* Applications Section */}
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       <div className="border-t border-gray-300 mt-4">
-        <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+        <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300">
           Applications of Acrylic Laminates
         </h3>
         <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1021,7 +970,7 @@ Why Choose Our HPL Boards?
             { title: "Retail Stores", description: "Attractive backdrops for product displays." },
             { title: "Hotels & Restaurants", description: "Luxurious touch to hospitality spaces." }
           ].map((app, index) => (
-            <div key={index} className="p-4 bg-gray-50 rounded-lg shadow-md">
+            <div key={index} className="p-4 bg-orange-50 rounded-lg shadow-md">
               <h4 className="font-semibold text-lg">{app.title}</h4>
               <p className="text-gray-700">{app.description}</p>
             </div>
@@ -1033,7 +982,7 @@ Why Choose Our HPL Boards?
     {/* Key Features Section */}
     <div className="border-t border-gray-300 mt-6">
   {/* Introduction Section */}
-  <h3 className="text-2xl font-bold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-2xl font-bold p-4 bg-red-600 text-white border-b border-gray-300">
     Acrylic Laminates: Versatile and Premium Decorative Surfaces
   </h3>
   <p className="p-4 text-gray-700">
@@ -1043,7 +992,7 @@ Why Choose Our HPL Boards?
   </p>
 
   {/* Key Features of Acrylic Laminates */}
-  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300 mt-6">
+  <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300 mt-6">
     Key Features of Acrylic Laminates
   </h3>
   <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1061,7 +1010,7 @@ Why Choose Our HPL Boards?
   </div>
 
   {/* Key Features of Acrylic Fluted Panels */}
-  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300 mt-6">
+  <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300 mt-6">
     Key Features of Acrylic Fluted Panels
   </h3>
   <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1079,7 +1028,7 @@ Why Choose Our HPL Boards?
   </div>
 
   {/* Other Common Features */}
-  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300 mt-6">
+  <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300 mt-6">
     Other Common Features
   </h3>
   <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1096,7 +1045,7 @@ Why Choose Our HPL Boards?
   </div>
 
   {/* Applications of Acrylic Laminates */}
-  <h3 className="text-xl font-bold p-4 bg-gray-100 border-b border-gray-300 mt-6">
+  <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300 mt-6">
     Applications of Acrylic Laminates
   </h3>
   <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1133,7 +1082,7 @@ Why Choose Our HPL Boards?
         <>
           {/* What is WPVC Pastel Louvers? */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               What is WPVC Pastel Louvers?
             </h3>
             <div className="p-4">
@@ -1146,28 +1095,48 @@ Why Choose Our HPL Boards?
 
           {/* Composition Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 md:flex justify-center bg-red-600 text-white border-b border-gray-300">
               Composition
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
               <div className="p-2 w-1/3">
-                <div className="font-bold">Wood Polymer Composite (WPVC)</div>
-                <div className="text-lg font-semibold text-red-600">50% – 60%</div>
-              </div>
-              <div className="p-2 w-1/3">
                 <div className="font-bold">PVC Resin</div>
-                <div className="text-lg font-semibold text-red-600">30% – 40%</div>
+                <div className="text-lg font-semibold text-red-600"> 60%</div>
               </div>
               <div className="p-2 w-1/3">
-                <div className="font-bold">Additives & Stabilizers</div>
-                <div className="text-lg font-semibold text-red-600">5% – 10%</div>
+                <div className="font-bold">Calcium Carbonate (CaCO₃)</div>
+                <div className="text-lg font-semibold text-red-600">35%</div>
+              </div>
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Other</div>
+                <div className="text-lg font-semibold text-red-600">5%</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-300 mt-4">
+            <h3 className="text-lg md:flex justify-center  font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+              size
+            </h3>
+            <div className="p-4 flex flex-wrap justify-around text-center">
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Length</div>
+                <div className="text-lg font-semibold text-red-600"> 290cm</div>
+              </div>
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Width</div>
+                <div className="text-lg font-semibold text-red-600">variable</div>
+              </div> 
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Thickness</div>
+                <div className="text-lg font-semibold text-red-600">variable</div>
               </div>
             </div>
           </div>
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               Applications of WPVC Pastel Louvers
             </h3>
             <div className="p-4">
@@ -1183,7 +1152,7 @@ Why Choose Our HPL Boards?
 
           {/* Advantages Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               Advantages of WPVC Pastel Louvers
             </h3>
             <div className="p-4">
@@ -1222,7 +1191,7 @@ Why Choose Our HPL Boards?
         <>
           {/* What are PS Panels (Charcoal Panels)? */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               What are PS Panels (Charcoal Panels)?
             </h3>
             <div className="p-4">
@@ -1235,7 +1204,7 @@ Why Choose Our HPL Boards?
 
           {/* Composition Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               Composition
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
@@ -1260,7 +1229,7 @@ Why Choose Our HPL Boards?
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     Features of PS Planks (Charcoal Panels)
   </h3>
   <div className="p-4">
@@ -1295,7 +1264,7 @@ Why Choose Our HPL Boards?
 
 {/* Advantages Section */}
 <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     Advantages of PS Planks
   </h3>
   <div className="p-4">
@@ -1319,7 +1288,7 @@ Why Choose Our HPL Boards?
 
           {/* Advantages Section */}
           <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     Applications of PS Planks (Charcoal Panels)
   </h3>
   <div className="p-4">
@@ -1351,7 +1320,7 @@ Why Choose Our HPL Boards?
 
 {/* Why Choose PS Planks Section */}
 <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     Why Choose PS Planks (Charcoal Panels)?
   </h3>
   <div className="p-4">
@@ -1387,7 +1356,7 @@ Why Choose Our HPL Boards?
         <>
           {/* What are PVC Fluted Panels? */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               What are PVC Fluted Panels?
             </h3>
             <div className="p-4">
@@ -1400,7 +1369,7 @@ Why Choose Our HPL Boards?
 
           {/* Composition Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               Composition
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
@@ -1421,7 +1390,8 @@ Why Choose Our HPL Boards?
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+          <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+  
     PVC Fluted Panels: Stylish and Functional Wall & Ceiling Solutions
   </h3>
   <div className="p-4 text-gray-700 space-y-4">
@@ -1431,38 +1401,39 @@ Why Choose Our HPL Boards?
       making them a popular choice for residential and commercial spaces.
     </p>
 
-    <h4 className="text-lg font-semibold">Key Features of PVC Fluted Panels</h4>
+    <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+  Key Features of PVC Fluted Panels</h4>
     <ul className="list-disc pl-5 space-y-2">
-      <li><strong>Stylish Design:</strong> Features evenly spaced vertical grooves for a textured, linear look. Available in a range of colors, matte, glossy, wood, or marble textures.</li>
-      <li><strong>Durable & Long-Lasting:</strong> Resistant to moisture, termites, and UV light, making them ideal for humid environments. Does not warp, crack, or fade over time.</li>
-      <li><strong>Lightweight & Easy Installation:</strong> Simple to install using basic tools and adhesives. Can be customized for various dimensions and designs.</li>
-      <li><strong>Low Maintenance:</strong> Easy to clean with a damp cloth, requiring minimal upkeep.</li>
+      <li><strong className="text-red-700">Stylish Design:</strong> Features evenly spaced vertical grooves for a textured, linear look. Available in a range of colors, matte, glossy, wood, or marble textures.</li>
+      <li><strong className="text-red-700">Durable & Long-Lasting:</strong> Resistant to moisture, termites, and UV light, making them ideal for humid environments. Does not warp, crack, or fade over time.</li>
+      <li><strong className="text-red-700">Lightweight & Easy Installation:</strong> Simple to install using basic tools and adhesives. Can be customized for various dimensions and designs.</li>
+      <li><strong className="text-red-700">Low Maintenance:</strong> Easy to clean with a damp cloth, requiring minimal upkeep.</li>
     </ul>
 
-    <h4 className="text-lg font-semibold">Advantages of PVC Fluted Panels</h4>
+    <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Advantages of PVC Fluted Panels</h4>
     <ul className="list-disc pl-5 space-y-2">
-      <li><strong>Eco-Friendly:</strong> Made from recyclable PVC material, reducing environmental impact.</li>
-      <li><strong>Cost-Effective:</strong> An affordable alternative to traditional wood or stone panels while offering a premium appearance.</li>
-      <li><strong>Sound & Thermal Insulation:</strong> The fluted design provides acoustic and thermal benefits, improving indoor comfort.</li>
-      <li><strong>Waterproof & Fire-Resistant:</strong> Ideal for areas exposed to moisture or requiring fire safety compliance.</li>
+      <li><strong className="text-red-700">Eco-Friendly:</strong> Made from recyclable PVC material, reducing environmental impact.</li>
+      <li><strong className="text-red-700">Cost-Effective:</strong> An affordable alternative to traditional wood or stone panels while offering a premium appearance.</li>
+      <li><strong className="text-red-700">Sound & Thermal Insulation:</strong> The fluted design provides acoustic and thermal benefits, improving indoor comfort.</li>
+      <li><strong className="text-red-700">Waterproof & Fire-Resistant:</strong> Ideal for areas exposed to moisture or requiring fire safety compliance.</li>
     </ul>
 
-    <h4 className="text-lg font-semibold">Applications of PVC Fluted Panels</h4>
+    <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Applications of PVC Fluted Panels</h4>
     <ul className="list-disc pl-5 space-y-2">
-      <li><strong>Residential Spaces:</strong> 
+      <li><strong className="text-red-700">Residential Spaces:</strong> 
         <ul className="list-disc pl-5">
           <li>Living Rooms: Create stylish accent walls or statement ceilings.</li>
           <li>Bedrooms: Add texture and warmth to feature walls or headboards.</li>
           <li>Bathrooms: Use moisture-resistant panels for a sleek and practical finish.</li>
         </ul>
       </li>
-      <li><strong>Commercial Interiors:</strong> 
+      <li><strong className="text-red-700">Commercial Interiors:</strong> 
         <ul className="list-disc pl-5">
           <li>Offices: Modernize meeting rooms and lobbies with clean, structured lines.</li>
           <li>Retail Stores: Use as a backdrop for displays or partitions.</li>
         </ul>
       </li>
-      <li><strong>Hospitality and Entertainment:</strong> 
+      <li><strong className="text-red-700">Hospitality and Entertainment:</strong> 
         <ul className="list-disc pl-5">
           <li>Hotels and Restaurants: Enhance interiors with luxurious textures and finishes.</li>
           <li>Theaters and Lounges: Improve acoustics while adding a contemporary look.</li>
@@ -1470,7 +1441,7 @@ Why Choose Our HPL Boards?
       </li>
     </ul>
 
-    <h4 className="text-lg font-semibold">Why Choose PVC Fluted Panels?</h4>
+    <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Why Choose PVC Fluted Panels?</h4>
     <ul className="list-disc pl-5 space-y-2">
       <li>Offers a modern, linear aesthetic that complements minimalistic and contemporary designs.</li>
       <li>Combines visual appeal with practical benefits like durability, ease of maintenance, and eco-friendliness.</li>
@@ -1502,7 +1473,7 @@ Why Choose Our HPL Boards?
         <>
           {/* What is PVC False Ceiling? */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               What is PVC False Ceiling?
             </h3>
             <div className="p-4">
@@ -1516,7 +1487,7 @@ Why Choose Our HPL Boards?
 
           {/* Composition Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               Composition
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
@@ -1533,7 +1504,7 @@ Why Choose Our HPL Boards?
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+  <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     PVC False Ceiling Panels: A Practical and Stylish Ceiling Solution
   </h3>
   <div className="p-4 text-gray-700 space-y-4">
@@ -1543,47 +1514,42 @@ Why Choose Our HPL Boards?
       residential and commercial applications.
     </p>
 
-    <h4 className="text-lg font-semibold">Composition</h4>
-    <ul className="list-disc pl-5 space-y-2">
-      <li><strong>Polyvinyl Chloride Resin:</strong> 64%</li>
-      <li><strong>Calcium Carbonate (CaCO₃):</strong> 36%</li>
-    </ul>
-
+   
     <h4 className="text-lg font-semibold">Panel Specifications</h4>
     <div className="overflow-x-auto">
     <table className="min-w-full border-collapse border border-gray-300">
   <thead>
     <tr className="bg-gray-100">
-      <th className="border border-gray-300 px-4 py-2" colSpan="3">Wooden finsh Grooved</th>
-      <th className="border border-gray-300 px-4 py-2" colSpan="3">Pain seamless</th>
+      <th className="border border-gray-300 bg-red-600 text-white px-4 py-2" colSpan="3">Wooden finsh Grooved</th>
+      <th className="border border-gray-300 px-4 py-2 bg-red-600 text-white" colSpan="3">Pain seamless</th>
     </tr>
   </thead>
   <tbody>
     <tr className="bg-gray-100 font-bold">
-      <td className="border border-gray-300 px-4 py-2">Length</td>
-      <td className="border border-gray-300 px-4 py-2">Width</td>
-      <td className="border border-gray-300 px-4 py-2">Thickness</td>
-      <td className="border border-gray-300 px-4 py-2">Length</td>
-      <td className="border border-gray-300 px-4 py-2">Width</td>
-      <td className="border border-gray-300 px-4 py-2">Thickness</td>
+      <td className="border border-red-600 px-4 py-2">Length</td>
+      <td className="border border-red-600 px-4 py-2">Width</td>
+      <td className="border border-red-600 px-4 py-2">Thickness</td>
+      <td className="border border-red-600 px-4 py-2">Length</td>
+      <td className="border border-red-600 px-4 py-2">Width</td>
+      <td className="border border-red-600 px-4 py-2">Thickness</td>
 
     </tr>
     <tr>
-      <td className="border border-gray-300 px-4 py-2">366cm</td>
-      <td className="border border-gray-300 px-4 py-2">30cm</td>
-      <td className="border border-gray-300 px-4 py-2">9mm</td>
-      <td className="border border-gray-300 px-4 py-2">366cm</td>
-      <td className="border border-gray-300 px-4 py-2">25cm</td>
-      <td className="border border-gray-300 px-4 py-2">9mm</td>
+      <td className="border border-red-600 px-4 py-2">366cm</td>
+      <td className="border border-red-600 px-4 py-2">30cm</td>
+      <td className="border border-red-600 px-4 py-2">9mm</td>
+      <td className="border border-red-600 px-4 py-2">366cm</td>
+      <td className="border border-red-600 px-4 py-2">25cm</td>
+      <td className="border border-red-600 px-4 py-2">9mm</td>
 
     </tr>
     <tr>
-      <td className="border border-gray-300 px-4 py-2">305cm</td>
-      <td className="border border-gray-300 px-4 py-2">30cm</td>
-      <td className="border border-gray-300 px-4 py-2">7mm</td>
-      <td className="border border-gray-300 px-4 py-2">305cm</td>
-      <td className="border border-gray-300 px-4 py-2">25cm</td>
-      <td className="border border-gray-300 px-4 py-2">7mm</td>
+      <td className="border border-red-600 px-4 py-2">305cm</td>
+      <td className="border border-red-600 px-4 py-2">30cm</td>
+      <td className="border border-red-600 px-4 py-2">7mm</td>
+      <td className="border border-red-600 px-4 py-2">305cm</td>
+      <td className="border border-red-600 px-4 py-2">25cm</td>
+      <td className="border border-red-600 px-4 py-2">7mm</td>
 
 
     </tr>
@@ -1594,15 +1560,15 @@ Why Choose Our HPL Boards?
 
     </div>
 
-        <h4 className="text-lg font-semibold">Key Features of PVC False Ceiling Panels</h4>
+        <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Key Features of PVC False Ceiling Panels</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Durable & Long-Lasting:</strong> Resistant to moisture, termites, and corrosion, making them ideal for damp or humid environments. UV-resistant and does not warp or fade over time.</li>
-          <li><strong>Lightweight & Easy Installation:</strong> Designed for quick and hassle-free installation. Can be fitted using basic tools with minimal structural modifications.</li>
-          <li><strong>Aesthetic Versatility:</strong> Available in a wide range of colors, textures, and designs, including wood, marble, and metallic finishes. Offers seamless integration with lighting fixtures and air conditioning ducts.</li>
-          <li><strong>Low Maintenance:</strong> Smooth surface ensures easy cleaning with just a damp cloth. Stain-resistant and requires minimal upkeep.</li>
+          <li><strong className="text-red-600">Durable & Long-Lasting:</strong> Resistant to moisture, termites, and corrosion, making them ideal for damp or humid environments. UV-resistant and does not warp or fade over time.</li>
+          <li><strong className="text-red-600">Lightweight & Easy Installation:</strong> Designed for quick and hassle-free installation. Can be fitted using basic tools with minimal structural modifications.</li>
+          <li><strong className="text-red-600">Aesthetic Versatility:</strong> Available in a wide range of colors, textures, and designs, including wood, marble, and metallic finishes. Offers seamless integration with lighting fixtures and air conditioning ducts.</li>
+          <li><strong className="text-red-600">Low Maintenance:</strong> Smooth surface ensures easy cleaning with just a damp cloth. Stain-resistant and requires minimal upkeep.</li>
         </ul>
 
-        <h4 className="text-lg font-semibold">Advantages of PVC False Ceiling Panels</h4>
+        <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Advantages of PVC False Ceiling Panels</h4>
         <ul className="list-disc pl-5 space-y-2">
           <li><strong>Waterproof and Fire-Resistant:</strong> Ideal for bathrooms, kitchens, and areas prone to moisture or heat.</li>
           <li><strong>Cost-Effective:</strong> More affordable than traditional false ceiling materials like gypsum or wood.</li>
@@ -1610,30 +1576,30 @@ Why Choose Our HPL Boards?
           <li><strong>Eco-Friendly:</strong> Made from recyclable materials, supporting sustainable practices.</li>
         </ul>
 
-        <h4 className="text-lg font-semibold">Applications of PVC False Ceiling Panels</h4>
+        <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Applications of PVC False Ceiling Panels</h4>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Residential Spaces:</strong>
+          <div><strong className="text-red-600">Residential Spaces:</strong>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Living Rooms:</strong> For a modern, sleek ceiling design with integrated lighting.</li>
               <li><strong>Kitchens and Bathrooms:</strong> Moisture-resistant panels ensure durability in these spaces.</li>
               <li><strong>Bedrooms:</strong> Add texture and style with patterned or wood-finish panels.</li>
             </ul>
-          </li>
-          <li><strong>Commercial Spaces:</strong>
+          </div>
+          <div><strong className="text-red-600">Commercial Spaces:</strong>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Offices:</strong> Enhances professional environments with clean and contemporary ceiling designs.</li>
               <li><strong>Retail Stores:</strong> Creates visually appealing ceilings to complement product displays.</li>
             </ul>
-          </li>
-          <li><strong>Hospitality and Public Areas:</strong>
+          </div>
+          <div ><strong className="text-red-600">Hospitality and Public Areas:</strong>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Hotels and Restaurants:</strong> Adds elegance and functionality to dining areas and lobbies.</li>
               <li><strong>Hospitals and Clinics:</strong> Hygienic and easy-to-clean solutions for healthcare facilities.</li>
             </ul>
-          </li>
+          </div>
         </ul>
 
-        <h4 className="text-lg font-semibold">Why Choose PVC False Ceiling Panels?</h4>
+        <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Why Choose PVC False Ceiling Panels?</h4>
         <ul className="list-disc pl-5 space-y-2">
           <li>Combines durability, affordability, and aesthetic versatility in one solution.</li>
           <li>Easy to install, maintain, and customize for various design themes.</li>
@@ -1671,7 +1637,7 @@ Why Choose Our HPL Boards?
         <>
           {/* What is PU Wall Covering? */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               What is PU (Polyurethane) Wall Covering?
             </h3>
             <div className="p-4">
@@ -1685,7 +1651,7 @@ Why Choose Our HPL Boards?
 
           {/* Composition Section */}
           <div className="border-t border-gray-300 mt-4">
-            <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
               Composition
             </h3>
             <div className="p-4 flex flex-wrap justify-around text-center">
@@ -1715,7 +1681,7 @@ Why Choose Our HPL Boards?
     <table className="min-w-full border-collapse border border-gray-300">
   <thead>
     <tr className="bg-gray-100">
-      <th className="border border-gray-300 px-4 py-2" colSpan="3">Wooden finsh Grooved</th>
+      <th className="border border-gray-300 bg-red-600 text-white px-4 py-2" colSpan="3">Wooden finsh Grooved</th>
     </tr>
   </thead>
   <tbody>
@@ -1726,9 +1692,9 @@ Why Choose Our HPL Boards?
 
     </tr>
     <tr>
-      <td className="border border-gray-300 px-4 py-2">366cm</td>
-      <td className="border border-gray-300 px-4 py-2">25cm</td>
-      <td className="border border-gray-300 px-4 py-2">9mm</td>
+      <td className="border border-gray-300 px-4 py-2">120cm</td>
+      <td className="border border-gray-300 px-4 py-2">60cm</td>
+      <td className="border border-gray-300 px-4 py-2">30mm</td>
 
     </tr>
  
@@ -1743,7 +1709,7 @@ Why Choose Our HPL Boards?
 
           {/* Applications Section */}
           <div className="border-t border-gray-300 mt-4">
-  <h3 className="text-lg font-semibold p-4 bg-gray-100 border-b border-gray-300">
+          <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
     PU Wall Coverings: Elegant Decorative Panels with Leaf, Stone, and Jali Designs
   </h3>
   <div className="p-4 text-gray-700 space-y-4">
@@ -1755,7 +1721,7 @@ Why Choose Our HPL Boards?
     </p>
 
     {/* Key Features */}
-    <h4 className="text-lg font-semibold">Key Features of PU Wall Coverings</h4>
+    <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Key Features of PU Wall Coverings</h4>
     <ul className="list-disc pl-5 space-y-2">
       <li><strong>Aesthetic Variety</strong>
         <ul className="list-disc pl-5">
@@ -1785,7 +1751,7 @@ Why Choose Our HPL Boards?
     </ul>
 
     {/* Advantages */}
-    <h4 className="text-lg font-semibold">Advantages of PU Wall Coverings</h4>
+     <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Advantages of PU Wall Coverings</h4>
     <ul className="list-disc pl-5 space-y-2">
       <li><strong>Eco-Friendly:</strong> Made from recyclable materials and free from harmful chemicals.</li>
       <li><strong>Low Maintenance:</strong> Easy to clean with a damp cloth, requiring minimal upkeep.</li>
@@ -1794,22 +1760,22 @@ Why Choose Our HPL Boards?
     </ul>
 
     {/* Applications */}
-    <h4 className="text-lg font-semibold">Applications</h4>
+     <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Applications</h4>
     <ul className="list-disc pl-5 space-y-2">
-      <li><strong>Residential Spaces</strong>
+      <li><strong className="text-red-700">Residential Spaces</strong>
         <ul className="list-disc pl-5">
           <li><strong>Living Rooms:</strong> Create feature walls with leaf or stone designs for a bold statement.</li>
           <li><strong>Bedrooms:</strong> Use Jali patterns as headboards or decorative wall panels.</li>
           <li><strong>Kitchens & Bathrooms:</strong> Moisture-resistant panels for accent walls or backsplashes.</li>
         </ul>
       </li>
-      <li><strong>Commercial Spaces</strong>
+      <li><strong className="text-red-700">Commercial Spaces</strong>
         <ul className="list-disc pl-5">
           <li><strong>Offices:</strong> Enhance meeting rooms and reception areas with stylish patterns.</li>
           <li><strong>Retail Stores:</strong> Use as a backdrop for displays or partitions.</li>
         </ul>
       </li>
-      <li><strong>Hospitality and Public Areas</strong>
+      <li><strong className="text-red-700">Hospitality and Public Areas</strong>
         <ul className="list-disc pl-5">
           <li><strong>Hotels and Restaurants:</strong> Add elegance with Jali-inspired wall coverings in lobbies or dining areas.</li>
           <li><strong>Theaters and Lounges:</strong> Improve acoustics while adding aesthetic value.</li>
@@ -1818,7 +1784,7 @@ Why Choose Our HPL Boards?
     </ul>
 
     {/* Why Choose PU Wall Coverings */}
-    <h4 className="text-lg font-semibold">Why Choose PU Wall Coverings?</h4>
+     <h4 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">Why Choose PU Wall Coverings?</h4>
     <ul className="list-disc pl-5 space-y-2">
       <li>Combines the durability of polyurethane with artistic designs to suit any interior theme.</li>
       <li>Lightweight and easy to work with, making installation and customization effortless.</li>

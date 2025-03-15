@@ -20,10 +20,9 @@ import PVCFluted from '../Assets/Products/005.png';
 import CharcolePanels from '../Assets/Products/002.png';
 import Nonails from '../Assets/Products/009.png';
 
-// Updated Product Card Component with redirect functionality
 const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
   const navigate = useNavigate()
-  // Function to handle click on image or title
+  
   const handleClick = () => {
     if (product.title === "WPC EXTERIOR CLADDING") {
       navigateToExteriorCladding();
@@ -34,7 +33,14 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
     if  (product.title === "PVC SOFFIT PANELS") {
       navigate('/pvc_soffit');
     }
+    if  (product.title === "PVC FALSE CEILING") {
+      navigate('/pvc_ceiling');
+    }
+    if  (product.title === "WPVC PASTEL LOUVERS") {
+      navigate('/wpvc_pastel');
+    }
   };
+  
 
 
   const shouldShowLearnMore = 

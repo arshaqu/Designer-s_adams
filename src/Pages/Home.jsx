@@ -33,6 +33,17 @@ function Home() {
     }
   };
 
+
+  const handleOnExplore = ()=>{
+      try {
+        navigate("/products");
+        window.scrollTo(0, 0);        
+      } catch (error) {
+        console.log(error);
+      }
+  }
+
+
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(false); // Start fading out
@@ -135,7 +146,7 @@ function Home() {
           <Carosel />
         </div>
         <div className="flex flex-col items-center space-y-4 mt-2 px-4">
-          <button className="bg-[#E6492D] text-white font-bold text-lg px-6 py-3 rounded-md uppercase w-full max-w-xs sm:max-w-md">
+          <button onClick={handleOnExplore}  className="bg-[#E6492D] text-white font-bold text-lg px-6 py-3 rounded-md uppercase w-full max-w-xs sm:max-w-md">
             Explore Products
           </button>
          

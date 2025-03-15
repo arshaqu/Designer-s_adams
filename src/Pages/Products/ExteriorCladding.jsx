@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import AdhamsWhite from '../../Assets/whitered.png';
-import CladdingBanner from '../../Assets/Home/homeSlider 3.png';
+import CladdingBanner from '../../Assets/Products/Banners/Wpc exterior.png';
 
 import Ipe from '../../Assets/Products/ExteriorCladding/image1.png';
 import Teak from '../../Assets/Products/ExteriorCladding/image2.png';
