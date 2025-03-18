@@ -13,6 +13,7 @@ import PvcSoffit from './Pages/Products/PvcSoffit.jsx';
 import FoamBoards from './Pages/Products/FoamBoards.jsx';
 import PvcFalseCeiling from './Pages/Products/PvcFalseCeiling.jsx';
 import WpvcPastel from './Pages/Products/WpvcPastel.jsx';
+import AcrylicLaminates from './Pages/Products/AcrylicLaminates.jsx';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <Route path='/foam_board' element={<FoamBoards/>} />
         <Route path='/pvc_ceiling' element={<PvcFalseCeiling/>} />
         <Route path='/wpvc_pastel' element={<WpvcPastel/>} />
+        <Route path='/acrylic_laminates' element={<AcrylicLaminates/>} />
+
 
 
 

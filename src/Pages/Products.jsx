@@ -39,6 +39,9 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
     if  (product.title === "WPVC PASTEL LOUVERS") {
       navigate('/wpvc_pastel');
     }
+    if  (product.title === "ACRYLIC LAMINATES") {
+      navigate('/acrylic_laminates');
+    }
   };
   
 

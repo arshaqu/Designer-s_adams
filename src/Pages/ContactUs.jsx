@@ -109,6 +109,18 @@ function ContactUs() {
                 className="border p-2 w-full h-24 mt-2 rounded-md ml-1 md:ml-80"
                 placeholder="Please write to us..."
               ></textarea>
+              <button
+          style={{
+            borderRadius: '5px',
+            borderColor: 'red',
+            borderWidth: '2px',
+            borderStyle: 'solid'
+          }}
+          className="mt-2  text-red-600 text-lg px-6 py-2 shadow-md hover:bg-red-700 hover:text-white"
+        >
+          Submit
+        </button>
+
             </div>
 
 
