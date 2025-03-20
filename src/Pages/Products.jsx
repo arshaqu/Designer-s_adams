@@ -42,6 +42,12 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
     if  (product.title === "ACRYLIC LAMINATES") {
       navigate('/acrylic_laminates');
     }
+    if  (product.title === "PVC FLUTED PANELS") {
+      navigate('/pvc_flutedplanels');
+    }
+    if  (product.title === "PS PANELS (CHARCOAL PANELS)") {
+      navigate('/charcole_panels');
+    }
   };
   
 

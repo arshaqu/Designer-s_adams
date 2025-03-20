@@ -14,6 +14,8 @@ import FoamBoards from './Pages/Products/FoamBoards.jsx';
 import PvcFalseCeiling from './Pages/Products/PvcFalseCeiling.jsx';
 import WpvcPastel from './Pages/Products/WpvcPastel.jsx';
 import AcrylicLaminates from './Pages/Products/AcrylicLaminates.jsx';
+import PvcFlueidPanels from './Pages/Products/PvcFlueidPanels.jsx';
+import CharcolePanels from './Pages/Products/CharcolePanels.jsx';
 
 function App() {
   return (
@@ -33,13 +35,10 @@ function App() {
         <Route path='/pvc_ceiling' element={<PvcFalseCeiling/>} />
         <Route path='/wpvc_pastel' element={<WpvcPastel/>} />
         <Route path='/acrylic_laminates' element={<AcrylicLaminates/>} />
+        <Route path='/pvc_flutedplanels' element={<PvcFlueidPanels/>} />
+        <Route path='/charcole_panels' element={<CharcolePanels/>} />
 
-
-
-
-
-
-        
+                  
 
         <Route path="*" element={<UnderConstruction/>} />
    

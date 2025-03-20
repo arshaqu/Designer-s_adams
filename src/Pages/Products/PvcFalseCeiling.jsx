@@ -88,7 +88,7 @@ function PvcFalseCeiling() {
                 {/* Popup for enlarged image */}
                 {/* Popup for enlarged image */}
                 {hoveredImage === product.zoomImage && (
-                    <div className="absolute mt-40 top-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-gray-300 w-[300px] md:w-[500px] p-4 md:p-6 rounded-lg shadow-4xl border">
+                    <div className="absolute md:mt-0 mt-40 top-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-gray-300 w-[300px] md:w-[500px] p-4 md:p-6 rounded-lg shadow-4xl border">
                     <img src={hoveredImage} alt="Large Product" className="w-[300px] md:w-[500px] h-auto object-cover transition-transform duration-300 scale-105" />
                     <div className="flex flex-col sm:flex-row items-center sm:items-start">
                         <img
