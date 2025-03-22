@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook
+import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ProductModal from "./Components/ProductModal";
@@ -19,10 +19,263 @@ import PVCFalse from '../Assets/Products/014.png';
 import PVCFluted from '../Assets/Products/005.png';
 import CharcolePanels from '../Assets/Products/002.png';
 import Nonails from '../Assets/Products/009.png';
+import image121 from '../Assets/Products/Banners/No nail banner.png'; // Import the image for NO NAIL popup
+
+// Custom Image Popup Component
+const ImagePopup = ({ isOpen, onClose, imageSrc }) => {
+  const popupRef = useRef(null);
+  
+  // Handle click outside the popup content
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+    
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen, onClose]);
+  
+  if (!isOpen) return null;
+  
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+      <div 
+        ref={popupRef}
+        className="bg-gray-800 p-4 rounded-lg max-w-4xl md:w-3xl max-h-screen overflow-auto"
+      >
+        <div className="flex justify-end mb-2">
+          <button 
+            onClick={onClose}
+            className="text-white hover:text-red-500 font-bold text-xl"
+          >
+            ×
+          </button>
+        </div>
+        <img 
+          src={imageSrc} 
+          alt="NO NAIL - SPECIAL ADHESIVE" 
+          className="w-full h-auto"
+        />
+      </div>
+    </div>
+  );
+};
+
+
+
+
+const PvcFoamBoardPopup = ({ isOpen, onClose }) => {
+  const popupRef = useRef(null);
+  
+  // Handle click outside the popup content
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+    
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen, onClose]);
+  
+  if (!isOpen) return null;
+  
+  return (
+    
+<div style={{marginTop:'200px',marginBottom:'200px'}} className="fixed m-5 mt-12 mb-12  shadow-lg inset-0 bg-opacity-70 flex items-center justify-center z-50">
+
+      <div  
+        ref={popupRef}
+        className="bg-gray-200 rounded-lg shadow-lg max-w-4xl w-full max-h-screen overflow-auto"
+      >
+        <div className="flex justify-end mb-2">
+          <button 
+            onClick={onClose}
+            className="text-black hover:text-red-500 text-xl mr-8 mt-3"
+          >
+            ×
+          </button>
+        </div>
+        
+        {/* PVC Foam Board Content */}
+        <div>
+          <div className="border-t border-gray-300 mt-4">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">What is PVC FOAM BOARD</h3>
+            <div className="p-4">
+              <p className="text-gray-700">
+                PVC foam boards are lightweight, durable, and versatile materials widely used in both interior and exterior applications. 
+                These boards are known for their excellent strength-to-weight ratio and resistance to moisture, chemicals, and fire.
+              </p>
+            </div>
+          </div>
+          
+          {/* Composition */}
+          <div className="border-t border-gray-300 mt-4">
+            <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+              Composition
+            </h3>
+            <div className="p-4 flex flex-wrap justify-around text-center">
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Polyvinyl Chloride (PVC) Resin</div>
+                <div className="text-lg font-semibold text-red-600">78%</div>
+              </div>
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Foaming Agent</div>
+                <div className="text-lg font-semibold text-red-600">13%</div>
+              </div>
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Calcium Carbonate (CaCO₃)</div>
+                <div className="text-lg font-semibold text-red-600">6%</div>
+              </div>
+              <div className="p-2 w-1/3">
+                <div className="font-bold">Other</div>
+                <div className="text-lg font-semibold text-red-600">3%</div>
+              </div>
+            </div>
+
+            {/* Size Section */}
+            <div className="border-t border-gray-300 mt-4">
+              <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+                Size
+              </h3>
+              <div className="p-4 text-center">
+                <p className="text-gray-700">
+                  <span className="font-semibold">Length:</span> 244cm &nbsp;
+                  <span className="font-semibold">Width:</span> 122cm
+                </p>
+              </div>
+            </div>
+
+            {/* Available Density & Thickness Section */}
+            <div className="border-t border-gray-300 mt-4">
+              <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+                Available Density & Thickness
+              </h3>
+              <div className="p-4 text-center">
+                <div className="overflow-x-auto">
+                  <table className="w-full border border-gray-300">
+                    <thead>
+                      <tr className="bg-gray-100">
+                        <th className="border border-gray-300 p-2">Density (g/cm³)</th>
+                        <th className="border border-gray-300 p-2">Thickness (mm)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border border-gray-300 p-2">
+                          0.40 &nbsp;&nbsp;&nbsp; 0.45 &nbsp;&nbsp;&nbsp; 0.55 &nbsp;&nbsp;&nbsp; 0.60 &nbsp;&nbsp;&nbsp;0.70
+                        </td>
+                        <td className="border border-gray-300 p-2">
+                          5&nbsp;mm &nbsp;&nbsp;&nbsp;8&nbsp;mm &nbsp;&nbsp;&nbsp;12&nbsp;mm &nbsp;&nbsp;&nbsp;15&nbsp;mm &nbsp;&nbsp;&nbsp;17&nbsp;mm &nbsp;&nbsp;&nbsp;
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            {/* Density Options */}
+            <div className="border-t border-gray-300 mt-4">
+              <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+                Density Options
+              </h3>
+              <div className="p-4 text-gray-700">
+                <ul className="list-disc pl-5 space-y-2">
+                  <div className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
+                    <span className="font-semibold">Low-Density Boards:</span>
+                    <ul className="list-disc pl-5">
+                      <li>Lightweight and easy to handle.</li>
+                      <li>Best for applications like signage, decorative panels, and exhibition displays.</li>
+                    </ul>
+                  </div>
+                  <div className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
+                    <span className="font-semibold">Medium-Density Boards:</span>
+                    <ul className="list-disc pl-5">
+                      <li>Balanced strength and flexibility.</li>
+                      <li>Suitable for furniture, partitions, and interior cladding.</li>
+                    </ul>
+                  </div>
+                  <div className="p-3 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-sm">
+                    <span className="font-semibold">High-Density Boards:</span>
+                    <ul className="list-disc pl-5">
+                      <li>High strength and rigidity.</li>
+                      <li>Ideal for load-bearing applications, outdoor cladding, and industrial use.</li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </div>
+
+            {/* Key Features Section */}
+            <div className="border-t border-gray-300 mt-4">
+              <h3 className="text-lg font-semibold p-4 bg-red-600 text-white border-b border-gray-300">
+                Key Features of PVC Foam Boards
+              </h3>
+              <div className="p-4">
+                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm">
+                    <span className="font-semibold">Weather Resistance:</span> Resistant to moisture, UV rays, and temperature changes<br/>- Suitable for outdoor applications.
+                  </div>
+                  <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm">
+                    <span className="font-semibold">Fire Retardant:</span> Meets fire safety standards, adding an extra layer of safety.
+                  </div>
+                  <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm">
+                    <span className="font-semibold">Eco-Friendly:</span> Recyclable and non-toxic, contributing to sustainable building practices.
+                  </div>
+                  <div className="p-3 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-sm">
+                    <span className="font-semibold">Customizable:</span> Easy to cut, drill, and shape, making it ideal for creative applications.
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+            {/* Applications Section */}
+            <div className="border-t border-gray-300 mt-4">
+              <h3 className="text-xl font-bold p-4 bg-red-600 text-white border-b border-gray-300">Applications of PVC Foam Board</h3>
+              <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  { title: "Signage and Advertising", description: "Ideal for banners, hoardings, and display boards." },
+                  { title: "Interior Design", description: "Wall cladding, ceiling panels, and decorative partitions." },
+                  { title: "Furniture", description: "Used for lightweight and moisture-resistant furniture, especially in kitchens and bathrooms." },
+                  { title: "Outdoor Applications", description: "Building facades, fences, and temporary structures." },
+                  { title: "Industrial Use", description: "Used in packaging, insulation, and construction templates." }
+                ].map((app, index) => (
+                  <div key={index} className="p-4 bg-yellow-50 rounded-lg shadow-md">
+                    <h4 className="font-semibold text-lg">{app.title}</h4>
+                    <p className="text-gray-700">{app.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 
 const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
-  const navigate = useNavigate()
-  
+  const navigate = useNavigate();
+  const [showNoNailPopup, setShowNoNailPopup] = useState(false);
+  const [showPvcFoamPopup, setShowPvcFoamPopup] = useState(false); 
+
   const handleClick = () => {
     if (product.title === "WPC EXTERIOR CLADDING") {
       navigateToExteriorCladding();
@@ -30,28 +283,35 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
     if (product.title === "HPL EXTERIOR LAMINATE") {
       navigate('/hpl_exterior');
     } 
-    if  (product.title === "PVC SOFFIT PANELS") {
+    if (product.title === "PVC SOFFIT PANELS") {
       navigate('/pvc_soffit');
     }
-    if  (product.title === "PVC FALSE CEILING") {
+    if (product.title === "PVC FALSE CEILING") {
       navigate('/pvc_ceiling');
     }
-    if  (product.title === "WPVC PASTEL LOUVERS") {
+    if (product.title === "WPVC PASTEL LOUVERS") {
       navigate('/wpvc_pastel');
     }
-    if  (product.title === "ACRYLIC LAMINATES") {
+    if (product.title === "ACRYLIC LAMINATES") {
       navigate('/acrylic_laminates');
     }
-    if  (product.title === "PVC FLUTED PANELS") {
+    if (product.title === "PVC FLUTED PANELS") {
       navigate('/pvc_flutedplanels');
     }
-    if  (product.title === "PS PANELS (CHARCOAL PANELS)") {
+    if (product.title === "PS PANELS (CHARCOAL PANELS)") {
       navigate('/charcole_panels');
     }
+    if (product.title === "NO NAIL - SPECIAL ADHESIVE") {
+      setShowNoNailPopup(true);
+    }    
+    if (product.title === "FRENCH MOULDINGS") {
+      navigate('/french_modules');
+    } 
+    if (product.title === "PVC FOAM BOARDS") {
+      setShowPvcFoamPopup(true);
+    } 
   };
   
-
-
   const shouldShowLearnMore = 
     product.title !== "NO NAIL - SPECIAL ADHESIVE" && 
     product.title !== "PVC MIRROR STRIPS";
@@ -62,13 +322,13 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
         src={product.image} 
         alt={product.title} 
         className="w-auto h-24 md:h-64 object-cover rounded-md md:ml-24 cursor-pointer" 
-        onClick={handleClick} // Add click handler to image
+        onClick={handleClick}
       />
 
       <div className="transform scale-75 md:scale-95 origin-left md:origin-center">
         <h3 
           className="text-sm sm:text-sm md:text-3xl font-semibold cursor-pointer" 
-          onClick={handleClick} // Add click handler to title
+          onClick={handleClick}
         >
           {product.title}
         </h3>
@@ -94,12 +354,27 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
           ))}
         </div>
       </div>
+      
+      {/* NO NAIL Image Popup */}
+      <ImagePopup 
+        isOpen={showNoNailPopup} 
+        onClose={() => setShowNoNailPopup(false)} 
+        imageSrc={image121}
+      />
+
+
+<PvcFoamBoardPopup 
+      isOpen={showPvcFoamPopup} 
+      onClose={() => setShowPvcFoamPopup(false)} 
+    />
+
+
     </div>
   );
 };
 
 function Products() {
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate();
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -112,7 +387,6 @@ function Products() {
     setIsModalOpen(false);
   };
 
-  // Function to handle navigation to exterior_cladding page
   const navigateToExteriorCladding = () => {
     navigate('/exterior_cladding');
   };
@@ -232,7 +506,6 @@ function Products() {
       fullDescription: "French mouldings are exquisite architectural elements that draw inspiration from classical French design traditions, particularly the ornate styles of the Baroque, Rococo, and Neoclassical periods. These decorative profiles feature intricate details such as scrolls, foliage, egg-and-dart patterns, and other motifs that add sophistication and timeless elegance to interior spaces. Our collection of French mouldings is crafted using high-quality materials.",
       tags: ["SKIRTINGS", "COVINGS", "BORDERS", "CORNER ROSE", "CEILING ROSES", "DADO RAILS"],
     },
-    // ... rest of interior products
     {
       image: Pastel,
       title: "WPVC PASTEL LOUVERS",
@@ -325,7 +598,7 @@ function Products() {
                 key={index} 
                 product={product} 
                 onLearnMore={handleLearnMore} 
-                navigateToExteriorCladding={navigateToExteriorCladding} // Pass the navigation function
+                navigateToExteriorCladding={navigateToExteriorCladding}
               />
             ))}
           </div>
@@ -340,7 +613,7 @@ function Products() {
                 <ProductCard 
                   product={product} 
                   onLearnMore={handleLearnMore} 
-                  navigateToExteriorCladding={navigateToExteriorCladding} // Pass the navigation function
+                  navigateToExteriorCladding={navigateToExteriorCladding}
                 />
               </div>
             ))}
