@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import AdhamsWhite from '../../Assets/whitered.png';
-import BannerImg from '../../Assets/Products/Banners/WPVC PASTEL LOUVERS.png';
+import BannerImg from '../../Assets/Products/Banners/1.png';
 
 
 import Image1 from '../../Assets/Products/PvcFluied/Image1.png'
@@ -55,27 +55,27 @@ import Image21Zoom from '../../Assets/Products/PvcFluied/Image21Zoom.png'
 
 
 const products = [
-    { image: Image1, zoomImage: Image1Zoom },
-    { image: Image2, zoomImage: Image2Zoom },
-    { image: Image3, zoomImage: Image3Zoom },
-    { image: Image4, zoomImage: Image4Zoom },
-    { image: Image5, zoomImage: Image5Zoom },
-    { image: Image6, zoomImage: Image6Zoom },
-    { image: Image7, zoomImage: Image7Zoom },
-    { image: Image8, zoomImage: Image8Zoom },
-    { image: Image9, zoomImage: Image9Zoom },
-    { image: Image10, zoomImage: Image10Zoom },
-    { image: Image11, zoomImage: Image11Zoom },
-    { image: Image12, zoomImage: Image12Zoom },
-    { image: Image13, zoomImage: Image13Zoom },
-    { image: Image14, zoomImage: Image14Zoom },
-    { image: Image15, zoomImage: Image15Zoom },
-    { image: Image16, zoomImage: Image16Zoom },
-    { image: Image17, zoomImage: Image17Zoom },
-    { image: Image18, zoomImage: Image18Zoom },
-    { image: Image19, zoomImage: Image19Zoom },
-    { image: Image20, zoomImage: Image20Zoom },
-    { image: Image21, zoomImage: Image21Zoom },
+    { image: Image1, zoomImage: Image1Zoom ,Description:'width: 10 inch Length : 10ft'},
+    { image: Image2, zoomImage: Image2Zoom ,Description:'width: 10 inch Length : 10ft'},
+    { image: Image3, zoomImage: Image3Zoom ,Description:'width: 12 inch Length : 10ft' },
+    { image: Image4, zoomImage: Image4Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image5, zoomImage: Image5Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image6, zoomImage: Image6Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image7, zoomImage: Image7Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image8, zoomImage: Image8Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image9, zoomImage: Image9Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image10, zoomImage: Image10Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image11, zoomImage: Image11Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image12, zoomImage: Image12Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image13, zoomImage: Image13Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image14, zoomImage: Image14Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image15, zoomImage: Image15Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image16, zoomImage: Image16Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image17, zoomImage: Image17Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image18, zoomImage: Image18Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image19, zoomImage: Image19Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image20, zoomImage: Image20Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image21, zoomImage: Image21Zoom ,Description:'width: 12 inch Length : 10ft'},
 
 
 ];
@@ -84,6 +84,11 @@ const products = [
 
 function PvcFlueidPanels() {
     const [hoveredImage, setHoveredImage] = useState(null); 
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
     return (
       <div className="w-full min-h-screen bg-neutral-50">
         <Navbar />
@@ -129,13 +134,13 @@ function PvcFlueidPanels() {
                         <img
                         src={AdhamsWhite}
                         alt="Large Product"
-                        className="md:w-auto md:h-[100px] h-[50px] w-auto mt-5 object-cover"
+                        className="md:w-auto md:mt-12 md:h-[100px] h-[50px] w-auto mt-5 object-cover"
                         />
                         <div className='flex align-center justify-center'>
                         <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
                         Outdoor-Indoor under roof<br />
                         PVC SOFFIT PANELS<br/>
-                        30cm X 12mm X 3.05m
+                        {product.Description}
                         </h1>
                         </div>
                     </div>

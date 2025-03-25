@@ -39,7 +39,7 @@ const products = [
       { image: Image1, zoomImage: Image1 },
       { image: Image2, zoomImage: Image2 },
       { image: Image3, zoomImage: Image3 },
-      { image: Image4, zoomImage: Image3 },
+      { image: Image4, zoomImage: Image4 },
       { image: Image5, zoomImage: Image5 },
       { image: Image6, zoomImage: Image6 },
       { image: Image7, zoomImage: Image7 },
@@ -119,7 +119,7 @@ function FrenchModules() {
                         <div className='flex align-center justify-center'>
                         <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
                         Outdoor-Indoor under roof<br />
-                        French Modules <br/>
+                        French Moulds <br/>
                         
                         </h1>
                         </div>

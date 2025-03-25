@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import AdhamsWhite from '../../Assets/whitered.png';
@@ -202,6 +202,11 @@ const products = [
 
 function CharcolePanels() {
     const [hoveredImage, setHoveredImage] = useState(null); 
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
     return (
       <div className="w-full min-h-screen bg-neutral-50">
         <Navbar />
@@ -251,7 +256,7 @@ function CharcolePanels() {
                         />
                         <div className='flex align-center justify-center'>
                         <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
-                        Outdoor-Indoor under roof<br />
+                        Interior Wall and Ceiling<br />
                         PS PANELS <br/>
                         Charcole Panels
                         </h1>

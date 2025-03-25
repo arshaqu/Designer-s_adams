@@ -2,28 +2,19 @@ import React, { useState } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import AdhamsWhite from '../../Assets/whitered.png';
-import SoffitBanner from '../../Assets/Products/Banners/soffit panel 1.png';
+import SoffitBanner from '../../Assets/Products/Banners//PU.png';
 
-  import Image1 from '../../Assets/Products/PvcSoffit/1007.png';
-  import Image2 from '../../Assets/Products//PvcSoffit/1006.png';
-  import Image3 from '../../Assets/Products/PvcSoffit/15002.png'
-  import image4 from '../../Assets/Products/PvcSoffit/15007.png'
-
-  import Image1Zoom from '../../Assets/Products/PvcSoffit/1007Zoom.png';
-  import Image2Zoom from '../../Assets/Products/PvcSoffit/1006Zoom.png';
-  import Image3Zoom from '../../Assets/Products/PvcSoffit/15002Zoom.png'
-  import image4Zoom from '../../Assets/Products/PvcSoffit/15007Zoom.png'
-
+import Image1 from '../../Assets/Products/PvcSoffit/1006.png'
+import Image1Zoom from '../../Assets/Products/PvcSoffit/1006Zoom.png'
 
 const products = [
-    { image: Image1, zoomImage: Image1Zoom },
-    { image: Image2, zoomImage: Image2Zoom },
-    { image: Image3, zoomImage: Image3Zoom },
-    { image: image4, zoomImage: image4Zoom },
+    // { image: Image1, zoomImage: Image1Zoom },
+  
 
 ];
 
-function PvcSoffit() {
+
+function PUWallcoverings() {
     const [hoveredImage, setHoveredImage] = useState(null); 
 
     return (
@@ -36,8 +27,8 @@ function PvcSoffit() {
               <div className="relative w-full md:ml-[596px] md:mt-[550px] ">
                 <div style={{ overflow: 'hidden' }}>
                   <h1 className="text-white text-xs sm:text-sm md:text-lg lg:text-2xl montserrat font-bold bg-opacity-45 bg-gray-800 px-4 sm:px-5 md:px-6 py-4 sm:py-3 md:py-5 w-full">
-                    <span className="text-xxs md:text-lg">Outdoor-Indoor under-roof<br /></span>
-                    PVC SOFFIT PANELS
+                    <span className="text-xxs md:text-lg">Interior Wall Panels<br /></span>
+                    PU (Polyurethane) WALL COVERINGS
                   </h1>
                 </div>
                 <div style={{ backgroundColor: '#eb4c34' }} className="absolute mt-1 bottom-0 left-0 w-full h-3 md:h-6"></div>
@@ -93,4 +84,4 @@ function PvcSoffit() {
       </div>
     );
   }
-export default PvcSoffit
+export default PUWallcoverings

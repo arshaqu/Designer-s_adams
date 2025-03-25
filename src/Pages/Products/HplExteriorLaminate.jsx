@@ -30,6 +30,7 @@ function HplExteriorLaminate() {
                 <div style={{ overflow: 'hidden' }}>
                   <h1 className="text-white text-xs sm:text-sm md:text-lg lg:text-2xl montserrat font-bold bg-opacity-45 bg-gray-800 px-4 sm:px-5 md:px-6 py-4 sm:py-3 md:py-5 w-full">
                     <span className="text-xxs md:text-lg">Double Sided<br /></span>
+                    
                     HPL EXTERIOR LAMINATES
                   </h1>
                 </div>

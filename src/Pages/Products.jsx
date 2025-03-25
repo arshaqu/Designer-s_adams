@@ -95,7 +95,7 @@ const PvcFoamBoardPopup = ({ isOpen, onClose }) => {
   
   return (
     
-<div style={{marginTop:'200px',marginBottom:'200px'}} className="fixed m-5 mt-12 mb-12  shadow-lg inset-0 bg-opacity-70 flex items-center justify-center z-50">
+<div style={{marginTop:'250px',marginBottom:'250px'}} className="fixed m-5 mt-12 mb-12  shadow-lg inset-0 bg-opacity-70 flex items-center justify-center z-50">
 
       <div  
         ref={popupRef}
@@ -309,6 +309,12 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
     } 
     if (product.title === "PVC FOAM BOARDS") {
       setShowPvcFoamPopup(true);
+    } 
+    if (product.title === "WPVC INTERIOR LOUVERS") {
+      navigate('/wpvc_interiors');
+    } 
+    if (product.title === "PU (Polyurethane) WALL COVERINGS") {
+      navigate('/pu_wallcovering');
     } 
   };
   

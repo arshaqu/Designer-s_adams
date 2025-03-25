@@ -17,6 +17,8 @@ import AcrylicLaminates from './Pages/Products/AcrylicLaminates.jsx';
 import PvcFlueidPanels from './Pages/Products/PvcFlueidPanels.jsx';
 import CharcolePanels from './Pages/Products/CharcolePanels.jsx';
 import FrenchModules from './Pages/Products/FrenchModules.jsx';
+import WpvcInterior from './Pages/Products/WpvcInterior.jsx';
+import PUWallcoverings from './Pages/Products/PUWallcoverings.jsx';
 
 function App() {
   return (
@@ -39,6 +41,10 @@ function App() {
         <Route path='/pvc_flutedplanels' element={<PvcFlueidPanels/>} />
         <Route path='/charcole_panels' element={<CharcolePanels/>} />
         <Route path='/french_modules' element={<FrenchModules/>} />
+        <Route path='/wpvc_interiors' element={<WpvcInterior/>} />
+        <Route path='/pu_wallcovering' element={<PUWallcoverings/>} />
+
+
 
 
                   

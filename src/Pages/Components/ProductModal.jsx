@@ -155,9 +155,8 @@ const ProductModal = ({ product, isOpen, onClose }) => {
   <div className="p-6 text-gray-700">
     <div className="grid md:grid-cols-3 gap-4">
       {[
-        { title: "Size 1", details: ["Length - 244cm", "Width - 122cm"] },
-        { title: "Size 2", details: ["Length - 305cm", "Width - 129cm"] },
-        { title: "Size 3", details: ["Thickness - 6 mm"] }
+        { title: "Size 1", details: ["Length - 244cm", "Width - 122cm" ,"Thickness - 6 mm"]  },
+        { title: "Size 2", details: ["Length - 305cm", "Width - 129cm","Thickness - 6 mm "] },
       ].map((size, index) => (
         <div key={index} className="p-4 bg-gradient-to-r from-teal-200 to-teak-400 border borderteal-400 rounded-xl shadow-md">
           <h4 className="text-lg font-semibold text-teal-800">{size.title}</h4>

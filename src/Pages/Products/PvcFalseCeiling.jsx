@@ -30,9 +30,9 @@ import PlainWhiteZoom from '../../Assets/Products/PvcCeiling/PlainWhiteZoom.png'
 
 
 const products = [
-    { image: Teakwood, zoomImage: TeakwoodZoom },
-    { image: Walnut, zoomImage: WalnutZoom },
-    { image: Rosewood, zoomImage: RosewoodZoom },
+    { image: Teakwood, zoomImage: TeakwoodZoom ,Description:'fdsfsdfsdfsdf' ,size:'fdsfdsfsdfsdfdf'},
+    { image: Walnut, zoomImage: WalnutZoom ,Description:'fdsfsdfsdfsdf' ,size:'fdsfdsfsdfsdfdf'},
+    { image: Rosewood, zoomImage: RosewoodZoom ,Description:'fdsfsdfsdfsdf' ,size:'fdsfdsfsdfsdfdf'},
     { image: Coffie, zoomImage: CoffieZoom },
     { image: White, zoomImage: WhiteZoom },
     { image: Beigewood, zoomImage: BeigewoodZoom },
@@ -94,18 +94,18 @@ function PvcFalseCeiling() {
                         <img
                         src={AdhamsWhite}
                         alt="Large Product"
-                        className="md:w-auto md:h-[100px] h-[50px] w-auto mt-5 object-cover"
+                        className="md:w-auto md:mt-12 md:h-[100px] h-[50px] w-auto mt-5 object-cover"
                         />
                         <div className='flex align-center justify-center'>
                         <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
                         Outdoor-Indoor under roof<br />
                         PVC SOFFIT PANELS<br/>
-                        30cm X 12mm X 3.05m
                         </h1>
                         </div>
                     </div>
                     </div>
                  )}
+  
   
               </div>
             ))}
