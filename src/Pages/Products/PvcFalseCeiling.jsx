@@ -30,16 +30,16 @@ import PlainWhiteZoom from '../../Assets/Products/PvcCeiling/PlainWhiteZoom.png'
 
 
 const products = [
-    { image: Teakwood, zoomImage: TeakwoodZoom ,Description:'fdsfsdfsdfsdf' ,size:'fdsfdsfsdfsdfdf'},
-    { image: Walnut, zoomImage: WalnutZoom ,Description:'fdsfsdfsdfsdf' ,size:'fdsfdsfsdfsdfdf'},
-    { image: Rosewood, zoomImage: RosewoodZoom ,Description:'fdsfsdfsdfsdf' ,size:'fdsfdsfsdfsdfdf'},
-    { image: Coffie, zoomImage: CoffieZoom },
-    { image: White, zoomImage: WhiteZoom },
-    { image: Beigewood, zoomImage: BeigewoodZoom },
-    { image: Jemwood, zoomImage: JemwoodWood },
-    { image: Darkwood, zoomImage: DarkWoodZoom },
-    { image: PlainBeige, zoomImage: PlainBeigeWoodZoom },
-    { image: PlainWhite, zoomImage: PlainWhiteZoom },
+    { image: Teakwood, zoomImage: TeakwoodZoom ,Description:'TEAKWOOD' ,size:'fdsfdsfsdfsdfdf'},
+    { image: Walnut, zoomImage: WalnutZoom ,Description:'WALNUT' ,size:'fdsfdsfsdfsdfdf'},
+    { image: Rosewood, zoomImage: RosewoodZoom ,Description:'ROSEWOOD' ,size:'fdsfdsfsdfsdfdf'},
+    { image: Coffie, zoomImage: CoffieZoom ,Description:'COFFIEWOOD'},
+    { image: White, zoomImage: WhiteZoom ,Description:'WHITE'},
+    { image: Beigewood, zoomImage: BeigewoodZoom ,Description:'BEIGEWOOD'},
+    { image: Jemwood, zoomImage: JemwoodWood ,Description:'JEMWOOD'},
+    { image: Darkwood, zoomImage: DarkWoodZoom ,Description:'DARKWOOD'},
+    { image: PlainBeige, zoomImage: PlainBeigeWoodZoom ,Description:'PLAIN BEIGE'},
+    { image: PlainWhite, zoomImage: PlainWhiteZoom ,Description:'PLAIN WHITE'},
 
 
 ];
@@ -58,7 +58,7 @@ function PvcFalseCeiling() {
               <div className="relative w-full md:ml-[596px] md:mt-[550px] ">
                 <div style={{ overflow: 'hidden' }}>
                   <h1 className="text-white text-xs sm:text-sm md:text-lg lg:text-2xl montserrat font-bold bg-opacity-45 bg-gray-800 px-4 sm:px-5 md:px-6 py-4 sm:py-3 md:py-5 w-full">
-                    <span className="text-xxs md:text-lg">Interior Ceiling<br /></span>
+                    <span className="text-xxs md:text-lg">Interior and Ceiling<br /></span>
                     PVC FALSE CEILING
                   </h1>
                 </div>
@@ -97,9 +97,10 @@ function PvcFalseCeiling() {
                         className="md:w-auto md:mt-12 md:h-[100px] h-[50px] w-auto mt-5 object-cover"
                         />
                         <div className='flex align-center justify-center'>
-                        <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
+                        <h1 className="ml-0 sm:ml-5 mt-3 md:mt-20 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
                         Outdoor-Indoor under roof<br />
-                        PVC SOFFIT PANELS<br/>
+                        PVC FALSE CEILING<br/>
+                        {product.Description}
                         </h1>
                         </div>
                     </div>

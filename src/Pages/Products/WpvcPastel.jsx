@@ -38,20 +38,20 @@ import Image14Zoom from '../../Assets/Products/WpvcPastel/Image14Zoom.png';
 
 
 const products = [
-    { image: Image1, zoomImage: Image1Zoom, content: "WPVC PASTEL PANELS",size: "196mm X 12mm X 2900mm" },
-    { image: Image2, zoomImage: Image2Zoom, content: "WPVC PASTEL PANELS" ,size: "196mm X 12mm X 2900mm"},
-    { image: Image3, zoomImage: Image3Zoom, content: "WPVC PASTEL PANELS",size: "196mm X 12mm X 2900mm" },
-    { image: Image4, zoomImage: Image4Zoom, content: "WPVC PASTEL PANELS" ,size: "150mm X 15mm X 2900mm"},
-    { image: Image5, zoomImage: Image5Zoom, content: "WPVC PASTEL PANELS",size: "150mm X 15mm X 2900mm" },
-    { image: Image6, zoomImage: Image6Zoom, content: "WPVC PASTEL PANELS",size: "196mm X 14mm X 2900mm" },
-    { image: Image7, zoomImage: Image7Zoom, content: "WPVC PASTEL PANELS" ,size: "150mm X 09mm X 2900mm"},
-    { image: Image8, zoomImage: Image8Zoom, content: "WPVC PASTEL PANELS" ,size: "150mm X 09mm X 2900mm"},
-    { image: Image9, zoomImage: Image9Zoom, content: "WPVC PASTEL PANELS",size: "150mm X 09mm X 2900mm" },
-    { image: Image10, zoomImage: Image10Zoom, content: "WPVC PASTEL PANELS" ,size: "150mm X 09mm X 2900mm"},
-    { image: Image11, zoomImage: Image11Zoom, content: "WPVC PASTEL PANELS",size: "160mm X 23mm X 2900mm" },
-    { image: Image12, zoomImage: Image12Zoom, content: "WPVC PASTEL PANELS" ,size: "160mm X 23mm X 2900mm"},
-    { image: Image13, zoomImage: Image13Zoom, content: "WPVC PASTEL PANELS" ,size: "160mm X 23mm X 2900mm"},
-    { image: Image14, zoomImage: Image14Zoom, content: "WPVC PASTEL PANELS" ,size: "160mm X 17mm X 2900mm"},
+    { image: Image1, zoomImage: Image1Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "196mm X 12mm X 2900mm" },
+    { image: Image2, zoomImage: Image2Zoom, content: "WPVC PASTEL PANELS", Description : "Interior Wall and Ceiling",size: "196mm X 12mm X 2900mm"},
+    { image: Image3, zoomImage: Image3Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "196mm X 12mm X 2900mm" },
+    { image: Image4, zoomImage: Image4Zoom, content: "WPVC PASTEL PANELS", Description : "Interior Wall and Ceiling",size: "150mm X 15mm X 2900mm"},
+    { image: Image5, zoomImage: Image5Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "150mm X 15mm X 2900mm" },
+    { image: Image6, zoomImage: Image6Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "195mm X 14mm X 2900mm" },
+    { image: Image7, zoomImage: Image7Zoom, content: "WPVC PASTEL PANELS", Description : "Interior Wall and Ceiling",size: "150mm X 09mm X 2900mm"},
+    { image: Image8, zoomImage: Image8Zoom, content: "WPVC PASTEL PANELS", Description : "Interior Wall and Ceiling",size: "150mm X 09mm X 2900mm"},
+    { image: Image9, zoomImage: Image9Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "150mm X 09mm X 2900mm" },
+    { image: Image10, zoomImage: Image10Zoom, content: "WPVC PASTEL PANELS" ,Description : "Interior Wall and Ceiling",size: "150mm X 09mm X 2900mm"},
+    { image: Image11, zoomImage: Image11Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "160mm X 23mm X 2900mm" },
+    { image: Image12, zoomImage: Image12Zoom, content: "WPVC PASTEL PANELS", Description : "Interior Wall and Ceiling",size: "160mm X 23mm X 2900mm"},
+    { image: Image13, zoomImage: Image13Zoom, content: "WPVC PASTEL PANELS", Description : "Interior Wall and Ceiling",size: "160mm X 23mm X 2900mm"},
+    { image: Image14, zoomImage: Image14Zoom, content: "WPVC PASTEL PANELS" ,Description : "Interior Wall and Ceiling",size: "160mm X 17mm X 2900mm"},
 ];
 
 function WpvcPastel() {
@@ -113,7 +113,10 @@ function WpvcPastel() {
                                             <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 md:ml-12 sm:mt-5 text-center sm:text-left text-sm sm:text-lg">
                                                 {hoveredProduct.content}
                                             </h1>
-                                            <h1 className="ml-0 sm:ml-5  md:ml-12 sm:mt-5 text-center sm:text-left text-sm sm:text-lg">
+                                            <h1 className="ml-0 sm:ml-5  md:ml-12  text-center sm:text-left text-sm sm:text-lg">
+                                                {hoveredProduct.Description}
+                                            </h1>
+                                            <h1 className="ml-0 sm:ml-5  md:ml-12  text-center sm:text-left text-sm sm:text-lg">
                                                 {hoveredProduct.size}
                                             </h1>
                                         </div>

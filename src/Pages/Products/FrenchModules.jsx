@@ -118,7 +118,7 @@ function FrenchModules() {
                         />
                         <div className='flex align-center justify-center'>
                         <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
-                        Outdoor-Indoor under roof<br />
+                        Interior Wall and Ceiling<br />
                         French Moulds <br/>
                         
                         </h1>

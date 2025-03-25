@@ -55,27 +55,27 @@ import Image21Zoom from '../../Assets/Products/PvcFluied/Image21Zoom.png'
 
 
 const products = [
-    { image: Image1, zoomImage: Image1Zoom ,Description:'width: 10 inch Length : 10ft'},
-    { image: Image2, zoomImage: Image2Zoom ,Description:'width: 10 inch Length : 10ft'},
-    { image: Image3, zoomImage: Image3Zoom ,Description:'width: 12 inch Length : 10ft' },
-    { image: Image4, zoomImage: Image4Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image5, zoomImage: Image5Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image6, zoomImage: Image6Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image7, zoomImage: Image7Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image8, zoomImage: Image8Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image9, zoomImage: Image9Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image10, zoomImage: Image10Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image11, zoomImage: Image11Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image12, zoomImage: Image12Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image13, zoomImage: Image13Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image14, zoomImage: Image14Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image15, zoomImage: Image15Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image16, zoomImage: Image16Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image17, zoomImage: Image17Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image18, zoomImage: Image18Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image19, zoomImage: Image19Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image20, zoomImage: Image20Zoom ,Description:'width: 12 inch Length : 10ft'},
-    { image: Image21, zoomImage: Image21Zoom ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image1, zoomImage: Image1Zoom , name:'305 - BEIGE' ,Description:'width: 10 inch Length : 10ft'},
+    { image: Image2, zoomImage: Image2Zoom , name:'7012 - STONE GREY' ,Description:'width: 10 inch Length : 10ft'},
+    { image: Image3, zoomImage: Image3Zoom , name:'2024 - WALNUT' ,Description:'width: 12 inch Length : 10ft' },
+    { image: Image4, zoomImage: Image4Zoom , name:'3025 - DARK OAK' ,Description:'width: 12 inch Length : 10ft'},
+    { image: Image5, zoomImage: Image5Zoom  , name:'356 - GOLDLINE',Description:'width: 12 inch Length : 10ft'},
+    { image: Image6, zoomImage: Image6Zoom , name:'2007 - MAHAGONY',Description:'width: 12 inch Length : 10ft'},
+    { image: Image7, zoomImage: Image7Zoom , name:'2052 - WHITE MARBLE',Description:'width: 12 inch Length : 10ft'},
+    { image: Image8, zoomImage: Image8Zoom , name:'2023 - RED OAK',Description:'width: 12 inch Length : 10ft'},
+    { image: Image9, zoomImage: Image9Zoom , name:'2004 - WHITE OAK',Description:'width: 12 inch Length : 10ft'},
+    { image: Image10, zoomImage: Image10Zoom , name:'2006 - FOREST TEAK',Description:'width: 12 inch Length : 10ft'},
+    { image: Image11, zoomImage: Image11Zoom , name:'2010 - WHITE',Description:'width: 12 inch Length : 10ft'},
+    { image: Image12, zoomImage: Image12Zoom , name:'2020',Description:'width: 12 inch Length : 10ft'},
+    { image: Image13, zoomImage: Image13Zoom , name:'2017 - PLJW',Description:'width: 12 inch Length : 10ft'},
+    { image: Image14, zoomImage: Image14Zoom , name:'1251 - UPVC',Description:'width: 12 inch Length : 10ft'},
+    { image: Image15, zoomImage: Image15Zoom , name:'1252 - UPVC',Description:'width: 12 inch Length : 10ft'},
+    { image: Image16, zoomImage: Image16Zoom , name:'2016',Description:'width: 12 inch Length : 10ft'},
+    { image: Image17, zoomImage: Image17Zoom , name:'L - 102',Description:'width: 12 inch Length : 10ft'},
+    { image: Image18, zoomImage: Image18Zoom , name:'L - 539',Description:'width: 12 inch Length : 10ft'},
+    { image: Image19, zoomImage: Image19Zoom , name:'1505',Description:'width: 12 inch Length : 10ft'},
+    { image: Image20, zoomImage: Image20Zoom , name:'1516',Description:'width: 12 inch Length : 10ft'},
+    { image: Image21, zoomImage: Image21Zoom , name:'1520',Description:'width: 12 inch Length : 10ft'},
 
 
 ];
@@ -137,9 +137,9 @@ function PvcFlueidPanels() {
                         className="md:w-auto md:mt-12 md:h-[100px] h-[50px] w-auto mt-5 object-cover"
                         />
                         <div className='flex align-center justify-center'>
-                        <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
-                        Outdoor-Indoor under roof<br />
-                        PVC SOFFIT PANELS<br/>
+                        <h1 className="ml-0 sm:ml-5 mt-3 md:mt-20 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
+                       {product.name}<br />
+                        PVC FLUTED PANELS<br/>
                         {product.Description}
                         </h1>
                         </div>

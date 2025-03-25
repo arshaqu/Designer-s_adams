@@ -91,7 +91,7 @@ function WpvcInterior() {
         { image: Image12, zoomImage: Image12Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "19.5cm X 13mm X 2.9m"},
         { image: Image13, zoomImage: Image13Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "19.5cm X 13mm X 2.9m"},
         { image: Image14, zoomImage: Image14Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "195mm X 12mm X 2900mm"},
-        { image: Image15, zoomImage: Image15Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "16cm X 17mm X 2.9m00000000000"},
+        { image: Image15, zoomImage: Image15Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "16cm X 17mm X 2.9m0"},
         { image: Image16, zoomImage: Image16Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "150mm X 15mm X 2900mm"},
         { image: Image17, zoomImage: Image17Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "16cm X 8mm X 2.9m"},
         { image: Image18, zoomImage: Image18Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "16cm X 18mm X 2.9m"},
@@ -132,7 +132,7 @@ function WpvcInterior() {
                     <div style={{ overflow: 'hidden' }}>
                       <h1 className="text-white text-xs sm:text-sm md:text-lg lg:text-2xl montserrat font-bold bg-opacity-45 bg-gray-800 px-4 sm:px-5 md:px-6 py-4 sm:py-3 md:py-5 w-full">
                         <span className="text-xxs md:text-lg">Interior Wall and Ceiling<br /></span>
-                        WPVC PANELS
+                        WPVC INTERIOR LOUVERS
                       </h1>
                     </div>
                     <div style={{ backgroundColor: '#eb4c34' }} className="absolute mt-1 bottom-0 left-0 w-full h-3 md:h-6"></div>
@@ -170,10 +170,13 @@ function WpvcInterior() {
                             className="md:w-auto md:h-[100px] h-[50px] w-auto mt-5 object-cover"
                             />
                             <div className='flex align-center justify-center'>
+                                
                             <h1 className="ml-0 sm:ml-5 md:ml-12 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
                                 
                             {product.content}<br/>
+                            Interior Wall and Ceiling<br/>
                                 {product.size}
+
                             </h1>
                             <h1>
                             </h1>
