@@ -13,6 +13,7 @@ import Carosel from './Components/Carosel';
 import Footer from './Components/Footer';
 import Simple from '../Assets/Home/simple.jpg'
 import SimpleDry from '../Assets/dff.png'
+import Elite from './Components/Elite';
 
 
 function Home() {
@@ -143,6 +144,10 @@ function Home() {
               <div><img src={SimpleDry} alt="Adhams Logo" className=" h-20 w-auto  md:h-48" /></div>
             </div>
               <p className='font-bold mt-[-20px] montserrat'>CLOTH DRYING HANGER</p>
+              
+              <div className="w-full max-w-full text-center border-b border-black lg:p-24 py-4">
+              <Elite/>
+          </div>
           <Carosel />
         </div>
         <div className="flex flex-col items-center space-y-4 mt-2 px-4">
