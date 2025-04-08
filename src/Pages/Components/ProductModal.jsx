@@ -1519,8 +1519,8 @@ Why Choose Our HPL Boards?
     <table className="min-w-full border-collapse border border-gray-300">
   <thead>
     <tr className="bg-gray-100">
-      <th className="border border-gray-300 bg-red-600 text-white px-4 py-2" colSpan="3">Wooden finsh Grooved</th>
-      <th className="border border-gray-300 px-4 py-2 bg-red-600 text-white" colSpan="3">Pain seamless</th>
+      <th className="border border-gray-300 bg-red-600 text-white px-4 py-2" colSpan="3">Wooden finish Grooved</th>
+      <th className="border border-gray-300 px-4 py-2 bg-red-600 text-white" colSpan="3">Plain panels</th>
     </tr>
   </thead>
   <tbody>
@@ -1545,10 +1545,10 @@ Why Choose Our HPL Boards?
     <tr>
       <td className="border border-red-600 px-4 py-2">305cm</td>
       <td className="border border-red-600 px-4 py-2">30cm</td>
-      <td className="border border-red-600 px-4 py-2">7mm</td>
+      <td className="border border-red-600 px-4 py-2">9mm</td>
       <td className="border border-red-600 px-4 py-2">305cm</td>
       <td className="border border-red-600 px-4 py-2">25cm</td>
-      <td className="border border-red-600 px-4 py-2">7mm</td>
+      <td className="border border-red-600 px-4 py-2">9mm</td>
 
 
     </tr>

@@ -21,6 +21,7 @@ import CharcolePanels from '../Assets/Products/002.png';
 import Nonails from '../Assets/Products/009.png';
 import image121 from '../Assets/Products/Banners/No nail banner.png'; // Import the image for NO NAIL popup
 
+
 // Custom Image Popup Component
 const ImagePopup = ({ isOpen, onClose, imageSrc }) => {
   const popupRef = useRef(null);
@@ -389,6 +390,9 @@ function Products() {
     setIsModalOpen(true);
   };
 
+
+
+  
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -396,6 +400,8 @@ function Products() {
   const navigateToExteriorCladding = () => {
     navigate('/exterior_cladding');
   };
+
+ 
 
   const exteriorProducts = [
     {
@@ -569,6 +575,10 @@ function Products() {
       tags: ["EXPLORE"],
     },
   ];
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   return (
     <div className="w-full md:w-full min-h-screen bg-neutral-50">

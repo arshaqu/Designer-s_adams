@@ -44,11 +44,13 @@ function Elite() {
           ref={videoRef}
           loop 
           controls 
+          muted  // <-- add this line
           className="elite-video w-[90%] ml-5 md:w-[40%] h-auto rounded-lg shadow-lg"
         >
           <source src={EliteVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
       </div>
     </div>
   );

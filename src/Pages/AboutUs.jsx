@@ -4,10 +4,17 @@ import Footer from "./Components/Footer";
 import BannerAbout from '../Assets/Home/ABOUTUS.png'
 import Adhams from '../Assets/Home/ADHAMS.jpg';
 import AdhamsWhite from '../Assets/whitered.png'
+import { useNavigate } from "react-router-dom";
 
 
 
 function AboutUs() {
+  const navigate = useNavigate()
+
+  const handleExplore = (()=>{
+    navigate('/products')
+  })
+
   return (
     <div className="w-full min-h-screen bg-neutral-50">
 
@@ -122,7 +129,7 @@ function AboutUs() {
 
       {/* Explore Products Button */}
       <div className="mt-8">
-        <button className="bg-red-600 text-white text-lg px-6 py-3 shadow-md hover:bg-red-700">
+        <button onClick={handleExplore} className="bg-red-600 text-white text-lg px-6 py-3 shadow-md hover:bg-red-700">
           EXPLORE PRODUCTS
         </button>
       </div>

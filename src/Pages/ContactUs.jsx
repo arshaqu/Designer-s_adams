@@ -5,8 +5,14 @@ import Footer from "./Components/Footer";
 import BannerContact from '../Assets/contact.jpg'
 import Adhams from '../Assets/Home/ADHAMS.jpg';
 import AdhamsWhite from '../Assets/whitered.png'
+import { useNavigate } from "react-router-dom";
 
 function ContactUs() {
+  const navigate = useNavigate()
+
+  const handleExplore = (()=>{
+    navigate("/products")  
+  })
   return (
     <div style={{overflow:'hidden'}} className="w-full min-h-screen bg-neutral-50">
 
@@ -98,34 +104,35 @@ function ContactUs() {
               </div>
 
               <h3 className="text-2xl font-bold mt-6 md:text-3xl mb-2 mr-32">Visit Us:</h3>
-              <a href="#" className="flex items-center mr-28 text-red-600 space-x-2">
+              <a href="https://www.google.co.in/maps/place/DEZINER+CEILING+CO./@11.0630401,76.0444474,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba64bdfcb6cc7c3:0xe3dc22feb3ba422f!8m2!3d11.0630348!4d76.0470277!16s%2Fg%2F11qyq32z__?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" className="flex items-center mr-28 text-red-600 space-x-2">
                 <FaMapMarkerAlt size={20} />
                 <span className="md:text-3xl">Sitemap</span>
               </a>
 
               {/* Message Box */}
               <h3 className="text-2xl font-bold mt-6 md:ml-1 ml-10 mb-2 mr-12">Leave a Message:</h3>
-              <textarea
-                className="border p-2 w-full h-24 mt-2 rounded-md ml-1 md:ml-80"
-                placeholder="Please write to us..."
-              ></textarea>
-              <button
-          style={{
-            borderRadius: '5px',
-            borderColor: 'red',
-            borderWidth: '2px',
-            borderStyle: 'solid'
-          }}
-          className="mt-2  text-red-600 text-lg px-6 py-2 shadow-md hover:bg-red-700 hover:text-white"
-        >
-          Submit
-        </button>
+              <form action="https://formsubmit.co/muhammedarshaque1999@gmail.com" method="POST">
+            <textarea name="message" className="border p-2 w-full h-24 mt-2 rounded-md ml-1 " placeholder="Please write to us..."></textarea>
+            <button
+              type="submit"
+              style={{
+                borderRadius: '5px',
+                borderColor: 'red',
+                borderWidth: '2px',
+                borderStyle: 'solid'
+              }}
+              className="mt-2 text-red-600 text-lg px-6 py-2 shadow-md hover:bg-red-700 hover:text-white"
+            >
+              Submit
+            </button>
+          </form>                                     
+
 
             </div>
 
 
           <div className="mt-8">
-      <button className="bg-red-600 md:ml-48 ml-12 text-white text-lg px-6 py-3 shadow-md hover:bg-red-700">
+      <button onClick={handleExplore} className="bg-red-600 md:ml-48 ml-12 text-white text-lg px-6 py-3 shadow-md hover:bg-red-700">
         EXPLORE PRODUCTS
       </button>
     </div>

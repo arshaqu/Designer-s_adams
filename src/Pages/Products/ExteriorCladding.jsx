@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import AdhamsWhite from '../../Assets/whitered.png';
@@ -27,7 +27,21 @@ const products = [
 ];
 
 function ExteriorCladding() {
-  const [hoveredImage, setHoveredImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // Function to close the popup when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (selectedImage && !event.target.closest('.zoom-popup')) {
+        setSelectedImage(null);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [selectedImage]);
 
   return (
     <div className="w-full min-h-screen bg-neutral-50">
@@ -60,35 +74,41 @@ function ExteriorCladding() {
               {/* Product Card */}
               <div
                 className="border p-3 shadow-lg bg-white w-64 md:w-full rounded-md flex flex-col items-center cursor-pointer"
-                onMouseEnter={() => setHoveredImage(product.zoomImage)} // Show zoomed-in image
-                onMouseLeave={() => setHoveredImage(null)}
+                onClick={() => setSelectedImage(product.zoomImage)} // Show zoomed-in image on click
               >
                 <img src={product.image} alt={`Product ${index}`} className="w-full h-auto md:h-auto md:w-full object-cover" />
               </div>
-
-              {/* Popup for enlarged image */}
-              {/* Popup for enlarged image */}
-{hoveredImage === product.zoomImage && (
-  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-gray-300 w-[300px] md:w-[500px] p-4 md:p-6 rounded-lg shadow-4xl border">
-    <img src={hoveredImage} alt="Large Product" className="w-[300px] md:w-[500px] h-auto object-cover transition-transform duration-300 scale-105" />
-    <div className="flex flex-col sm:flex-row items-center sm:items-start">
-      <img
-        src={AdhamsWhite}
-        alt="Large Product"
-        className="md:w-auto md:h-[100px] h-[50px] w-auto mt-3 object-cover"
-      />
-      <h1 className="ml-0 sm:ml-5 mt-3 sm:mt-5 text-center sm:text-left text-sm sm:text-lg">
-        Co-extrusion | Non brushed<br />
-        21.9cm X 26mm X 2.9m<br />
-        WPC EXTERIOR CLADDINGS
-      </h1>
-    </div>
-  </div>
-)}
-
             </div>
           ))}
         </div>
+
+        {/* Popup for enlarged image */}
+        {selectedImage && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <div className="zoom-popup relative bg-gray-300 w-[300px] md:w-[680px] p-4 md:p-6 rounded-lg shadow-4xl border">
+              <img src={selectedImage} alt="Large Product" className="w-[300px] md:w-[680px] h-auto object-cover transition-transform duration-300 scale-105" />
+              <div className="flex flex-col sm:flex-row items-center sm:items-start">
+                <img
+                  src={AdhamsWhite}
+                  alt="Large Product"
+                  className="md:w-auto md:h-[80px] h-[50px] w-auto mt-3 md:mt-5 object-cover"
+                />
+                <h1 className="ml-0 sm:ml-5 mt-3 sm:mt-5 text-center sm:text-left text-sm sm:text-lg">
+                  Co-extrusion | Non brushed<br />
+                  21.9cm X 26mm X 2.9m<br />
+                  WPC EXTERIOR CLADDINGS
+                </h1>
+              </div>
+              {/* Close button */}
+              <button
+                className="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full text-lg font-bold"
+                onClick={() => setSelectedImage(null)}
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        )}
       </div>
       <Footer />
     </div>

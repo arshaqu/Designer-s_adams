@@ -51,7 +51,7 @@ function Footer() {
    </div>
 
    
-   <a href="#" className="flex items-center text-white space-x-2">
+   <a href="https://wa.me/1234567890" className="flex items-center text-white space-x-2">
       <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
         <FaWhatsapp size={20} />
       </div>
@@ -61,7 +61,7 @@ function Footer() {
 
   {/* WhatsApp centered below Facebook & Instagram */}
   <div className="flex justify-center w-full md:ml-12">
-  <a href="#" className="flex items-center text-white space-x-2">
+  <a href="https://www.instagram.com/adhams_profiles/" className="flex items-center text-white space-x-2">
       <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
         <FaInstagram size={20} />
       </div>
