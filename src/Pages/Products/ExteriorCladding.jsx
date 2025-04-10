@@ -13,7 +13,7 @@ import StoneBg from '../../Assets/Products/ExteriorCladding/image5.png';
 // Define images for zoomed-in effect
 import IpeZoom from '../../Assets/Products/ExteriorCladding/Ipezoom.png';
 import TeakZoom from '../../Assets/Products/ExteriorCladding/Teakzoom.png';
-import StoneZoom from '../../Assets/Products/ExteriorCladding/stonegreyzoom.png';
+import StoneZoom from '../../Assets/Products/ExteriorCladding/stonegrey.png';
 import TeakBgZoom from '../../Assets/Products/ExteriorCladding/TeakBgzoom.png';
 import StoneBgZoom from '../../Assets/Products/ExteriorCladding/stonegreybg.png';
 
@@ -85,7 +85,7 @@ function ExteriorCladding() {
         {/* Popup for enlarged image */}
         {selectedImage && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="zoom-popup relative bg-gray-300 w-[300px] md:w-[680px] p-4 md:p-6 rounded-lg shadow-4xl border">
+            <div className="zoom-popup relative bg-gray-300 w-[300px] md:w-[500px] p-4 md:p-6 rounded-lg shadow-4xl border">
               <img src={selectedImage} alt="Large Product" className="w-[300px] md:w-[680px] h-auto object-cover transition-transform duration-300 scale-105" />
               <div className="flex flex-col sm:flex-row items-center sm:items-start">
                 <img
