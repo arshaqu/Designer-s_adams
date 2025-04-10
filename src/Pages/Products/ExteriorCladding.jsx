@@ -91,9 +91,9 @@ function ExteriorCladding() {
                 <img
                   src={AdhamsWhite}
                   alt="Large Product"
-                  className="md:w-auto md:h-[80px] h-[50px] w-auto mt-3 md:mt-5 object-cover"
+                  className="md:w-auto md:h-[80px]  h-[50px] w-auto mt-3 md:mt-8 object-cover"
                 />
-                <h1 className="ml-0 sm:ml-5 mt-3 sm:mt-5 text-center sm:text-left text-sm sm:text-lg">
+                <h1 className="ml-0 sm:ml-5 mt-3 sm:mt-5 md:mt-10 md:ml-12 text-center sm:text-left text-sm sm:text-lg">
                   Co-extrusion | Non brushed<br />
                   21.9cm X 26mm X 2.9m<br />
                   WPC EXTERIOR CLADDINGS
