@@ -3,11 +3,19 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import BannerContact from '../Assets/contact.jpg'
-import Adhams from '../Assets/Home/ADHAMS.jpg';
 import AdhamsWhite from '../Assets/whitered.png'
 import { useNavigate } from "react-router-dom";
 
 function ContactUs() {
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Thank you for your message!");
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000); // waits 1 second before refreshing
+  };
+  
   const navigate = useNavigate()
 
   const handleExplore = (()=>{
@@ -81,13 +89,13 @@ function ContactUs() {
                
 
 
-                <a href="#" className="flex items-center md:ml-4 text-white space-x-2 ">
+                <a href="https://www.facebook.com/profile.php?id=61555726366488" className="flex items-center md:ml-4 text-white space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaFacebookF size={20} />
                   </div>  <span className="text-red-600 md:ml-5 md:text-2xl">adhams-laminates</span>
                 </a>
 
-                <a href="#" className="flex items-center text-white md:ml-4 space-x-2 ">
+                <a href="https://www.instagram.com/adhams_profiles/" className="flex items-center text-white md:ml-4 space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaInstagram size={20} />
 
@@ -95,7 +103,7 @@ function ContactUs() {
                 </a>
 
 
-                <a href="#" className="flex items-center text-white md:ml-4 space-x-2 ">
+                <a href="https://wa.me/918301955233" className="flex items-center text-white md:ml-4 space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaWhatsapp size={20} />
                   </div>  <span className="text-red-600 md:text-2xl">WhatsApp</span>
@@ -110,28 +118,36 @@ function ContactUs() {
               </a>
 
               {/* Message Box */}
-              <h3 className="text-2xl font-bold mt-6 md:ml-1 ml-10 mb-2 mr-12">Leave a Message:</h3>
-              <form action="https://formsubmit.co/muhammedarshaque1999@gmail.com" method="POST">
-            <textarea name="message" className="border p-2 w-full h-24 mt-2 rounded-md ml-1 " placeholder="Please write to us..."></textarea>
-            <button
-              type="submit"
-              style={{
-                borderRadius: '5px',
-                borderColor: 'red',
-                borderWidth: '2px',
-                borderStyle: 'solid'
-              }}
-              className="mt-2 text-red-600 text-lg px-6 py-2 shadow-md hover:bg-red-700 hover:text-white"
-            >
-              Submit
-            </button>
-          </form>                                     
+              <div>
+      <h3 className="text-2xl font-bold mt-6 md:ml-1 ml-10 mb-2 mr-12">Leave a Message:</h3>
+      <form onSubmit={handleSubmit}>
+      <div className="flex ">
+      <textarea
+          name="message"
+          className="border p-2 w-full md:w-[400px] h-48 mt-2 rounded-md ml-1"
+          placeholder="Please write to us..."
+        ></textarea>
+        <button
+          type="submit"
+          style={{
+            borderRadius: '5px',
+            borderColor: 'red',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+          }}
+          className="mt-52 absolute ml-24 md:ml-44 text-red-600 text-lg px-6 py-2 shadow-md hover:bg-red-700 hover:text-white"
+        >
+          Submit
+        </button>
+      </div>
+      </form>
+    </div>                                  
 
 
             </div>
 
 
-          <div className="mt-8">
+          <div className="mt-24">
       <button onClick={handleExplore} className="bg-red-600 md:ml-48 ml-12 text-white text-lg px-6 py-3 shadow-md hover:bg-red-700">
         EXPLORE PRODUCTS
       </button>
