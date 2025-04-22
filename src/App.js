@@ -19,6 +19,7 @@ import CharcolePanels from './Pages/Products/CharcolePanels.jsx';
 import FrenchModules from './Pages/Products/FrenchModules.jsx';
 import WpvcInterior from './Pages/Products/WpvcInterior.jsx';
 import PUWallcoverings from './Pages/Products/PUWallcoverings.jsx';
+import EliteCollections from './Pages/Products/EliteCollections.jsx';
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
         <Route path='/french_modules' element={<FrenchModules/>} />
         <Route path='/wpvc_interiors' element={<WpvcInterior/>} />
         <Route path='/pu_wallcovering' element={<PUWallcoverings/>} />
+        <Route path='/elite_collections' element={<EliteCollections/>} />
+
 
 
 

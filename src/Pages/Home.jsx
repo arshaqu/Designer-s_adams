@@ -148,7 +148,7 @@ function Home() {
               <div className="w-full max-w-full text-center border-b border-black lg:p-24 py-4">
               <Elite/>
           </div>
-          <Carosel />
+          <Carosel className='md:mt-12' />
         </div>
         <div className="flex flex-col items-center space-y-4 mt-2 px-4">
           <button onClick={handleOnExplore}  className="bg-[#E6492D] text-white font-bold text-lg px-6 py-3 rounded-md uppercase w-full max-w-xs sm:max-w-md">
