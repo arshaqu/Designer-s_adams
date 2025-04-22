@@ -72,6 +72,10 @@ const products = [
 function EliteCollections() {
     const [selectedImage, setSelectedImage] = useState(null);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     // Function to close the popup when clicking outside
     useEffect(() => {
       function handleClickOutside(event) {
