@@ -317,6 +317,9 @@ const ProductCard = ({ product, onLearnMore, navigateToExteriorCladding }) => {
     if (product.title === "PU (Polyurethane) WALL COVERINGS") {
       navigate('/pu_wallcovering');
     } 
+    if ( product.title === "PVC MIRROR STRIPS") {
+      navigate('/mirror_strips')
+    }
   };
   
   const shouldShowLearnMore = 

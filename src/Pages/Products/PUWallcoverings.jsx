@@ -4,18 +4,28 @@ import Footer from '../Components/Footer';
 import AdhamsWhite from '../../Assets/whitered.png';
 import SoffitBanner from '../../Assets/Products/Banners//PU.png';
 
-import Image1 from '../../Assets/Products/PvcSoffit/1006.png'
-import Image1Zoom from '../../Assets/Products/PvcSoffit/1006Zoom.png'
+import Image1 from '../../Assets/Products/PuWallcovering/Image1.png'
+import Image2 from '../../Assets/Products/PuWallcovering/Image2.png'
+
+import Image1Zoom from '../../Assets/Products/PuWallcovering/Image1Zoom.png'
+import Image2Zoom from '../../Assets/Products/PuWallcovering/Image2Zoom.png'
 
 const products = [
-    // { image: Image1, zoomImage: Image1Zoom },
-  
+    { image: Image1, zoomImage: Image1Zoom },
+    { image: Image2, zoomImage: Image2Zoom },
+
 
 ];
 
 
 function PUWallcoverings() {
-    const [hoveredImage, setHoveredImage] = useState(null); 
+     const [selectedProduct, setSelectedProduct] = useState(null);
+
+
+    const closePopup = () => {
+      setSelectedProduct(null);
+    };
+
 
     return (
       <div className="w-full min-h-screen bg-neutral-50">
@@ -41,44 +51,53 @@ function PUWallcoverings() {
             />
           </div>
   
-          {/* Product Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full max-w-6xl px-4">
-            {products.map((product, index) => (
-              <div key={index} className="relative flex justify-center">
-                {/* Product Card */}
-                <div
-                  className="border p-3 shadow-lg bg-white w-64 md:w-full rounded-md flex flex-col items-center cursor-pointer"
-                  onMouseEnter={() => setHoveredImage(product.zoomImage)} // Show zoomed-in image
-                  onMouseLeave={() => setHoveredImage(null)}
-                >
-                  <img src={product.image} alt={`Product ${index}`} className="w-full h-auto md:h-auto md:w-full object-cover" />
-                </div>
-  
-                {/* Popup for enlarged image */}
-                {/* Popup for enlarged image */}
-                {hoveredImage === product.zoomImage && (
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-gray-300 w-[300px] md:w-[500px] p-4 md:p-6 rounded-lg shadow-4xl border">
-                    <img src={hoveredImage} alt="Large Product" className="w-[300px] md:w-[500px] h-auto object-cover transition-transform duration-300 scale-105" />
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start">
-                        <img
-                        src={AdhamsWhite}
-                        alt="Large Product"
-                        className="md:w-auto md:h-[100px] h-[50px] w-auto mt-5 object-cover"
-                        />
-                        <div className='flex align-center justify-center'>
-                        <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center r  sm:text-left text-sm sm:text-lg">
-                        Outdoor-Indoor under roof<br />
-                        PVC SOFFIT PANELS<br/>
-                        30cm X 12mm X 3.05m
-                        </h1>
-                        </div>
-                    </div>
-                    </div>
-                 )}
-  
+         {/* Product Grid */}
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full max-w-6xl px-4">
+          {products.map((product, index) => (
+            <div key={index} className="relative flex justify-center">
+              {/* Product Card */}
+              <div
+                className="border p-3 shadow-lg bg-white w-64 md:w-full rounded-md flex flex-col items-center cursor-pointer"
+                onClick={() => setSelectedProduct(product)}
+              >
+                <img
+                  src={product.image}
+                  alt={`Product ${index}`}
+                  className="w-full h-auto md:h-auto md:w-full object-cover"
+                />
               </div>
-            ))}
+            </div>
+          ))}
+        </div>
+
+        {/* Popup Overlay */}
+        {selectedProduct && (
+          <div
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+            onClick={closePopup} // Clicking outside closes the popup
+          >
+            <div
+              className="relative bg-gray-300 w-[300px] md:w-[500px] p-4 md:p-6 rounded-lg shadow-4xl border"
+              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+            >
+              <img
+                src={selectedProduct.zoomImage}
+                alt="Large Product"
+                className="w-[300px] md:w-[500px] h-auto object-cover transition-transform duration-300 scale-105"
+              />
+            
+
+              {/* Close Button */}
+              <button
+                onClick={closePopup}
+                className="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full text-sm"
+              >
+                ✕
+              </button>
+            </div>
           </div>
+        )}
+       
         </div>
         <Footer />
       </div>

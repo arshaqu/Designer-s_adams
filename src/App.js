@@ -20,6 +20,7 @@ import FrenchModules from './Pages/Products/FrenchModules.jsx';
 import WpvcInterior from './Pages/Products/WpvcInterior.jsx';
 import PUWallcoverings from './Pages/Products/PUWallcoverings.jsx';
 import EliteCollections from './Pages/Products/EliteCollections.jsx';
+import MirrorStrips from './Pages/Products/MirrorStrips.jsx';
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
         <Route path='/wpvc_interiors' element={<WpvcInterior/>} />
         <Route path='/pu_wallcovering' element={<PUWallcoverings/>} />
         <Route path='/elite_collections' element={<EliteCollections/>} />
+        <Route path='/mirror_strips' element={<MirrorStrips/>} />
+
 
 
 
