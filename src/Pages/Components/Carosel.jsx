@@ -80,7 +80,7 @@ function Carosel() {
   }, [isAutoScrolling, imageWidth]);
 
   return (
-    <section id="features" className="py-8 overflow-hidden relative">
+    <section id="features" style={{width:'100%'}} className="py-8 overflow-hidden relative ">
       {/* Left Button */}
       <button
         onClick={() => handleScroll("left")}
