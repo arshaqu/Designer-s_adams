@@ -131,8 +131,133 @@ import Image36Zoom from '../../Assets/Products/CharcolePanels/small/Image36Zoom.
 import Image37Zoom from '../../Assets/Products/CharcolePanels/small/Image37Zoom.png'
 
 
+
+import Asset1 from '../../Assets/Products/CharcolePanels/Latest/Asset1.png'
+import Asset2 from '../../Assets/Products/CharcolePanels/Latest/Asset2.png'
+import Asset3 from '../../Assets/Products/CharcolePanels/Latest/Asset3.png'
+import Asset4 from '../../Assets/Products/CharcolePanels/Latest/Asset4.png'
+import Asset5 from '../../Assets/Products/CharcolePanels/Latest/Asset5.png'
+import Asset6 from '../../Assets/Products/CharcolePanels/Latest/Asset6.png'
+import Asset7 from '../../Assets/Products/CharcolePanels/Latest/Asset7.png'
+import Asset8 from '../../Assets/Products/CharcolePanels/Latest/Asset8.png'
+import Asset9 from '../../Assets/Products/CharcolePanels/Latest/Asset9.png'
+import Asset10 from '../../Assets/Products/CharcolePanels/Latest/Asset10.png'
+import Asset11 from '../../Assets/Products/CharcolePanels/Latest/Asset11.png'
+import Asset12 from '../../Assets/Products/CharcolePanels/Latest/Asset12.png'
+import Asset13 from '../../Assets/Products/CharcolePanels/Latest/Asset13.png'
+import Asset14 from '../../Assets/Products/CharcolePanels/Latest/Asset14.png'
+import Asset15 from '../../Assets/Products/CharcolePanels/Latest/Asset15.png'
+import Asset16 from '../../Assets/Products/CharcolePanels/Latest/Asset16.png'
+import Asset17 from '../../Assets/Products/CharcolePanels/Latest/Asset17.png'
+import Asset18 from '../../Assets/Products/CharcolePanels/Latest/Asset18.png'
+import Asset19 from '../../Assets/Products/CharcolePanels/Latest/Asset19.png'
+import Asset20 from '../../Assets/Products/CharcolePanels/Latest/Asset20.png'
+import Asset21 from '../../Assets/Products/CharcolePanels/Latest/Asset21.png'
+import Asset22 from '../../Assets/Products/CharcolePanels/Latest/Asset22.png'
+import Asset23 from '../../Assets/Products/CharcolePanels/Latest/Asset23.png'
+import Asset24 from '../../Assets/Products/CharcolePanels/Latest/Asset24.png'
+import Asset25 from '../../Assets/Products/CharcolePanels/Latest/Asset25.png'
+import Asset26 from '../../Assets/Products/CharcolePanels/Latest/Asset26.png'
+import Asset27 from '../../Assets/Products/CharcolePanels/Latest/Asset27.png'
+import Asset28 from '../../Assets/Products/CharcolePanels/Latest/Asset28.png'
+import Asset29 from '../../Assets/Products/CharcolePanels/Latest/Asset29.png'
+import Asset30 from '../../Assets/Products/CharcolePanels/Latest/Asset30.png'
+import Asset31 from '../../Assets/Products/CharcolePanels/Latest/Asset31.png'
+import Asset32 from '../../Assets/Products/CharcolePanels/Latest/Asset32.png'
+import Asset33 from '../../Assets/Products/CharcolePanels/Latest/Asset33.png'
+import Asset34 from '../../Assets/Products/CharcolePanels/Latest/Asset34.png'
+import Asset35 from '../../Assets/Products/CharcolePanels/Latest/Asset35.png'
+import Asset36 from '../../Assets/Products/CharcolePanels/Latest/Asset36.png'
+import Asset37 from '../../Assets/Products/CharcolePanels/Latest/Asset37.png'
+
+
+
+
+
+import Asset1Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset1Zoom.png'
+import Asset2Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset2Zoom.png'
+import Asset3Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset3Zoom.png'
+import Asset4Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset4Zoom.png'
+import Asset5Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset5Zoom.png'
+import Asset6Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset6Zoom.png'
+import Asset7Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset7Zoom.png'
+import Asset8Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset8Zoom.png'
+import Asset9Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset9Zoom.png'
+import Asset10Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset10Zoom.png'
+import Asset11Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset11Zoom.png'
+import Asset12Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset12Zoom.png'
+import Asset13Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset13Zoom.png'
+import Asset14Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset14Zoom.png'
+import Asset15Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset15Zoom.png'
+import Asset16Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset16Zoom.png'
+import Asset17Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset17Zoom.png'
+import Asset18Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset18Zoom.png'
+import Asset19Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset19Zoom.png'
+import Asset20Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset20Zoom.png'
+import Asset21Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset21Zoom.png'
+import Asset22Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset22Zoom.png'
+import Asset23Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset23Zoom.png'
+import Asset24Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset24Zoom.png'
+import Asset25Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset25Zoom.png'
+import Asset26Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset26Zoom.png'
+import Asset27Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset27Zoom.png'
+import Asset28Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset28Zoom.png'
+import Asset29Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset29Zoom.png'
+import Asset30Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset30Zoom.png'
+import Asset31Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset31Zoom.png'
+import Asset32Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset32Zoom.png'
+import Asset33Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset33Zoom.png'
+import Asset34Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset34Zoom.png'
+import Asset35Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset35Zoom.png'
+import Asset36Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset36Zoom.png'
+import Asset37Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset37Zoom.png'
+
+
+
 const products = [
   // Small
+    { image: Asset1, zoomImage: Asset1Zoom },
+    { image: Asset2, zoomImage: Asset2Zoom },
+    { image: Asset3, zoomImage: Asset3Zoom },
+    { image: Asset4, zoomImage: Asset4Zoom },
+    { image: Asset5, zoomImage: Asset5Zoom },
+    { image: Asset6, zoomImage: Asset6Zoom },
+    { image: Asset7, zoomImage: Asset7Zoom },
+    { image: Asset8, zoomImage: Asset8Zoom },
+    { image: Asset9, zoomImage: Asset9Zoom },
+    { image: Asset10, zoomImage: Asset10Zoom },
+    { image: Asset11, zoomImage: Asset11Zoom },
+    { image: Asset12, zoomImage: Asset12Zoom },
+    { image: Asset13, zoomImage: Asset13Zoom },
+    { image: Asset14, zoomImage: Asset14Zoom },
+    { image: Asset15, zoomImage: Asset15Zoom },
+    { image: Asset16, zoomImage: Asset16Zoom },
+    { image: Asset17, zoomImage: Asset17Zoom },
+    { image: Asset18, zoomImage: Asset18Zoom },
+    { image: Asset19, zoomImage: Asset19Zoom },
+    { image: Asset20, zoomImage: Asset20Zoom },
+    { image: Asset21, zoomImage: Asset21Zoom },
+    { image: Asset22, zoomImage: Asset22Zoom },
+    { image: Asset23, zoomImage: Asset23Zoom },
+    { image: Asset24, zoomImage: Asset24Zoom },
+    { image: Asset25, zoomImage: Asset25Zoom },
+    { image: Asset26, zoomImage: Asset26Zoom },
+    { image: Asset27, zoomImage: Asset27Zoom },
+    { image: Asset28, zoomImage: Asset28Zoom },
+    { image: Asset29, zoomImage: Asset29Zoom },
+    { image: Asset30, zoomImage: Asset30Zoom },
+    { image: Asset31, zoomImage: Asset31Zoom },
+    { image: Asset32, zoomImage: Asset32Zoom },
+    { image: Asset33, zoomImage: Asset33Zoom },
+    { image: Asset34, zoomImage: Asset34Zoom },
+    { image: Asset35, zoomImage: Asset35Zoom },
+    { image: Asset36, zoomImage: Asset36Zoom },
+    { image: Asset37, zoomImage: Asset37Zoom },
+    
+
+
+     
+    
     { image: Image1, zoomImage: Image1Zoom },
     { image: Image2, zoomImage: Image2Zoom },
     { image: Image3, zoomImage: Image3Zoom },

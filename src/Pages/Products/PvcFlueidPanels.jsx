@@ -51,10 +51,40 @@ import Image20Zoom from '../../Assets/Products/PvcFluied/Image20Zoom.png'
 import Image21Zoom from '../../Assets/Products/PvcFluied/Image21Zoom.png'
 
 
+import Asset1 from '../../Assets/Products/PvcFluied/Asset1.png'
+import Asset2 from '../../Assets/Products/PvcFluied/Asset2.png'
+import Asset3 from '../../Assets/Products/PvcFluied/Asset3.png'
+import Asset4 from '../../Assets/Products/PvcFluied/Asset4.png'
+import Asset5 from '../../Assets/Products/PvcFluied/Asset5.png'
+import Asset6 from '../../Assets/Products/PvcFluied/Asset6.png'
+import Asset7 from '../../Assets/Products/PvcFluied/Asset7.png'
+import Asset8 from '../../Assets/Products/PvcFluied/Asset8.png'
+
+
+import Asset1Zoom from '../../Assets/Products/PvcFluied/Asset1Zoom.png'
+import Asset2Zoom from '../../Assets/Products/PvcFluied/Asset2Zoom.png'
+import Asset3Zoom from '../../Assets/Products/PvcFluied/Asset3Zoom.png'
+import Asset4Zoom from '../../Assets/Products/PvcFluied/Asset4Zoom.png'
+import Asset5Zoom from '../../Assets/Products/PvcFluied/Asset5Zoom.png'
+import Asset6Zoom from '../../Assets/Products/PvcFluied/Asset6Zoom.png'
+import Asset7Zoom from '../../Assets/Products/PvcFluied/Asset7Zoom.png'
+import Asset8Zoom from '../../Assets/Products/PvcFluied/Asset8Zoom.png'
+
+
 
 
 
 const products = [
+  { image: Asset1, zoomImage: Asset1Zoom , name:'GL IN 315' ,Description:'width: 3050 X 300mm'},
+  { image: Asset2, zoomImage: Asset2Zoom , name:'EMO3' ,Description:'width: 3050 X 300mm'},
+  { image: Asset3, zoomImage: Asset3Zoom , name:'2075' ,Description:'width: 3050 X 300mm'},
+  { image: Asset4, zoomImage: Asset4Zoom , name:'2034 GREY' ,Description:'width: 3050 X 300mm'},
+  { image: Asset5, zoomImage: Asset5Zoom , name:'IN 2012' ,Description:'width: 3050 X 300mm'},
+  { image: Asset6, zoomImage: Asset6Zoom , name:'IN 2015' ,Description:'width: 3050 X 300mm'},
+  { image: Asset7, zoomImage: Asset7Zoom , name:'IN 1248 uPVC' ,Description:'width: 3050 X 300mm'},
+  { image: Asset8, zoomImage: Asset8Zoom , name:'IN 1264 uPVC' ,Description:'width: 3050 X 300mm'},
+
+
     { image: Image1, zoomImage: Image1Zoom , name:'305 - BEIGE' ,Description:'width: 10 inch Length : 10ft'},
     { image: Image2, zoomImage: Image2Zoom , name:'7012 - STONE GREY' ,Description:'width: 10 inch Length : 10ft'},
     { image: Image3, zoomImage: Image3Zoom , name:'2024 - WALNUT' ,Description:'width: 12 inch Length : 10ft' },
