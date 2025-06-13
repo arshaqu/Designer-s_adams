@@ -216,43 +216,43 @@ import Asset37Zoom from '../../Assets/Products/CharcolePanels/Latest/Asset37Zoom
 
 const products = [
   // Small
-    { image: Asset1, zoomImage: Asset1Zoom },
-    { image: Asset2, zoomImage: Asset2Zoom },
-    { image: Asset3, zoomImage: Asset3Zoom },
-    { image: Asset4, zoomImage: Asset4Zoom },
-    { image: Asset5, zoomImage: Asset5Zoom },
-    { image: Asset6, zoomImage: Asset6Zoom },
-    { image: Asset7, zoomImage: Asset7Zoom },
-    { image: Asset8, zoomImage: Asset8Zoom },
-    { image: Asset9, zoomImage: Asset9Zoom },
-    { image: Asset10, zoomImage: Asset10Zoom },
-    { image: Asset11, zoomImage: Asset11Zoom },
-    { image: Asset12, zoomImage: Asset12Zoom },
-    { image: Asset13, zoomImage: Asset13Zoom },
-    { image: Asset14, zoomImage: Asset14Zoom },
-    { image: Asset15, zoomImage: Asset15Zoom },
-    { image: Asset16, zoomImage: Asset16Zoom },
-    { image: Asset17, zoomImage: Asset17Zoom },
-    { image: Asset18, zoomImage: Asset18Zoom },
-    { image: Asset19, zoomImage: Asset19Zoom },
-    { image: Asset20, zoomImage: Asset20Zoom },
-    { image: Asset21, zoomImage: Asset21Zoom },
-    { image: Asset22, zoomImage: Asset22Zoom },
-    { image: Asset23, zoomImage: Asset23Zoom },
-    { image: Asset24, zoomImage: Asset24Zoom },
-    { image: Asset25, zoomImage: Asset25Zoom },
-    { image: Asset26, zoomImage: Asset26Zoom },
-    { image: Asset27, zoomImage: Asset27Zoom },
-    { image: Asset28, zoomImage: Asset28Zoom },
-    { image: Asset29, zoomImage: Asset29Zoom },
-    { image: Asset30, zoomImage: Asset30Zoom },
-    { image: Asset31, zoomImage: Asset31Zoom },
-    { image: Asset32, zoomImage: Asset32Zoom },
-    { image: Asset33, zoomImage: Asset33Zoom },
-    { image: Asset34, zoomImage: Asset34Zoom },
-    { image: Asset35, zoomImage: Asset35Zoom },
-    { image: Asset36, zoomImage: Asset36Zoom },
-    { image: Asset37, zoomImage: Asset37Zoom },
+  { image: Asset3, zoomImage: Asset3Zoom }, /* AD 2001-AQ */
+  { image: Asset4, zoomImage: Asset4Zoom },  /* AD 2001-08 */
+  { image: Asset5, zoomImage: Asset5Zoom },    /* AD 2001-LG */ 
+  { image: Asset6, zoomImage: Asset6Zoom },   /* AD 2001-Q1 */
+  { image: Asset7, zoomImage: Asset7Zoom },   /* AD 2003-MW */
+  { image: Asset8, zoomImage: Asset8Zoom },   /* AD 2003-LG */
+  { image: Asset9, zoomImage: Asset9Zoom },   /* AD 2003-BM */
+  { image: Asset10, zoomImage: Asset10Zoom },  /* AD 2003-GR */
+  { image: Asset27, zoomImage: Asset27Zoom },   /* AD 2005-KS */
+  { image: Asset11, zoomImage: Asset11Zoom },   /* AD 2005-AQ */
+  { image: Asset12, zoomImage: Asset12Zoom },   /* AD 2005-BB */
+  { image: Asset13, zoomImage: Asset13Zoom },   /* AD 2005-WM */
+  { image: Asset14, zoomImage: Asset14Zoom },   /* AD 2006-WM */
+  { image: Asset15, zoomImage: Asset15Zoom },   /* AD 2006-BM */
+  { image: Asset16, zoomImage: Asset16Zoom },   /* AD 2006-BR */
+  { image: Asset17, zoomImage: Asset17Zoom },   /* AD 2006-BL */
+  { image: Asset18, zoomImage: Asset18Zoom },   /* AD 2007-SW */
+  { image: Asset19, zoomImage: Asset19Zoom },  /* AD 2007-SB */
+  { image: Asset20, zoomImage: Asset20Zoom },  /* AD 2007-BM */
+  { image: Asset21, zoomImage: Asset21Zoom },   /* AD 2007-WM */
+  { image: Asset22, zoomImage: Asset22Zoom },/* AD 3002 -OW */
+  { image: Asset23, zoomImage: Asset23Zoom },  /* AD 3002-BM */
+  { image: Asset2, zoomImage: Asset2Zoom }, /* AD 3002-BG */
+  { image: Asset24, zoomImage: Asset24Zoom },   /* AD 3002-GM */
+  { image: Asset25, zoomImage: Asset25Zoom },   /* AD 3002-WM */
+  { image: Asset31, zoomImage: Asset31Zoom },   /* AD 3003-WN */
+  { image: Asset32, zoomImage: Asset32Zoom },   /* AD 3003-03 */
+  { image: Asset30, zoomImage: Asset30Zoom },   /* AD 3003-BM */
+  { image: Asset29, zoomImage: Asset29Zoom },   /* AD 3003-GB */
+  { image: Asset26, zoomImage: Asset26Zoom },   /* AD 3007-A15 */
+  { image: Asset28, zoomImage: Asset28Zoom },   /* AD 3007-A16 */
+  { image: Asset1, zoomImage: Asset1Zoom }, /* AD 3007-A17 */
+    { image: Asset33, zoomImage: Asset33Zoom },   /* AD 3007-A19 */
+    { image: Asset34, zoomImage: Asset34Zoom },   /* AD 3009-WM */
+    { image: Asset35, zoomImage: Asset35Zoom },   /* AD 3009-BM */
+    { image: Asset36, zoomImage: Asset36Zoom },   /* AD 3009-AQ */
+    { image: Asset37, zoomImage: Asset37Zoom },   /* AD 3009-MR */
     
 
 
