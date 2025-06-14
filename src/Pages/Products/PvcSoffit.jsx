@@ -14,10 +14,21 @@ import SoffitBanner from '../../Assets/Products/Banners/soffit panel 1.png';
   import Image3Zoom from '../../Assets/Products/PvcSoffit/15002Zoom.png'
   import image4Zoom from '../../Assets/Products/PvcSoffit/15007Zoom.png'
 
+  import Asset1 from '../../Assets/Products/PvcSoffit/Asset1.png'
+  import Asset2 from '../../Assets/Products/PvcSoffit/Asset2.png'
+
+  import Asset1Zoom from '../../Assets/Products/PvcSoffit/Asset1Zoom.png'
+  import Asset2Zoom from '../../Assets/Products/PvcSoffit/Asset2Zoom.png'
+
+
+
 
 const products = [
-    { image: Image1, zoomImage: Image1Zoom },
+    { image: Asset1, zoomImage: Asset1Zoom },
+    { image: Asset2, zoomImage: Asset2Zoom },
+
     { image: Image2, zoomImage: Image2Zoom },
+    { image: Image1, zoomImage: Image1Zoom },
     { image: Image3, zoomImage: Image3Zoom },
     { image: image4, zoomImage: image4Zoom },
 
@@ -98,7 +109,7 @@ function PvcSoffit() {
                   <h1 className="ml-0 sm:ml-5 mt-3 md:mt-12 sm:mt-5 text-center sm:text-left text-sm sm:text-lg">
                     Outdoor-Indoor under roof<br />
                     PVC SOFFIT PANELS<br />
-                    30cm X 12mm X 3.05m
+                   
                   </h1>
                 </div>
               </div>

@@ -10,7 +10,20 @@ import Image2 from '../../Assets/Products/PuWallcovering/Image2.png'
 import Image1Zoom from '../../Assets/Products/PuWallcovering/Image1Zoom.png'
 import Image2Zoom from '../../Assets/Products/PuWallcovering/Image2Zoom.png'
 
+import Asset1 from '../../Assets/Products/PuWallcovering/Asset1.png'
+import Asset2 from '../../Assets/Products/PuWallcovering/Asset2.png'
+
+import Asset1Zoom from '../../Assets/Products/PuWallcovering/Asset1Zoom.png'
+import Asset2Zoom from '../../Assets/Products/PuWallcovering/Asset2Zoom.png'
+
+
+
+
 const products = [
+    { image: Asset1, zoomImage: Asset1Zoom },
+    { image: Asset2, zoomImage: Asset2Zoom },
+
+
     { image: Image1, zoomImage: Image1Zoom },
     { image: Image2, zoomImage: Image2Zoom },
 
