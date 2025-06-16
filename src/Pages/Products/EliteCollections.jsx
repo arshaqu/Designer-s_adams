@@ -25,7 +25,7 @@ import Image18 from '../../Assets/Elite/Image18.png'
 
 
 // Define images for zoomed-in effect
-import Image1Zoom from '../../Assets/Elite/Image11Zoom.png'
+import Image1Zoom from '../../Assets/Elite/Image1Zoom.png'
 import Image2Zoom from '../../Assets/Elite/Image2Zoom.png'
 import Image3Zoom from '../../Assets/Elite/Image3Zoom.png'
 import Image4Zoom from '../../Assets/Elite/Image4Zoom.png'
