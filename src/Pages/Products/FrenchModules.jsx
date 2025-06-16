@@ -31,10 +31,13 @@ import Image20 from '../../Assets/Products/FrenchMouldings/Image20.jpg'
 import Image21 from '../../Assets/Products/FrenchMouldings/Image21.jpg'
 import Image22 from '../../Assets/Products/FrenchMouldings/Image22.jpg'
 
+import Asset1 from '../../Assets/Products/FrenchMouldings/Asset1.png'
+
 
 
 
 const products = [
+      { image: Asset1 , zoomImage: Asset1 },
     // Small
       { image: Image1, zoomImage: Image1 },
       { image: Image2, zoomImage: Image2 },
