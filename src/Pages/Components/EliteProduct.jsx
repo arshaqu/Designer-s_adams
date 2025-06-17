@@ -36,14 +36,14 @@ function EliteProduct() {
   }, []);
 
   return (
-    <div className="elite-container flex flex-col items-center justify-center overflow-hidden w-full min-h-screen bg-black text-white p-6">
+    <div className="elite-container flex flex-col items-center justify-center overflow-hidden w-full min-h-auto bg-black text-white ">
       <h2 className="text-2xl md:text-4xl font-semibold mb-10 text-center montserrat"> <span style={{fontWeight:'bold'}}>ELITE COLLECTION</span></h2>
     
 
-<div className="w-full flex flex-col items-center gap-8">
+<div className="w-full flex flex-col items-center ">
 
 {/* Wrapper for image and video */}
-<div className="flex flex-col md:flex-row md:justify-center md:items-center w-full gap-8">
+<div className="flex flex-col md:flex-row md:justify-center md:items-center w-full ">
  
 
 
@@ -63,7 +63,7 @@ function EliteProduct() {
 
   <button 
     onClick={handleOnExplore}  
-    className="bg-white text-gray-900 font-bold text-lg px-6 py-3 rounded-md uppercase w-full max-w-xs sm:max-w-md"
+    className="bg-white m-5 text-gray-900 font-bold text-lg px-6 py-3 rounded-md uppercase w-full max-w-xs sm:max-w-md"
   >
     EXPLORE ELITE
   </button>
