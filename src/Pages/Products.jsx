@@ -21,6 +21,8 @@ import CharcolePanels from '../Assets/Products/002.png';
 import Nonails from '../Assets/Products/009.png';
 import image121 from '../Assets/Products/Banners/No nail banner.png'; // Import the image for NO NAIL popup
 
+import EliteProduct from "./Components/EliteProduct";
+
 
 // Custom Image Popup Component
 const ImagePopup = ({ isOpen, onClose, imageSrc }) => {
@@ -609,6 +611,7 @@ function Products() {
         </div>
 
         {/* Exterior Section */}
+        <EliteProduct/>
         <div style={{overflow:'hidden'}} className="p-2 border-b-4 m-2">
           <h2 style={{fontWeight:'bold'}} className="md:text-4xl text-1xl font-bold mt-3 md:m-12 border-b montserrat"> EXTERIOR & INTERIOR </h2>
           <div className="md:mt-5">
