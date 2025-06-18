@@ -37,13 +37,13 @@ function EliteProduct() {
 
   return (
     <div className="elite-container flex flex-col items-center justify-center overflow-hidden w-full min-h-auto bg-black text-white ">
-      <h2 className="text-2xl md:text-4xl font-semibold mb-10 text-center montserrat"> <span style={{fontWeight:'bold'}}>ELITE COLLECTION</span></h2>
+    
     
 
 <div className="w-full flex flex-col items-center ">
 
 {/* Wrapper for image and video */}
-<div className="flex flex-col md:flex-row md:justify-center md:items-center w-full ">
+<div className="flex flex-col md:flex-row md:justify-center md:items-center w-full mt-6">
  
 
 
