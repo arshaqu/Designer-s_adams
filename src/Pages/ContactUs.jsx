@@ -95,13 +95,17 @@ function ContactUs() {
                   </div>  <span className="text-red-600 md:ml-5 md:text-2xl">adhams-laminates</span>
                 </a>
 
-                <a href="https://www.instagram.com/adhams_profiles/" className="flex items-center text-white md:ml-4 space-x-2 ">
-                  <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
-                    <FaInstagram size={20} />
+          <a href="https://www.facebook.com/adhams.deziner"  className="flex items-center text-white md:ml-4 space-x-2 "> 
+          <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+            <FaInstagram size={20}/>
+          </div>
+          <p className="text-red-600 md:text-2xl">Adhams_Profiles</p>
+          </a>
+      
+                  
+                  
 
-                  </div>  <span className="text-red-600 md:text-2xl">adhams_profiles</span>
-                </a>
-
+              
 
                 <a href="https://wa.me/918301955233" className="flex items-center text-white md:ml-4 space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
