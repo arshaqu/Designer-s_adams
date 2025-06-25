@@ -83,7 +83,62 @@ function ContactUs() {
 
 
 
-          
+            {/* <div className="flex flex-col items-center md:ml-[-12] mt-3">
+              <h3 className="text-2xl font-bold mb-4 mt-5  mr-[80px]">Follow Us:</h3>
+              <div className="flex flex-col mr-6 gap-4">              
+                <a href="https://www.facebook.com/profile.php?id=61555726366488" className="flex items-center md:ml-4 text-white space-x-2 ">
+                  <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+                    <FaFacebookF size={20} />
+                  </div>  <span className="text-red-600 md:ml-5 md:text-2xl">adhams-laminates</span>
+                </a>
+
+                <a href="https://www.instagram.com/adhams_profiles/" className="flex items-center text-white md:ml-4 space-x-2 ">
+                  <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+                    <FaInstagram size={20} />
+
+                  </div>  <span className="text-red-600 md:text-2xl">adhams_profiles</span>
+                </a>
+
+
+                <a href="https://wa.me/918301955233" className="flex items-center text-white md:ml-4 space-x-2 ">
+                  <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
+                    <FaWhatsapp size={20} />
+                  </div>  <span className="text-red-600 md:text-2xl">WhatsApp</span>
+                </a>
+
+              </div>
+
+              <h3 className="text-2xl font-bold mt-6 md:text-3xl mb-2 mr-32">Visit Us:</h3>
+              <a href="https://www.google.co.in/maps/place/DEZINER+CEILING+CO./@11.0630401,76.0444474,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba64bdfcb6cc7c3:0xe3dc22feb3ba422f!8m2!3d11.0630348!4d76.0470277!16s%2Fg%2F11qyq32z__?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" className="flex items-center mr-28 text-red-600 space-x-2">
+                <FaMapMarkerAlt size={20} />
+                <span className="md:text-3xl">Sitemap</span>
+              </a>
+
+              <div>
+      <h3 className="text-2xl font-bold mt-6 md:ml-1 ml-10 mb-2 mr-12">Leave a Message:</h3>
+      <form onSubmit={handleSubmit}>
+      <div className="flex ">
+      <textarea
+          name="message"
+          className="border p-2 w-full md:w-[400px] h-48 mt-2 rounded-md ml-1"
+          placeholder="Please write to us..."
+        ></textarea>
+        <button
+          type="submit"
+          style={{
+            borderRadius: '5px',
+            borderColor: 'red',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+          }}
+          className="mt-52 absolute ml-24 md:ml-44 text-red-600 text-lg px-6 py-2 shadow-md hover:bg-red-700 hover:text-white"
+        >
+          Submit
+        </button>
+      </div>
+      </form>
+    </div>                                  
+            </div> */}
 
 
           <div className="mt-24">
@@ -92,7 +147,6 @@ function ContactUs() {
       </button>
     </div>
 
- 
           </div>
 
         </div>
