@@ -83,10 +83,10 @@ function ContactUs() {
 
 
 
-            {/* <div className="flex flex-col items-center md:ml-[-12] mt-3">
+            <div className="flex flex-col items-center md:ml-[-12] mt-3">
               <h3 className="text-2xl font-bold mb-4 mt-5  mr-[80px]">Follow Us:</h3>
               <div className="flex flex-col mr-6 gap-4">              
-                <a href="https://www.facebook.com/profile.php?id=61555726366488" className="flex items-center md:ml-4 text-white space-x-2 ">
+                <a href="https://www.facebook.com/adhams.deziner" className="flex items-center md:ml-4 text-white space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaFacebookF size={20} />
                   </div>  <span className="text-red-600 md:ml-5 md:text-2xl">adhams-laminates</span>
@@ -138,7 +138,7 @@ function ContactUs() {
       </div>
       </form>
     </div>                                  
-            </div> */}
+            </div>
 
 
           <div className="mt-24">
