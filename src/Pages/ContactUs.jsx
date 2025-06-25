@@ -89,7 +89,7 @@ function ContactUs() {
                
 
 
-                <a href="https://www.facebook.com/profile.php?id=61555726366488" className="flex items-center md:ml-4 text-white space-x-2 ">
+                <a href="https://www.facebook.com/adhams.deziner" className="flex items-center md:ml-4 text-white space-x-2 ">
                   <div className="border border-red-600 bg-red-500 rounded-full px-1 py-1">
                     <FaFacebookF size={20} />
                   </div>  <span className="text-red-600 md:ml-5 md:text-2xl">adhams-laminates</span>
