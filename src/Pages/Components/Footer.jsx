@@ -42,7 +42,7 @@ function Footer() {
   {/* Facebook and Instagram in a row */}
   <div className="flex space-x-6">
    <div className="md:ml-[50px]">
-   <a href="https://www.facebook.com/profile.php?id=61555726366488" className="flex items-center text-white space-x-2">
+   <a href="https://www.facebook.com/adhams.deziner" className="flex items-center text-white space-x-2">
       <div className="border border-red-600 bg-red-500 ml-[-25px] rounded-full px-1 py-1">
         <FaFacebookF className="" size={20} />
       </div>
