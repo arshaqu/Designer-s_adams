@@ -71,12 +71,25 @@ import Image28Zoom from '../../Assets/Products/WpvcInterior/Image28Zoom.png'
 import Image29Zoom from '../../Assets/Products/WpvcInterior/Image29Zoom.png'
 import Image30Zoom from '../../Assets/Products/WpvcInterior/Image30Zooom.png'
 
+// NEW 
+import Asset1 from '../../Assets/Products/WpvcInterior/Assetnew1Wpvc.png'
+import Asset2 from '../../Assets/Products/WpvcInterior/Assetnew2Wpvc.png'
+
+// Zoooom 
+import Asset1Zoom from '../../Assets/Products/WpvcInterior/Assetnew1ZoomWpvc.png'
+import Asset2Zoom from '../../Assets/Products/WpvcInterior/Assetnew2ZoomWpvc.png'
+
+
+
+
 
 
 function WpvcInterior() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
     const products = [
+            { image: Asset1, zoomImage: Asset1Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "160mm X 17mm X 2900mm" },
+    { image: Asset2, zoomImage: Asset2Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "160mm X 17mm X 2900mm" },
         { image: Image1, zoomImage: Image1Zoom, content: "WPVC INTERIOR LOUVERS",size: "16cm X 23mm X 2.9m" },
         { image: Image2, zoomImage: Image2Zoom, content: "WPVC INTERIOR LOUVERS" ,size: "16cm X 23mm X 2.9m"},
         { image: Image3, zoomImage: Image3Zoom, content: "WPVC INTERIOR LOUVERS",size: "16cm X 23mm X 2.9m" },

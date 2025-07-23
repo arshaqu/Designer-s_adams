@@ -36,8 +36,30 @@ import Image13Zoom from '../../Assets/Products/WpvcPastel/Image13Zoom.png';
 import Image14Zoom from '../../Assets/Products/WpvcPastel/Image14Zoom.png';
 
 
+// NEW
+
+import Asset1 from '../../Assets/Products/WpvcPastel/Assetnew1.png'
+import Asset2 from '../../Assets/Products/WpvcPastel/Assetnew2.png'
+import Asset3 from '../../Assets/Products/WpvcPastel/Assetnew3.png'
+import Asset4 from '../../Assets/Products/WpvcPastel/Assetnew4.png'
+
+
+import Asset1Zoom from '../../Assets/Products/WpvcPastel/Assetnew1Zoom.png'
+import Asset2Zoom from '../../Assets/Products/WpvcPastel/Assetnew2Zoom.png'
+import Asset3Zoom from '../../Assets/Products/WpvcPastel/Assetnew3Zoom.png'
+import Asset4Zoom from '../../Assets/Products/WpvcPastel/Assetnew4Zoom.png'
+
+
+
 
 const products = [
+
+    { image: Asset1, zoomImage: Asset1Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "160mm X 17mm X 2900mm" },
+    { image: Asset2, zoomImage: Asset2Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "160mm X 17mm X 2900mm" },
+    { image: Asset3, zoomImage: Asset3Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "160mm X 17mm X 2900mm" },
+    { image: Asset4, zoomImage: Asset4Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "160mm X 17mm X 2900mm" },
+
+
     { image: Image1, zoomImage: Image1Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "196mm X 12mm X 2900mm" },
     { image: Image2, zoomImage: Image2Zoom, content: "WPVC PASTEL PANELS", Description : "Interior Wall and Ceiling",size: "196mm X 12mm X 2900mm"},
     { image: Image3, zoomImage: Image3Zoom, content: "WPVC PASTEL PANELS",Description : "Interior Wall and Ceiling",size: "196mm X 12mm X 2900mm" },
